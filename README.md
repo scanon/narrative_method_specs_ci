@@ -37,17 +37,7 @@ documentation pages.
 
 ## How to Add/Update Specifications
 
-To update or edit the specifications for methods/apps that you have written, you need to fork this repository,
-make changes in your local repository, and make a pull request.  See https://help.github.com/articles/using-pull-requests
-
-We prefer that pull requests are made to the dev branch, and that you test and confirm that the changes are
-correct on the dev deployment of the Narrative and functional site.  We will then merge the changes into
-master as soon as you have confirmed with us that the changes look good.  Only in rare circumstances will we
-accept changes directly into the live master branch.
-
-Changes pushed to the master branch will be reflected in the Narrative Method Store generally within a couple
-minutes, depending on the configuration settings of the Narrative Method Store.  Keep in mind that you may need
-to clear your browser cache to see the changes reflected on the live site.
+As this is a repo for specifications for CI and non-production KBase deployments, if you are developing KBase methods and apps, you can get commit privileges to this repository.  Just send an email to request access to Michael Sneddon.
 
 
 
