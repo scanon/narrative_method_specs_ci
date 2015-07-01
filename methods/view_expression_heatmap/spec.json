@@ -20,7 +20,7 @@
       "valid_ws_types" : [ "KBaseFeatureValues.ExpressionMatrix" ]
     }
   } ,
-
+  {
     "id" : "param1",
     "optional" : false,
     "advanced" : false,
