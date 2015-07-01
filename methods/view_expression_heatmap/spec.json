@@ -1,0 +1,53 @@
+{
+  "name" : "View Expression Heatmap",
+  "ver" : "1.0.0",
+  "authors" : [ ],
+  "contact" : "help@kbase.us",
+  "visble" : true,
+  "categories" : ["viewers"],
+  "widgets" : {
+    "input" : null,
+    "output" : "kbaseExpressionHeatmap"
+  },
+  "parameters" : [ {
+    "id" : "param0",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ "KBaseFeatureValues.ExpressionMatrix" ]
+    }
+  } ,
+
+    "id" : "param1",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ "KBaseSearch.FeatureSet" ]
+    }
+  } 
+],
+  "behavior" : {
+    "none" : {
+      "output_mapping" : [
+        {
+          "input_parameter": "param0",
+          "target_property": "expressionMatrixID"
+        },
+        {
+          "input_parameter": "param1",
+          "target_property": "featureSetId"
+        },
+        {
+          "narrative_system_variable": "workspace",
+          "target_property": "workspaceID"
+        }
+      ]
+    }
+  }
+}
