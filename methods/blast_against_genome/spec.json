@@ -6,7 +6,7 @@
   "categories" : ["active"],
   "widgets" : {
     "input" : null,
-    "output" : "kbaseJsonView"
+    "output" : null
   },
   "parameters" : [ {
       "id" : "genomes",
@@ -22,7 +22,7 @@
       "id" : "query",
       "optional" : false,
       "advanced" : false,
-      "allow_multiple" : true,
+      "allow_multiple" : false,
       "default_values" : [ "" ],
       "field_type" : "textarea",
       "textarea_options" : {
