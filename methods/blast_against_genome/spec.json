@@ -54,7 +54,19 @@
         {
           "narrative_system_variable": "workspace",
           "target_property": "ws"
-        }
+        },
+        {
+          "input_parameter": "genomes",
+          "target_property": "genomes"
+        },
+        {
+          "input_parameter": "query",
+          "target_property": "query"
+        },
+        {
+          "input_parameter": "blast_program",
+          "target_property": "blast_program"
+        },
       ]
     }
   }
