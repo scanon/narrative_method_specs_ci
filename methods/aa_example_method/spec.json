@@ -46,7 +46,7 @@
     "optional" : false,
     "advanced" : false,
     "allow_multiple" : false,
-    "default_values" : [ "123" ],
+    "default_values" : [ "188823" ],
     "field_type" : "text",
     "text_options" : {
       "validate_as": "int"
