@@ -44,6 +44,10 @@
           {
             "value": "blastp",
             "display": "blastp"
+          },
+          {
+            "value": "tblastp",
+            "display": "tblastp"
           }
         ]
       }
