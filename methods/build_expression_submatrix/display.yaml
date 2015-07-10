@@ -24,14 +24,13 @@ method-suggestions :
 # Configure the display and description of the parameters
 #
 parameters :
-    input_expression_matrix_set :
+    input_expression_matrix:
         ui-name : |
             Expression Matrix
         short-hint : |
             select the expression matrices to be merged
         long-hint  : |
             select the expression matrices to be merged
-
 
     input_selected_conditions :
         ui-name : |

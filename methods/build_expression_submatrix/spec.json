@@ -20,17 +20,6 @@
       "valid_ws_types" : [ "KBaseFeatureValues.ExpressionMatrix" ]                 
     }                 
   },{
-    "id": "input_allow_missing_genes",
-    "optional":false,
-    "advanced":false,
-    "allow_multiple":false,
-    "default_values":[""],
-    "field_type" : "checkbox",
-    "checkbox_options":{
-      "checked_value": 1,
-      "unchecked_value": 0
-    }
-  },{
     "id" : "input_selected_conditions",
     "optional" : true,
     "advanced" : false,
@@ -50,6 +39,17 @@
     "text_options" : {
       "valid_ws_types" : [ "KBaseSearch.FeatureSet" ]                 
     }                 
+  },{
+    "id": "input_allow_missing_genes",
+    "optional":false,
+    "advanced":false,
+    "allow_multiple":false,
+    "default_values":[""],
+    "field_type" : "checkbox",
+    "checkbox_options":{
+      "checked_value": 1,
+      "unchecked_value": 0
+    }
   },{
     "id": "input_allow_missing_conditions",
     "optional":false,
