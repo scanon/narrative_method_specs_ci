@@ -1,0 +1,53 @@
+{
+  "name" : "Expression Toolkit: estimate k",
+  "ver" : "1.0.0",
+  "authors" : [ ],
+  "contact" : "help@kbase.us",
+  "visble" : true,
+  "categories" : ["active"],
+  "widgets" : {
+    "input" : null,
+    "output" : "kbaseExpressionToolkitEstimateKResult"
+  },
+  "parameters" : [ {
+    "id" : "input_expression_matrix",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ "KBaseFeatureValues.ExpressionMatrix" ]                 
+    }                 
+  },{             
+    "id" : "output_estimated_k",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ "KBaseFeatureValues.EstimateKResult" ],
+      "is_output_name":true
+    }
+  }],
+  "behavior" : {
+      
+    "none" : {
+      "output_mapping" : [
+        {
+          "input_parameter": "input_expression_matrix",
+          "target_property": "expressionMatrix"
+        },
+        {
+          "input_parameter": "output_estimated_k",
+          "target_property": "estimateKResultId"
+        },
+        {
+          "narrative_system_variable": "workspace",
+          "target_property": "workspaceID"
+        }
+      ]
+    }
+  }
+}
