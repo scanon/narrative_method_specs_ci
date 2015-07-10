@@ -31,7 +31,23 @@ parameters :
             select the expression matrices to be merged
         long-hint  : |
             select the expression matrices to be merged
-            
+
+    input_allow_missing_genes :
+        ui-name : |
+            Allow missing genes
+        short-hint : |
+            allow missing genes
+        long-hint  : |
+            allow missing genes
+
+    input_allow_missing_conditions :
+        ui-name : |
+            Allow missing conditions
+        short-hint : |
+            allow missing conditions
+        long-hint  : |
+            allow missing conditions
+
     output_expression_matrix :
         ui-name : |
             Merged Expression Matrix

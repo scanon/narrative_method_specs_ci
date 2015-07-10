@@ -19,7 +19,29 @@
     "text_options" : {
       "valid_ws_types" : [ "KBaseFeatureValues.ExpressionMatrix" ]                 
     }                 
-  },{ 
+  },{
+    "id": "input_allow_missing_genes",
+    "optional":false,
+    "advanced":false,
+    "allow_multiple":false,
+    "default_values":[""],
+    "field_type" : "checkbox",
+    "checkbox_options":{
+      "checked_value": 1,
+      "unchecked_value": 0
+    }
+  },{
+    "id": "input_allow_missing_conditions",
+    "optional":false,
+    "advanced":false,
+    "allow_multiple":false,
+    "default_values":[""],
+    "field_type" : "checkbox",
+    "checkbox_options":{
+      "checked_value": 1,
+      "unchecked_value": 0
+    }      
+  },{             
     "id" : "output_expression_matrix",
     "optional" : false,
     "advanced" : false,
@@ -38,6 +60,14 @@
         {
           "input_parameter": "input_expression_matrix_set",
           "target_property": "expressionMatrixSet"
+        },
+        {
+          "input_parameter": "input_allow_missing_genes",
+          "target_property": "allowMissingGenes"
+        },
+        {
+          "input_parameter": "input_allow_missing_conditions",
+          "target_property": "allowMissingConditions"
         },
         {
           "input_parameter": "output_expression_matrix",
