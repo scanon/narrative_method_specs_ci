@@ -31,6 +31,14 @@ parameters :
             select the expression matrices to be merged
         long-hint  : |
             select the expression matrices to be merged
+            
+    output_expression_matrix :
+        ui-name : |
+            Expression Matrix
+        short-hint : |
+            Output expression matrix
+        long-hint  : |
+            Output expression matrix
 
 
 description : |
