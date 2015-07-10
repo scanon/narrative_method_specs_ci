@@ -26,7 +26,7 @@ method-suggestions :
 parameters :
     input_expression_matrix_set :
         ui-name : |
-            Expression Matrices
+            Expression Matrix
         short-hint : |
             select the expression matrices to be merged
         long-hint  : |
@@ -34,11 +34,11 @@ parameters :
             
     output_expression_matrix :
         ui-name : |
-            Expression Matrix
+            Merged Expression Matrix
         short-hint : |
-            Output expression matrix
+            Merged Expression Matrix
         long-hint  : |
-            Output expression matrix
+            Merged Expression Matrix
 
 
 description : |
