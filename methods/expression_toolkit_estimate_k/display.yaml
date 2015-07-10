@@ -1,11 +1,11 @@
 #
 # Define basic display information
 #
-name     : Expression Toolkit: estimate k
+name     : Expression Toolkit estimate k
 subtitle : |
-    Expression Toolkit: estimate k
+    Expression Toolkit estimate k
 tooltip  : |
-    Expression Toolkit: estimate k
+    Expression Toolkit estimate k
 
 screenshots :
     []
