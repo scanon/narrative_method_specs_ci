@@ -33,7 +33,7 @@ parameters :
             Expression Matrix
 
 
-    output_k :
+    output_estimated_k :
         ui-name : |
             Estimated number of clusters
         short-hint : |
