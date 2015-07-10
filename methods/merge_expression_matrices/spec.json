@@ -4,7 +4,7 @@
   "authors" : [ ],
   "contact" : "help@kbase.us",
   "visble" : true,
-  "categories" : ["viewers"],
+  "categories" : ["active"],
   "widgets" : {
     "input" : null,
     "output" : "kbaseExpressionMatrix"
@@ -32,7 +32,6 @@
   }],
   "behavior" : {
       
-    // Later it should service-mapping      
     "none" : {
       "output_mapping" : [
         {
