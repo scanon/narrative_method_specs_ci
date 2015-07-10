@@ -1,0 +1,56 @@
+#
+# Define basic display information
+#
+name     : Blast search against a genome
+tooltip  : |
+    Blast search against a genome
+
+screenshots :
+    []
+
+#
+# Define the set of other narrative methods that should be suggested to the user.
+#
+suggestions :
+    apps:
+        related :
+            []
+        next :
+            []
+    methods:
+        related :
+            []
+        next :
+            []
+
+#
+# Configure the display and description of the parameters
+#
+parameters :
+    genomes :
+        ui-name : |
+            Genome
+        short-hint : |
+            select the genome you want to search
+        long-hint  : |
+            additional information can be placed here
+    query :
+        ui-name : |
+            Query Sequence
+        short-hint : |
+            sequence you want to search for
+    query :
+        ui-name : |
+            Query Sequence
+        short-hint : |
+            sequence you want to search for
+    blast_program :
+        ui-name : |
+            Blast Program
+        short-hint : |
+            Defines the type of blast search to perform
+
+description : |
+    Blast search against a genome long description
+
+

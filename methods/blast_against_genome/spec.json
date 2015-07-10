@@ -1,0 +1,81 @@
+{
+  "ver" : "1.0.0",
+  "authors" : [ ],
+  "contact" : "help@kbase.us",
+  "visble" : true,
+  "categories" : ["active"],
+  "widgets" : {
+    "input" : null,
+    "output" : null
+  },
+  "parameters" : [ {
+      "id" : "genomes",
+      "optional" : false,
+      "advanced" : false,
+      "allow_multiple" : true,
+      "default_values" : [ "" ],
+      "field_type" : "text",
+      "text_options" : {
+        "valid_ws_types" : [ "KBaseGenomes.Genome" ]
+      }
+    }, {
+      "id" : "query",
+      "optional" : false,
+      "advanced" : false,
+      "allow_multiple" : false,
+      "default_values" : [ "" ],
+      "field_type" : "textarea",
+      "textarea_options" : {
+        "n_rows":4
+      }
+    }, {
+      "id" : "blast_program",
+      "optional" : false,
+      "advanced" : false,
+      "allow_multiple" : false,
+      "default_values" : [ "blastp" ],
+      "field_type" : "dropdown",
+      "dropdown_options":{
+        "options": [
+          {
+            "value": "blastn",
+            "display": "blastn"
+          },
+          {
+            "value": "blastp",
+            "display": "blastp"
+          },
+          {
+            "value": "tblastp",
+            "display": "tblastp"
+          },
+          {
+            "value": "test_by_Fei",
+            "display": "test_by_Fei"
+          }
+        ]
+      }
+  } ],
+  "behavior" : {
+    "none" : {
+      "output_mapping" : [
+        {
+          "narrative_system_variable": "workspace",
+          "target_property": "ws"
+        },
+        {
+          "input_parameter": "genomes",
+          "target_property": "genomes"
+        },
+        {
+          "input_parameter": "query",
+          "target_property": "query"
+        },
+        {
+          "input_parameter": "blast_program",
+          "target_property": "blast_program"
+        }
+      ]
+    }
+  }
+}
