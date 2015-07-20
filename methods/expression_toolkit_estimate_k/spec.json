@@ -32,7 +32,8 @@
     }
   }],
   "behavior" : {
-      
+
+/*      
     "none" : {
       "output_mapping" : [
         {
@@ -49,5 +50,46 @@
         }
       ]
     }
+*/       
+      
+    "service-mapping" : {
+        "url" : "https://ci.kbase.us/services/feature_values/jsonrpc",
+        "name" : "KBaseFeatureValues ",
+        "method" : "estimate_k",
+        "input_mapping" : [
+            {
+            "input_parameter": "input_expression_matrix",
+            "target_property": "input_matrix "
+            },
+            {
+            "narrative_system_variable": "workspace",
+            "target_property": "out_workspace"
+            },
+            {
+            "narrative_system_variable": "output_estimated_k",
+            "target_property": "out_estimate_result "
+            }     
+        ],
+        "output_mapping" : [
+          {
+            "input_parameter": "input_expression_matrix",
+            "target_property": "expressionMatrix"
+          },
+          {
+            "input_parameter": "output_estimated_k",
+            "target_property": "estimateKResultId"
+          },
+          {
+            "narrative_system_variable": "workspace",
+            "target_property": "workspaceID"
+          },
+          {
+            "service_method_output_path": [],
+            "target_property": "job_id"
+          }            
+        ]
+    }
+  },
+  "job_id_output_field": "job_id"                 
   }
 }
