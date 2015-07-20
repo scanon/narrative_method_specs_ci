@@ -34,7 +34,7 @@
   "behavior" : {
     "service-mapping" : {
         "url" : "https://ci.kbase.us/services/feature_values/jsonrpc",
-        "name" : "KBaseFeatureValues ",
+        "name" : "KBaseFeatureValues",
         "method" : "estimate_k",
         "input_mapping" : [
             {
