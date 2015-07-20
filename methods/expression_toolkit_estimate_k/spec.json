@@ -46,7 +46,7 @@
             "target_property": "out_workspace"
             },
             {
-            "narrative_system_variable": "output_estimated_k",
+            "input_parameter": "output_estimated_k",
             "target_property": "out_estimate_result "
             }     
         ],
