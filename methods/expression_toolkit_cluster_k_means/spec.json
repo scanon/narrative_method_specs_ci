@@ -1,0 +1,85 @@
+{
+  "name" : "Expression Toolkit cluster k_means",
+  "ver" : "1.0.0",
+  "authors" : [ ],
+  "contact" : "help@kbase.us",
+  "visble" : true,
+  "categories" : ["active"],
+  "widgets" : {
+    "input" : null,
+    "output" : "kbaseExpressionClusterSet"
+  },
+  "parameters" : [ {
+    "id" : "input_expression_matrix",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ "KBaseFeatureValues.ExpressionMatrix" ]                 
+    }                 
+  },{
+    "id" : "input_k_value",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    "text_options" : {
+      "validate_as": "int"
+    }
+  },{             
+    "id" : "output_cluster_set",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ "KBaseFeatureValues.ClusterSet" ],
+      "is_output_name":true
+    }
+  }],
+  "behavior" : {
+    "service-mapping" : {
+        "url" : "https://ci.kbase.us/services/feature_values/jsonrpc",
+        "name" : "KBaseFeatureValues",
+        "method" : "cluster_k_means",
+        "input_mapping" : [
+            {
+            "input_parameter": "input_k_value",
+            "target_property": "k"
+            },
+            {
+            "input_parameter": "input_expression_matrix",
+            "target_property": "input_matrix"
+            },
+            {
+            "narrative_system_variable": "workspace",
+            "target_property": "out_workspace"
+            },
+            {
+            "input_parameter": "output_cluster_set",
+            "target_property": "out_clusterset_id"
+            }     
+        ],
+      "output_mapping" : [
+        {
+          "input_parameter": "output_cluster_set",
+          "target_property": "clusterSetID"
+        },
+        {
+          "narrative_system_variable": "workspace",
+          "target_property": "workspaceID"
+        },
+        {
+           "service_method_output_path": [],
+            "target_property": "job_id"
+        }
+      ]
+    }
+  },
+  "job_id_output_field": "job_id"                 
+}    
+

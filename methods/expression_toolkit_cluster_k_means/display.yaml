@@ -1,0 +1,59 @@
+#
+# Define basic display information
+#
+name     : Expression Toolkit cluster k means
+subtitle : |
+    Expression Toolkit cluster k means
+tooltip  : |
+    Expression Toolkit cluster k means
+
+screenshots :
+    []
+
+#
+# Define the set of other narrative methods that should be suggested to the user.
+#
+method-suggestions :
+    related :
+        []
+    next :
+        []
+
+
+#
+# Configure the display and description of the parameters
+#
+parameters :
+    input_expression_matrix:
+        ui-name : |
+            Expression Matrix
+        short-hint : |
+            Expression Matrix
+        long-hint  : |
+            Expression Matrix
+
+    input_k_value:
+        ui-name : |
+            Number of clusters
+        short-hint : |
+            Number of clusters
+        long-hint  : |
+            Number of clusters
+
+
+
+    output_cluster_set :
+        ui-name : |
+            Set of clusters
+        short-hint : |
+            Generted clusters
+        long-hint  : |
+            Generted clusters
+
+
+description : |
+    Expression Toolkit cluster k means
+
+
+technical-description : |
+    Expression Toolkit cluster k means
