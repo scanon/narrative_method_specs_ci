@@ -39,7 +39,7 @@
         "input_mapping" : [
             {
             "input_parameter": "input_expression_matrix",
-            "target_property": "input_matrix "
+            "target_property": "input_matrix"
             },
             {
             "narrative_system_variable": "workspace",
@@ -47,7 +47,7 @@
             },
             {
             "input_parameter": "output_estimated_k",
-            "target_property": "out_estimate_result "
+            "target_property": "out_estimate_result"
             }     
         ],
         "output_mapping" : [
