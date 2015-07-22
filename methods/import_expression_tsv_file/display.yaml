@@ -1,0 +1,47 @@
+name     : EXPRESSION MATRIX FROM TSV FILE
+subtitle : none
+tooltip  : Upload an expression data from TSV file(s) into your Narrative.
+
+screenshots :
+    []
+
+method-suggestions :
+    related :
+        []
+    next :
+        []
+
+parameters :
+    expressionFile :
+        ui-name : EXPRESSION TSV FILE
+        short-hint : File with expression data in TSV format
+        long-hint  : File with expression data in TSV format
+
+    outputObject :
+        ui-name : NAME OF FBA MODEL
+        short-hint : Provide the name for the Expression Matrix object that will be created by this upload
+        long-hint  : Provide the name for the Expression Matrix object that will be created by this upload
+
+    genomeObject :
+        ui-name : GENOME
+        short-hint : Select the Genome object that contains features referenced by the Expression Matrix
+        long-hint  : Select the Genome object that contains features referenced by the Expression Matrix
+
+    fillMissingValues :
+        ui-name : FILL MISSING VALUES
+        short-hint : Flag for filling in missing values in matrix
+        long-hint  : Flag for filling in missing values in matrix
+
+    dataType :
+        ui-name : DATA TYPE
+        short-hint : Type of values in matrix
+        long-hint  : Type of values in matrix
+
+    dataScale :
+        ui-name : DATA SCALE
+        short-hint : Scale of values in matrix
+        long-hint  : Scale of values in matrix
+
+description : none
+
+technical-description : none
