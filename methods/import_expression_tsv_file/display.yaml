@@ -18,7 +18,7 @@ parameters :
         long-hint  : File with expression data in TSV format
 
     outputObject :
-        ui-name : NAME OF FBA MODEL
+        ui-name : NAME OF EXPRESSION MATRIX
         short-hint : Provide the name for the Expression Matrix object that will be created by this upload
         long-hint  : Provide the name for the Expression Matrix object that will be created by this upload
 

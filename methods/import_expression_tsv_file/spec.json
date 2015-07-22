@@ -52,7 +52,7 @@
   }, {
     "id" : "dataType",
     "optional" : true,
-    "advanced" : false,
+    "advanced" : true,
     "allow_multiple" : false,
     "default_values" : [ "log-ratio" ],
     "field_type" : "dropdown",
@@ -81,7 +81,7 @@
   }, {
     "id" : "dataScale",
     "optional" : true,
-    "advanced" : false,
+    "advanced" : true,
     "allow_multiple" : false,
     "default_values" : [ "" ],
     "field_type" : "text"
