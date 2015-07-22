@@ -53,7 +53,8 @@
             },
             {
             "input_parameter": "input_expression_matrix",
-            "target_property": "input_matrix"
+            "target_property": "input_matrix",
+            "target_type_transform": "ref"
             },
             {
             "narrative_system_variable": "workspace",
