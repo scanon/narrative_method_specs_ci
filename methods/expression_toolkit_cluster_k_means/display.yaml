@@ -40,8 +40,6 @@ parameters :
         long-hint  : |
             Number of clusters
 
-
-
     output_cluster_set :
         ui-name : |
             Set of clusters
@@ -49,6 +47,26 @@ parameters :
             Generted clusters
         long-hint  : |
             Generted clusters
+
+    n_start :
+        ui-name : Number of starts
+        short-hint : Number of initial configurations
+        long-hint  : Number of initial configurations
+
+    max_iter :
+        ui-name : Max. number of iterations
+        short-hint : Maximum number of iterations in K-means algorithm
+        long-hint  : Maximum number of iterations in K-means algorithm
+
+    algorithm :
+        ui-name : K-means implementation
+        short-hint : K-means algorithm implementation
+        long-hint  : K-means algorithm implementation
+
+    random_seed :
+        ui-name : Random seed
+        short-hint : Random seed used by K-means algorithm
+        long-hint  : Random seed used by K-means algorithm
 
 
 description : |

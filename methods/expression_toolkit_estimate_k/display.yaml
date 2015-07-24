@@ -3,9 +3,9 @@
 #
 name     : Expression Toolkit estimate k
 subtitle : |
-    Expression Toolkit estimate k
+    Expression Toolkit estimate k for K-means algorithm
 tooltip  : |
-    Expression Toolkit estimate k
+    Expression Toolkit estimate k for K-means algorithm
 
 screenshots :
     []
@@ -32,7 +32,6 @@ parameters :
         long-hint  : |
             Expression Matrix
 
-
     output_estimated_k :
         ui-name : |
             Estimated number of clusters
@@ -40,6 +39,31 @@ parameters :
             Estimated number of clusters
         long-hint  : |
             Estimated number of clusters
+
+    min_k :
+        ui-name : Min. number of clusters
+        short-hint : Minimum number of clusters
+        long-hint  : Minimum number of clusters
+
+    max_k :
+        ui-name : Max. number of clusters
+        short-hint : Maximum number of clusters
+        long-hint  : Maximum number of clusters
+
+    max_iter :
+        ui-name : Max. number of iterations
+        short-hint : Maximum number of iterations in K-means algorithm
+        long-hint  : Maximum number of iterations in K-means algorithm
+
+    neighb_size :
+        ui-name : Neighborhood size
+        short-hint : Neighborhood size used for the connectivity measure
+        long-hint  : Neighborhood size used for the connectivity measure
+
+    random_seed :
+        ui-name : Random seed
+        short-hint : Random seed used by K-means algorithm
+        long-hint  : Random seed used by K-means algorithm
 
 
 description : |
