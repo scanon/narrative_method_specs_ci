@@ -1,0 +1,57 @@
+#
+# Define basic display information
+#
+name     : Expression Toolkit reconnect matrix to genome
+subtitle : |
+    Expression Toolkit reconnect matrix to genome
+tooltip  : |
+    Expression Toolkit reconnect matrix to genome
+
+screenshots :
+    []
+
+#
+# Define the set of other narrative methods that should be suggested to the user.
+#
+method-suggestions :
+    related :
+        []
+    next :
+        []
+
+
+#
+# Configure the display and description of the parameters
+#
+parameters :
+    input_data:
+        ui-name : |
+            Input Matrix
+        short-hint : |
+            Input Expression Matrix
+        long-hint  : |
+            Input Expression Matrix
+
+    genome_id:
+        ui-name : |
+            Genome
+        short-hint : |
+            Genome object containing features referenced by the Input Matrix
+        long-hint  : |
+            Input Expression Matrix
+
+    out_matrix_id :
+        ui-name : |
+            Output Matrix
+        short-hint : |
+            Output Expression Matrix (optional, overwrites input if not set)
+        long-hint  : |
+            Output Expression Matrix (optional, overwrites input if not set)
+
+
+description : |
+    Expression Toolkit reconnect matrix to genome
+
+
+technical-description : |
+    Expression Toolkit reconnect matrix to genome
