@@ -1,0 +1,57 @@
+#
+# Define basic display information
+#
+name     : Build a Feature Set
+tooltip  : |
+    Create a new feature set by selecting features from a genome
+
+screenshots :
+    []
+
+#
+# Define the set of other narrative methods that should be suggested to the user.
+#
+method-suggestions :
+    related :
+        []
+    next :
+        []
+
+
+#
+# Configure the display and description of the parameters
+#
+parameters :
+    input_genome:
+        ui-name : |
+            Genome
+        short-hint : |
+            The Genome to select the features from
+
+    input_feature_ids:
+        ui-name : |
+            Feature IDs
+        short-hint : |
+            The comma or line separated ids of the features to include
+        placeholder : |
+            e.g. kb|g.0.peg.1118, kb|g.0.peg.1041, kb|g.0.peg.896
+
+    base_feature_set:
+        ui-name : |
+            Base FeatureSet
+        short-hint : |
+            If provided, the new features will be added to this FeatureSet
+
+    output_feature_set :
+        ui-name : |
+            Output FeatureSet
+        short-hint : |
+            Name for the new FeatureSet object
+        long-hint  : |
+            Generted clusters
+
+
+
+description : |
+    Build a FeatureSet from features in a genome
+
