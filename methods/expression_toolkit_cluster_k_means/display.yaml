@@ -49,13 +49,13 @@ parameters :
             
     n_start :
         ui-name : Number of Starts
-        short-hint : Number of initial configurations
-        long-hint  : Number of initial configurations
+        short-hint : Number of initial configurations for k-means algorithm
+        long-hint  : Number of initial configurations for k-means algorithm
 
     max_iter :
         ui-name : Maximum Number of Iterations
-        short-hint : Maximum number of iterations in k-means algorithm
-        long-hint  : Maximum number of iterations in k-means algorithm
+        short-hint : Maximum number of iterations to run k-means algorithm
+        long-hint  : Maximum number of iterations to run k-means algorithm
 
     algorithm :
         ui-name : K-means algorithm
