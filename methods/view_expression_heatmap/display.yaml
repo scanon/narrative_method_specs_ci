@@ -24,7 +24,7 @@ method-suggestions :
 # Configure the display and description of the parameters
 #
 parameters :
-    param0 :
+    input_expression_matrix :
         ui-name : |
             Expression Matrix
         short-hint : |
@@ -32,7 +32,7 @@ parameters :
         long-hint  : |
             Select the matrix with expression values
 
-    param1 :
+    input_gene_ids :
         ui-name : |
             Genes
         short-hint : |

@@ -10,7 +10,7 @@
     "output" : "kbaseExpressionHeatmap"
   },
   "parameters" : [ {
-    "id" : "param0",
+    "id" : "input_expression_matrix",
     "optional" : false,
     "advanced" : false,
     "allow_multiple" : false,
@@ -19,29 +19,28 @@
     "text_options" : {
       "valid_ws_types" : [ "KBaseFeatureValues.ExpressionMatrix" ]
     }
-  } ,
-  {
-    "id" : "param1",
-    "optional" : false,
+  } , {
+    "id" : "input_gene_ids",
+    "optional" : true,
     "advanced" : false,
     "allow_multiple" : false,
     "default_values" : [ "" ],
-    "field_type" : "text",
-    "text_options" : {
-      "valid_ws_types" : [ "KBaseSearch.FeatureSet" ]
+    "field_type" : "textarea",
+    "textarea_options" : {
+      "n_rows" : 6
     }
-  } 
+  }
 ],
   "behavior" : {
     "none" : {
       "output_mapping" : [
         {
-          "input_parameter": "param0",
+          "input_parameter": "input_expression_matrix",
           "target_property": "expressionMatrixID"
         },
         {
-          "input_parameter": "param1",
-          "target_property": "featureSetId"
+          "input_parameter": "input_gene_ids",
+          "target_property": "geneIds"
         },
         {
           "narrative_system_variable": "workspace",
