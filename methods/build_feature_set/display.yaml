@@ -1,12 +1,14 @@
 #
 # Define basic display information
 #
-name     : Build a Feature Set
+name     : Build a FeatureSet from a Genome
 tooltip  : |
     Create a new feature set by selecting features from a genome
 
 screenshots :
     []
+
+replacement-text : Created a new FeatureSet with features from {{input_genome}}
 
 #
 # Define the set of other narrative methods that should be suggested to the user.
@@ -40,7 +42,7 @@ parameters :
         ui-name : |
             Base FeatureSet
         short-hint : |
-            If provided, the new features will be added to this FeatureSet
+            If provided, the new features will be combined with this FeatureSet
 
     output_feature_set :
         ui-name : |
