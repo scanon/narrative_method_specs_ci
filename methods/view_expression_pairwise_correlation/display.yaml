@@ -1,0 +1,48 @@
+#
+# Define basic display information
+#
+name     : View Expression Pairwise Correlation
+subtitle : |
+    View and explore  expression pairwise correlation in your workspace.
+tooltip  : |
+    View and explore  expression pairwise correlation in your workspace.
+
+screenshots :
+    []
+
+#
+# Define the set of other narrative methods that should be suggested to the user.
+#
+method-suggestions :
+    related :
+        []
+    next :
+        []
+
+
+#
+# Configure the display and description of the parameters
+#
+parameters :
+    input_expression_matrix :
+        ui-name : |
+            Expression Matrix
+        short-hint : |
+            Matrix with expression values
+        long-hint  : |
+            Select the matrix with expression values
+
+    input_gene_ids :
+        ui-name : |
+            Genes
+        short-hint : |
+            Genes to be visuliazed 
+        long-hint  : |
+            Select the gene set to be visualized
+
+description : |
+    View and explore expression pairwise correlation in your workspace.
+
+
+technical-description : |
+    View and explore  expression pairwise correlation in your workspace.
