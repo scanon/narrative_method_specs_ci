@@ -50,6 +50,11 @@ parameters :
         long-hint  : |
             Generted clusters
 
+    description:
+        ui-name : |
+            Description
+        short-hint : |
+            Description for FeatureSet object
 
 
 description : |
