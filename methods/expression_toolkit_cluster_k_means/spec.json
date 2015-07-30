@@ -98,6 +98,12 @@
           "display": "MacQueen",
           "id": "MacQueen",
           "ui_name": "MacQueen"
+        },
+        {
+          "value": "Python Scikit-learn",
+          "display": "Python Scikit-learn",
+          "id": "Python Scikit-learn",
+          "ui_name": "Python Scikit-learn"
         }
       ]
     }
