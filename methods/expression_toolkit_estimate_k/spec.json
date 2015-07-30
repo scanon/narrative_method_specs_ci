@@ -80,6 +80,18 @@
       "min_int" : 10
     }
   }, {
+    "id" : "max_items",
+    "optional" : true,
+    "advanced" : true,
+    "allow_multiple" : false,
+    "default_values" : [ "15000" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ ],
+      "validate_as": "int",
+      "min_int" : 1000
+    }
+  }, {
     "id" : "random_seed",
     "optional" : true,
     "advanced" : true,
@@ -125,6 +137,10 @@
         {
           "input_parameter": "neighb_size",
           "target_property": "neighb_size"
+        },
+        {
+          "input_parameter": "max_items",
+          "target_property": "max_items"
         },
         {
           "input_parameter": "random_seed",

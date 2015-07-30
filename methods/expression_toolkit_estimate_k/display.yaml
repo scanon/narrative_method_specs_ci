@@ -60,6 +60,11 @@ parameters :
         short-hint : Neighborhood size used for the connectivity measure
         long-hint  : Neighborhood size used for the connectivity measure
 
+    max_items :
+        ui-name : Max. number of rows
+        short-hint : Maximum number of rows (randomly chosen when less then rows in data)
+        long-hint  : Maximum number of rows (randomly chosen when less then rows in data)
+
     random_seed :
         ui-name : Random seed
         short-hint : Random seed used by K-means algorithm
