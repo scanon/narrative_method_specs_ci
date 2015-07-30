@@ -11,6 +11,8 @@ screenshots :
 
 icon: icon.png
 
+replacement-text : Annotated the microbial genome named {{{input_genome}}}
+
 #
 # Define the set of other narrative methods that should be suggested to the user.
 #
