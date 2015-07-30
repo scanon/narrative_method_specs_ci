@@ -4,7 +4,7 @@
 name     : K-Means Clustering for Expression Data 
 
 tooltip  : |
-    Sort expression data to observe and analyze patterns of gene expression.
+    Group expression data to observe and analyze patterns of gene expression.
 
 screenshots :
     []
