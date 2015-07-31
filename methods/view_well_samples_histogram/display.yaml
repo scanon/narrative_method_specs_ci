@@ -1,11 +1,11 @@
 #
 # Define basic display information
 #
-name     : View Well Sample Distribution
+name     : View Well Sample Histogram
 subtitle : |
-    View Well Sample Distribution.
+    View distribution of geochemical characteristics of wells
 tooltip  : |
-    View Well Sample Distribution.
+    View Well Sample Histogram
 
 screenshots :
     []
