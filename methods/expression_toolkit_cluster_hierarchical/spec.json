@@ -116,6 +116,10 @@
         {
           "input_parameter": "linkage_criteria",
           "target_property": "linkage_criteria"
+        },
+        {
+          "input_parameter": "algorithm",
+          "target_property": "algorithm"
         }
       ],
       "output_mapping" : [
