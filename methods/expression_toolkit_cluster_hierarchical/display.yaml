@@ -58,6 +58,11 @@ parameters :
         short-hint : Linkage criteria
         long-hint  : Linkage criteria
 
+    algorithm :
+        ui-name : Algorithm
+        short-hint : Hierarchical clustering implementation
+        long-hint  : Hierarchical clustering implementation
+
 
 description : |
     Expression Toolkit cluster hierarchical

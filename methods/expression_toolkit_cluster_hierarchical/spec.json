@@ -62,6 +62,29 @@
     "text_options" : {
       "valid_ws_types" : [ ]
     }
+  }, {
+    "id" : "algorithm",
+    "optional" : true,
+    "advanced" : true,
+    "allow_multiple" : false,
+    "default_values" : [ "hclust" ],
+    "field_type" : "dropdown",
+    "dropdown_options":{
+      "options": [
+        {
+          "value": "hclust",
+          "display": "hclust",
+          "id": "hclust",
+          "ui_name": "hclust"
+        },
+        {
+          "value": "flashClust",
+          "display": "flashClust",
+          "id": "flashClust",
+          "ui_name": "flashClust"
+        }
+      ]
+    }
   } ],
   "behavior" : {
     "service-mapping" : {
