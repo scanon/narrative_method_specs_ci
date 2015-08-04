@@ -44,10 +44,10 @@
     }
   }, {
     "id" : "max_k",
-    "optional" : true,
-    "advanced" : true,
+    "optional" : false,
+    "advanced" : false,
     "allow_multiple" : false,
-    "default_values" : [ "100" ],
+    "default_values" : [ "200" ],
     "field_type" : "text",
     "text_options" : {
       "valid_ws_types" : [ ],
@@ -56,10 +56,10 @@
     }
   }, {
     "id" : "max_iter",
-    "optional" : true,
-    "advanced" : true,
+    "optional" : false,
+    "advanced" : false,
     "allow_multiple" : false,
-    "default_values" : [ "10" ],
+    "default_values" : [ "100" ],
     "field_type" : "text",
     "text_options" : {
       "valid_ws_types" : [ ],
