@@ -46,13 +46,13 @@ parameters :
 
     max_k :
         ui-name : Max. Number of Clusters
-        short-hint : Maximum number of clusters
-        long-hint  : Maximum number of clusters
+        short-hint : Maximum number of clusters (Set max to 100 for most datasets)
+        long-hint  : Maximum number of clusters (Set max to 100 for most datasets)
 
     max_iter :
         ui-name : Max. Number of Iterations
-        short-hint : Maximum number of iterations in K-means algorithm
-        long-hint  : Maximum number of iterations in K-means algorithm
+        short-hint : Maximum number of iterations in K-means algorithm (use lower values for small datasets)
+        long-hint  : Maximum number of iterations in K-means algorithm (use lower values for small datasets)
 
     neighb_size :
         ui-name : Neighborhood Size
@@ -61,8 +61,8 @@ parameters :
 
     max_items :
         ui-name : Max. number of rows
-        short-hint : Maximum number of rows (randomly chosen when less then rows in data)
-        long-hint  : Maximum number of rows (randomly chosen when less then rows in data)
+        short-hint : Maximum number of rows (can be left empty; randomly chosen when less than rows in data)
+        long-hint  : Maximum number of rows (can be left empty; randomly chosen when less than rows in data)
 
     random_seed :
         ui-name : Random Seed
@@ -72,6 +72,8 @@ parameters :
 
 description : |
     <p>This method computes an optimal number of clusters (k) for use in the K-Means Clustering for Expression Data method. This is achieved by minimizing both the number of clusters (k) and the average variance between the clusters. Begin by selecting or importing an expression dataset to analyze using the Add Data button. Provide a name for the output estimate and run the method to calculate an optimal value for k.</p>
+    
+    <p>For small datasets, calculation time can be improved by setting the maximum number of clusters and the maximum number of iterations to smaller values.</p>
     
     <p><strong>Team members who developed & deployed algorithm in KBase:</strong>
     Paramvir Dehal, Roman Sutormin, Michael Sneddon, Srividya Ramakrishnan, Pavel Novichkov, Keith Keller.</p>
