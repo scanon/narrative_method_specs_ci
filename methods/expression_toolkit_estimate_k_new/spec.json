@@ -91,7 +91,6 @@
     "default_values" : [ "FALSE" ],
     "field_type" : "text",
     "text_options" : {
-      "valid_ws_types" : [ ]
     }
   }, {
     "id" : "alpha",
@@ -112,7 +111,6 @@
     "default_values" : [ "FALSE" ],
     "field_type" : "text",
     "text_options" : {
-      "valid_ws_types" : [ ]
     }
   },{
     "id" : "random_seed",
