@@ -88,9 +88,18 @@
     "optional" : true,
     "advanced" : true,
     "allow_multiple" : false,
-    "default_values" : [ "FALSE" ],
-    "field_type" : "text",
-    "text_options" : {
+    "default_values" : [ "" ],
+    "field_type" : "dropdown",
+    "dropdown_options":{
+      "options": [
+        {
+          "value": "TRUE",
+          "display": "TRUE"
+        },
+        {
+          "value": "FALSE",
+          "display": "FALSE"
+        }
     }
   }, {
     "id" : "alpha",
@@ -108,9 +117,18 @@
     "optional" : true,
     "advanced" : true,
     "allow_multiple" : false,
-    "default_values" : [ "FALSE" ],
-    "field_type" : "text",
-    "text_options" : {
+    "default_values" : [ "" ],
+    "field_type" : "dropdown",
+    "dropdown_options":{
+      "options": [
+        {
+          "value": "TRUE",
+          "display": "TRUE"
+        },
+        {
+          "value": "FALSE",
+          "display": "FALSE"
+        }
     }
   },{
     "id" : "random_seed",
@@ -138,7 +156,7 @@
         {
           "narrative_system_variable": "workspace",
           "target_property": "workspaceID"
-        },
+        }
       ]
     }
   }
