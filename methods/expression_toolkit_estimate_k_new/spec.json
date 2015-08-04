@@ -88,11 +88,10 @@
     "optional" : true,
     "advanced" : true,
     "allow_multiple" : false,
-    "default_values" : [ "10" ],
+    "default_values" : [ "FALSE" ],
     "field_type" : "text",
     "text_options" : {
-      "valid_ws_types" : [ ],
-      "validate_as": "bool",
+      "valid_ws_types" : [ ]
     }
   }, {
     "id" : "alpha",
@@ -103,18 +102,17 @@
     "field_type" : "text",
     "text_options" : {
       "valid_ws_types" : [ ],
-      "validate_as": "float",
+      "validate_as": "float"
     }
   }, {
     "id" : "diss",
     "optional" : true,
     "advanced" : true,
     "allow_multiple" : false,
-    "default_values" : [ "" ],
+    "default_values" : [ "FALSE" ],
     "field_type" : "text",
     "text_options" : {
-      "valid_ws_types" : [ ],
-      "validate_as": "bool",
+      "valid_ws_types" : [ ]
     }
   },{
     "id" : "random_seed",
