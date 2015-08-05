@@ -118,6 +118,38 @@ parameters :
         long-hint  : |
             Specify additional compounds to add to media one at a time by using “add another additional compound” button
     
+    expression_matrix :
+        ui-name : |
+            Expression matrix
+        short-hint : |
+            Matrix of gene expression values, one column of which will be used to constrain reaction activity in FBA
+        long-hint  : |
+            Matrix of gene expression values, one column of which will be used to constrain reaction activity in FBA
+
+    expression_condition :
+        ui-name : |
+            Expression condition
+        short-hint : |
+            Specific condition in expression matrix to which reaction activity in FBA should be fit
+        long-hint  : |
+            Specific condition in expression matrix to which reaction activity in FBA should be fit
+
+    expression_threshold :
+        ui-name : |
+            Expression threshold
+        short-hint : |
+            Reactions with expression values in the percentile above this threshold are considered ON; if below, they are considered OFF
+        long-hint  : |
+            Reactions with expression values in the percentile above this threshold are considered ON; if below, they are considered OFF
+
+    expression_uncertainty :
+        ui-name : |
+            Expression uncertainty
+        short-hint : |
+            Range of uncertainty for classification of reaction activity based on expression threshold
+        long-hint  : |
+            Reactions with expression values in a percentile that is within this uncertainty of the expression threshold will not be classified as on or off
+    
     maxc_uptake :
         ui-name : |
             Max Carbon Uptake
