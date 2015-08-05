@@ -4,7 +4,7 @@
 name     : Hierarchical Clustering for Expression Data
 
 tooltip  : |
-    Group gene expression data as branches of dendogram.
+    Group gene expression data as branches of dendrogram.
 
 screenshots :
     []
@@ -64,7 +64,7 @@ parameters :
 
 
 description : |
-    <p>This method organizes gene expression data into a dendogram (cluster tree) by using distance and linkage criteria to analyze dissimilarity between observations in the data and sorting these observations into the branches of the tree. Agglomerative clustering is used to build a hierarchy of clusters by progressively merging individual clusters into groups. This is useful for understanding the similarities and dissimilarities between sets of data based on their grouping patterns throughout the cluster tree.</p>
+    <p>This method organizes gene expression data into a dendrogram (cluster tree) by using distance and linkage criteria to analyze dissimilarity between observations in the data and sorting these observations into the branches of the tree. Agglomerative clustering is used to build a hierarchy of clusters by progressively merging individual clusters into groups. This is useful for understanding the similarities and dissimilarities between sets of data based on their grouping patterns throughout the cluster tree.</p>
 
     <p>Begin by selecting or importing both the expression dataset to analyze and the genome associated with the expression dataset using the Add Data button. Provide a name for the output set of clusters. Define the height to cut the branches of the tree, set the parameters for computing the dissimilarity between sets, and select the hierarchical clustering algorithm to use for the analysis.</p>
 
