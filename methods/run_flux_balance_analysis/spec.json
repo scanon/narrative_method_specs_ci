@@ -131,7 +131,7 @@
     "default_values" : [ "" ],
     "field_type" : "text",
     "text_options" : {
-      "valid_ws_types" : [ "KBaseExpression.ExpressionMatrix" ],
+      "valid_ws_types" : [ "KBaseExpression.ExpressionMatrix" ]
     }
   }, {
 	"id" : "expression_condition",
@@ -141,7 +141,7 @@
     "default_values" : [ "" ],
     "field_type" : "text",
     "text_options" : {
-      "valid_ws_types" : [ "" ],
+      "valid_ws_types" : [ "" ]
     }
   }, {
 	"id" : "expression_threshold",
