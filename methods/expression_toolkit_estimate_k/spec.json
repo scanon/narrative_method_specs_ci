@@ -44,8 +44,8 @@
     }
   }, {
     "id" : "max_k",
-    "optional" : true,
-    "advanced" : true,
+    "optional" : false,
+    "advanced" : false,
     "allow_multiple" : false,
     "default_values" : [ "200" ],
     "field_type" : "text",
@@ -56,8 +56,8 @@
     }
   }, {
     "id" : "max_iter",
-    "optional" : true,
-    "advanced" : true,
+    "optional" : false,
+    "advanced" : false,
     "allow_multiple" : false,
     "default_values" : [ "100" ],
     "field_type" : "text",
@@ -84,12 +84,13 @@
     "optional" : true,
     "advanced" : true,
     "allow_multiple" : false,
-    "default_values" : [ "15000" ],
+    "default_values" : [ "" ],
     "field_type" : "text",
     "text_options" : {
       "valid_ws_types" : [ ],
       "validate_as": "int",
-      "min_int" : 1000
+      "min_int" : 1000,
+      "max_int" : 15000
     }
   }, {
     "id" : "random_seed",
