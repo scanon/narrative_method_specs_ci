@@ -52,7 +52,7 @@
       ],
       "output_mapping" : [
         {
-          "input_parameter": "output_pangenome",
+          "input_parameter": "output_fba_comparison",
           "target_property": "name"
         },
         {
