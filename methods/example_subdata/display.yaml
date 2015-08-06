@@ -42,6 +42,13 @@ parameters :
         short-hint : |
             Select some compounds
 
+    input_template:
+        ui-name : |
+            Template Model stuff
+        short-hint : |
+            Something from a fixed reference, in this case some random thing from the GramNegModelTemplate
+
+
 description : |
     subselect some things
 
