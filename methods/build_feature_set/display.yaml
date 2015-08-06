@@ -34,9 +34,9 @@ parameters :
         ui-name : |
             Feature IDs
         short-hint : |
-            The comma or line separated ids of the features to include
+            Select features in the selected Genome
         placeholder : |
-            e.g. kb|g.0.peg.1118, kb|g.0.peg.1041, kb|g.0.peg.896
+            type to search in the selected genome
 
     base_feature_set:
         ui-name : |
