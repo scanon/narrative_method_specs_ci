@@ -34,7 +34,7 @@
         "selection_description" : ["name","pathway"]
       },
       "multiselection":false,
-      "show_src_obj":false,
+      "show_src_obj":true,
       "allow_custom":false
     }
   }, {
