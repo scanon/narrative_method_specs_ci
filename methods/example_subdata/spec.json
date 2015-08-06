@@ -28,10 +28,10 @@
     "textsubdata_options" : {
       "subdata_selection": {
         "parameter_id" : "input_model",
-        "subdata_included" : ["modelreactions/[*]/id", "modelreactions/[*]/name","modelreactions/[*]/pathway"],
+        "subdata_included" : ["modelreactions/[*]/id", "modelreactions/[*]/name"],
         "path_to_subdata": ["modelreactions"],
         "selection_id" : "id",
-        "selection_description" : ["name","pathway"]
+        "selection_description" : ["name"]
       },
       "multiselection":false,
       "show_src_obj":true,
