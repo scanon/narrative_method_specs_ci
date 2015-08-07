@@ -71,7 +71,7 @@ parameters :
 description : |
     <p>This method enables users to observe and analyze patterns of gene expression by grouping expression data via k-means clustering. K-means clustering is useful for discovering functionally related sets of genes, investigating regulatory networks for gene expression, and deducing unknown gene functions by observing and grouping their expression patterns in differing conditions.</p>
 
-    <p>Begin by selecting or importing both the expression dataset to analyze and the genome associated with the expression dataset using the Add Data button. Specify a value for k. You can use the Estimate K method to assist in determining an optimal value for k. Provide a name for the output set of clusters. Define the number of starts and iterations, select the k-means clustering algorithm to use for the analysis, and input a random seed value.</p>
+    <p>Begin by selecting or importing both the expression dataset to analyze and the genome associated with the expression dataset using the Add Data button. Specify a value for k. You can use the Estimate K method to assist in determining an optimal value for k. Provide a name for the output set of clusters. Define the number of starts and iterations, select the k-means clustering algorithm to use for the analysis, and input a random seed value. The number of iterations determines how many times the k-means algorithm is run on the dataset until convergence is achieved.</p>
     
     <p>Description of k-means clustering algorithms: 
         <ul>

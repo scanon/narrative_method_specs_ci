@@ -71,7 +71,7 @@ parameters :
 
 
 description : |
-    <p>This method computes an optimal number of clusters (k) for use in the K-Means Clustering for Expression Data method. This is achieved by minimizing both the number of clusters (k) and the average variance between the clusters. Begin by selecting or importing an expression dataset to analyze using the Add Data button. Provide a name for the output estimate, a valid number for Max. Number of clusters and a valid number for Max. Number of Iterations ,run the method to calculate an optimal value for k.</p>
+    <p>This method computes an optimal number of clusters (k) for use in the K-Means Clustering for Expression Data method. This is achieved by minimizing both the number of clusters (k) and the average variance between the clusters. Begin by selecting or importing an expression dataset to analyze using the Add Data button. Provide a name for the output estimate, a valid number for Max. Number of clusters and a valid number for Max. Number of Iterations ,run the method to calculate an optimal value for k. The number of iterations determines how many times the k-means algorithm is run on the dataset until convergence is achieved.</p>
     
     <p><u>For Smaller datasets (less than 4000 expression values and fewer than 20 conditions):</u></p>
     
