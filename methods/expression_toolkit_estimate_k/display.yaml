@@ -4,7 +4,7 @@
 name     : Estimate K for K-Means Clustering
 
 tooltip  : |
-    Calculate an optimal value of k for use in k-means clustering method
+    Calculate an optimal value of k for use in k-means clustering method.
 
 screenshots :
     []
