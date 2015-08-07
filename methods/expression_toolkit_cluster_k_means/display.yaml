@@ -1,7 +1,7 @@
 #
 # Define basic display information
 #
-name     : K-Means Clustering for Expression Data 
+name     : Cluster Expression Data - K-Means 
 
 tooltip  : |
     Group expression data to observe and analyze patterns of gene expression.
