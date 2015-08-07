@@ -52,7 +52,7 @@ parameters :
     max_iter :
         ui-name : Max. Number of Iterations
         short-hint : Maximum allowed iterations for K-Means algorithm to converge. 
-        long-hint  : Maximum allowed iterations for K-Means algorithm to converge.( Try increasing this parameter if the method gives a warning, "did not converge in <max_iter> iterations")
+        long-hint  : Try increasing this parameter if the method gives a warning: "did not converge in <max_iter> iterations"
 
     neighb_size :
         ui-name : Neighborhood Size
@@ -61,8 +61,8 @@ parameters :
 
     max_items :
         ui-name : Max. number of rows
-        short-hint : Maximum number of rows ( recommended only for large datasets )
-        long-hint  : Maximum number of rows ( recommended only for large datasets. This parameter is used to randomly sample the expression matrix to estimate k )
+        short-hint : Maximum number of rows (recommended only for large datasets)
+        long-hint  : This parameter is used to randomly sample the expression matrix to estimate k
 
     random_seed :
         ui-name : Random Seed
@@ -72,11 +72,16 @@ parameters :
 
 description : |
     <p>This method computes an optimal number of clusters (k) for use in the K-Means Clustering for Expression Data method. This is achieved by minimizing both the number of clusters (k) and the average variance between the clusters. Begin by selecting or importing an expression dataset to analyze using the Add Data button. Provide a name for the output estimate, a valid number for Max. Number of clusters and a valid number for Max. Number of Iterations ,run the method to calculate an optimal value for k.</p>
-    <p>For Smaller datasets ( < 4000 expression values and < 20 conditions ):</p>
-        <p>If the estimate k method gives a warning saying, "did not converge in <max_iter> iterations", try running the method by increasing the Max. Number of Iterations parameter.</p>
-        <p>If the estimate k method gives a warning saying, "Quick-TRANSfer stage steps exceeded maximum", try running the method by decreasing the Max. Num of Clusters to a smaller number.</p>
-    <p>For larger datasets ( > 15000 expression features and > 20 conditions ):</p>
-        <p>Use the Max. number of rows parameter (in advanced options ) to a smaller number (1000 - 15000) to estimate_k.This parameter is used to randomly sample the dataset in order to compute the estimate for k.</p>
+    
+    <p><b>For Smaller datasets (less than 4000 expression values and fewer than 20 conditions):</p>
+    
+    <p>If the estimate k method gives the warning, "did not converge in <max_iter> iterations", try increasing the Max. Number of Iterations parameter before running the method again.</p>
+    
+    <p>If the estimate k method gives the warning, "Quick-TRANSfer stage steps exceeded maximum", try decreasing the Max. Num of Clusters to a smaller number before running the method again.</p>
+    
+    <p>For larger datasets (over 15000 expression features and more than 20 conditions):</p>
+    
+    <p>Set the Max. number of rows parameter (in advanced options) to a smaller number (1000 - 15000) for estimating k. This parameter is used to randomly sample the dataset in order to compute the estimate for k.</p>
         
     <p><strong>Team members who developed & deployed algorithm in KBase:</strong>
     Paramvir Dehal, Roman Sutormin, Michael Sneddon, Srividya Ramakrishnan, Pavel Novichkov, Keith Keller.</p>

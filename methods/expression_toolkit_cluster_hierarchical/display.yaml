@@ -70,7 +70,7 @@ description : |
 
     <p>Description of hierarchical clustering algorithms: 
         <ul>
-        <li>hclust (default):  Performs a hierarchical cluster analysis using a set of dissimilarities for the number of objects being clustered</li>
+        <li>hclust (default): Performs a hierarchical cluster analysis using a set of dissimilarities for the number of objects being clustered</li>
         <li>flashClust: Faster version of the hclust algorithm</li>
     </ul></p>
 
