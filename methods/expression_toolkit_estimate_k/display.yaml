@@ -52,7 +52,7 @@ parameters :
     max_iter :
         ui-name : Max. Number of Iterations
         short-hint : Maximum allowed iterations for K-Means algorithm to converge. 
-        long-hint  : Try increasing this parameter if the method gives a warning: "did not converge in <max_iter> iterations"
+        long-hint  : Try increasing this parameter if the method gives a warning: "did not converge in max_iter iterations"
 
     neighb_size :
         ui-name : Neighborhood Size
