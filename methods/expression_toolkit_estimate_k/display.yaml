@@ -73,13 +73,13 @@ parameters :
 description : |
     <p>This method computes an optimal number of clusters (k) for use in the K-Means Clustering for Expression Data method. This is achieved by minimizing both the number of clusters (k) and the average variance between the clusters. Begin by selecting or importing an expression dataset to analyze using the Add Data button. Provide a name for the output estimate, a valid number for Max. Number of clusters and a valid number for Max. Number of Iterations ,run the method to calculate an optimal value for k.</p>
     
-    <p><b>For Smaller datasets (less than 4000 expression values and fewer than 20 conditions):</p>
+    <p><u>For Smaller datasets (less than 4000 expression values and fewer than 20 conditions):</u></p>
     
     <p>If the estimate k method gives the warning, "did not converge in <max_iter> iterations", try increasing the Max. Number of Iterations parameter before running the method again.</p>
     
     <p>If the estimate k method gives the warning, "Quick-TRANSfer stage steps exceeded maximum", try decreasing the Max. Num of Clusters to a smaller number before running the method again.</p>
     
-    <p>For larger datasets (over 15000 expression features and more than 20 conditions):</p>
+    <p><u>For larger datasets (over 15000 expression features and more than 20 conditions):</u></p>
     
     <p>Set the Max. number of rows parameter (in advanced options) to a smaller number (1000 - 15000) for estimating k. This parameter is used to randomly sample the dataset in order to compute the estimate for k.</p>
         
