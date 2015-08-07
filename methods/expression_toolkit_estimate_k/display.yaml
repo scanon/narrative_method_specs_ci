@@ -1,7 +1,7 @@
 #
 # Define basic display information
 #
-name     : Estimate K for K-Means Clustering
+name     : Estimate K for K-Means Clustering for Expression Data
 
 tooltip  : |
     Calculate an optimal value of k for use in k-means clustering method.
