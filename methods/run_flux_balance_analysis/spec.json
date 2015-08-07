@@ -291,19 +291,19 @@
           "target_property": "workspace"
         },
         {
-          "narrative_system_variable": "expression_threshold",
+          "input_parameter": "expression_threshold",
           "target_property": "expression_threshold_percentile"
         },
         {
-          "narrative_system_variable": "expression_uncertainty",
+          "input_parameter": "expression_uncertainty",
           "target_property": "kappa"
         },
         {
-          "narrative_system_variable": "expression_condition",
+          "input_parameter": "expression_condition",
           "target_property": "expsample"
         },
         {
-          "narrative_system_variable": "expression_matrix",
+          "input_parameter": "expression_matrix",
           "target_property": "expseries"
         }
       ],
