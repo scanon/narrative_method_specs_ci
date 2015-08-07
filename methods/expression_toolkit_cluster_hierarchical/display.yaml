@@ -68,7 +68,7 @@ description : |
 
     <p>Begin by selecting or importing both the expression dataset to analyze and the genome associated with the expression dataset using the Add Data button. Provide a name for the output set of clusters. Define the height to cut the branches of the tree, set the parameters for computing the dissimilarity between sets, and select the hierarchical clustering algorithm to use for the analysis.</p>
 
-    <p>Description of k-means clustering algorithms: 
+    <p>Description of hierarchical clustering algorithms: 
         <ul>
         <li>hclust (default):  Performs a hierarchical cluster analysis using a set of dissimilarities for the number of objects being clustered</li>
         <li>flashClust: Faster version of the hclust algorithm</li>

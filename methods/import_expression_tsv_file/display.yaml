@@ -1,6 +1,6 @@
 name     : EXPRESSION MATRIX FROM TSV FILE
 subtitle : none
-tooltip  : Upload an expression data from TSV file(s) into your Narrative.
+tooltip  : Upload an expression matrix from a TSV file into your Narrative.
 
 screenshots :
     []
@@ -15,7 +15,7 @@ parameters :
     expressionFile :
         ui-name : EXPRESSION TSV FILE
         short-hint : File with expression data in TSV format
-        long-hint  : File with expression data in TSV format
+        long-hint  : File with expression data in TSV format (filename should end with ".tsv")
 
     outputObject :
         ui-name : NAME OF EXPRESSION MATRIX
