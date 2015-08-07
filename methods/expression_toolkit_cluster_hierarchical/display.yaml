@@ -1,7 +1,7 @@
 #
 # Define basic display information
 #
-name     : Hierarchical Clustering for Expression Data
+name     : Cluster Expression Data - Hierarchical
 
 tooltip  : |
     Group gene expression data as branches of dendrogram.
