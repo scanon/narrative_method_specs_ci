@@ -1,7 +1,7 @@
 #
 # Define basic display information
 #
-name     : Expression Toolkit reconnect matrix to genome
+name     : Associate Expression Features to Genome Features
 subtitle : |
     Expression Toolkit reconnect matrix to genome
 tooltip  : |

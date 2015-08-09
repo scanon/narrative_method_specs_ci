@@ -1,7 +1,7 @@
 #
 # Define basic display information
 #
-name     : Expression Toolkit cluster from dendrogram
+name     : View Clusters from Dendrogram
 subtitle : |
     Expression Toolkit cluster from dendrogram
 tooltip  : |

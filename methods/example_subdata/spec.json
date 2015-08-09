@@ -50,7 +50,8 @@
         "subdata_included" : ["modelcompounds/[*]/id", "modelcompounds/[*]/name","modelcompounds/[*]/formula"],
         "path_to_subdata": ["modelcompounds"],
         "selection_id" : "id",
-        "selection_description" : ["name","formula"]
+        "selection_description" : ["name","formula"],
+        "description_template" :"- {{name}} ({{formula}})"
       },
       "multiselection":true,
       "show_src_obj":false,
@@ -71,7 +72,8 @@
             "templateBiomasses/0/templateBiomassComponents/[*]/coefficient"],
         "path_to_subdata": ["templateBiomasses","0","templateBiomassComponents"],
         "selection_id" : "id",
-        "selection_description" : ["class","coefficient"]
+        "selection_description" : ["class","coefficient"],
+        "description_template" :"- {{class}} (coeff = {{coefficient}})"
       },
       "multiselection":false,
       "show_src_obj":true,

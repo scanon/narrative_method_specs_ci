@@ -1,7 +1,7 @@
 #
 # Define basic display information
 #
-name     : Expression Toolkit set missing values
+name     : Impute Missing Expression Values
 subtitle : |
     Expression Toolkit set missing values
 tooltip  : |
