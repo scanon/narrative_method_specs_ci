@@ -2,10 +2,9 @@
 # Define basic display information
 #
 name     : View Expression Heatmap
-subtitle : |
-    View and explore  expression heatmap in your workspace.
+
 tooltip  : |
-    View and explore  expression heatmap in your workspace.
+    View Expression Heatmap
 
 screenshots :
     []
