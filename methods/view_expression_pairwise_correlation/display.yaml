@@ -2,10 +2,9 @@
 # Define basic display information
 #
 name     : View Pairwise Correlation for Expression Data
-subtitle : |
-    View and explore  expression pairwise correlation in your workspace.
+
 tooltip  : |
-    View and explore  expression pairwise correlation in your workspace.
+    View Pairwise Correlation for Expression Data
 
 screenshots :
     []

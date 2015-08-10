@@ -2,10 +2,9 @@
 # Define basic display information
 #
 name     : View Clusters from Dendrogram
-subtitle : |
-    Expression Toolkit cluster from dendrogram
+
 tooltip  : |
-    Expression Toolkit cluster from dendrogram
+    View Clusters from Dendrogram
 
 screenshots :
     []

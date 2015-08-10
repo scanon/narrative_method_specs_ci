@@ -2,10 +2,9 @@
 # Define basic display information
 #
 name     : Impute Missing Expression Values
-subtitle : |
-    Expression Toolkit set missing values
+
 tooltip  : |
-    Expression Toolkit set missing values
+    Impute Missing Expression Values
 
 screenshots :
     []

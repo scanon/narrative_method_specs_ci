@@ -1,0 +1,37 @@
+name     : GROWTH MATRIX FROM TSV FILE
+subtitle : none
+tooltip  : Upload a growth matrix from a TSV file into your Narrative.
+
+screenshots :
+    []
+
+method-suggestions :
+    related :
+        []
+    next :
+        []
+
+parameters :
+    growthFile :
+        ui-name : GROWTH TSV FILE
+        short-hint : File with growth data in TSV format
+        long-hint  : File with growth data in TSV format (filename should end with ".tsv")
+
+    metadataFile :
+        ui-name : GROWTH METADATA TSV FILE
+        short-hint : File with growth metadata in TSV format
+        long-hint  : File with growth metadata in TSV format (filename should end with ".tsv")
+
+    outputObject :
+        ui-name : NAME OF GROWTH MATRIX
+        short-hint : Provide the name for the Expression Matrix object that will be created by this upload
+        long-hint  : Provide the name for the Expression Matrix object that will be created by this upload
+
+    fillMissingValues :
+        ui-name : FILL MISSING VALUES
+        short-hint : Flag for filling in missing values in matrix
+        long-hint  : Flag for filling in missing values in matrix
+
+description : none
+
+technical-description : none
