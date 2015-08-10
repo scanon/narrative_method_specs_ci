@@ -7,7 +7,7 @@
   "categories" : ["active"],
   "widgets" : {
     "input" : null,
-    "output" : "kbaseExpressionToolkitEstimateKResult"
+    "output" : "kbaseExpressionEstimateK"
   },
   "parameters" : [ {
     "id" : "input_expression_matrix",
@@ -88,7 +88,7 @@
     "optional" : true,
     "advanced" : true,
     "allow_multiple" : false,
-    "default_values" : [ "" ],
+    "default_values" : [ "true" ],
     "field_type" : "checkbox",
     "checkbox_options":{
     "checked_value": true,
@@ -110,7 +110,7 @@
     "optional" : true,
     "advanced" : true,
     "allow_multiple" : false,
-    "default_values" : [ "" ],
+    "default_values" : [ "false" ],
     "field_type" : "checkbox",
     "checkbox_options":{
     "checked_value": true,
