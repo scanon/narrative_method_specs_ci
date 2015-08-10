@@ -15,12 +15,7 @@ parameters :
     growthFile :
         ui-name : GROWTH TSV FILE
         short-hint : File with growth data in TSV format
-        long-hint  : File with growth data in TSV format (filename should end with ".tsv")
-
-    metadataFile :
-        ui-name : GROWTH METADATA TSV FILE
-        short-hint : File with growth metadata in TSV format
-        long-hint  : File with growth metadata in TSV format (filename should end with ".tsv")
+        long-hint  : File with growth data in TSV format (Tab-separated table in text format. First row should contain sample identifiers. First column should contain time values, next columns should contain OD values, one sample per column. Filename should end with ".tsv")
 
     outputObject :
         ui-name : NAME OF GROWTH MATRIX
@@ -30,7 +25,7 @@ parameters :
     fillMissingValues :
         ui-name : FILL MISSING VALUES
         short-hint : Flag for filling in missing values in matrix
-        long-hint  : Flag for filling in missing values in matrix
+        long-hint  : If checked, missing values will be filled with zeros.
 
 description : none
 
