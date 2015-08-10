@@ -7,7 +7,7 @@
   "categories" : ["active"],
   "widgets" : {
     "input" : null,
-    "output" : "kbaseExpressionToolkitEstimateKResult"
+    "output" : "kbaseExpressionEstimateK"
   },
   "parameters" : [ {
     "id" : "input_expression_matrix",
