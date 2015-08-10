@@ -183,7 +183,7 @@
         },
         {
           "input_parameter": "output_estimated_k",
-          "target_property": "estimateKResultId"
+          "target_property": "estimateKResultID"
         },
         {
           "narrative_system_variable": "workspace",
