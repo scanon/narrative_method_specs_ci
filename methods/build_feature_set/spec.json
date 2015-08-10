@@ -31,7 +31,9 @@
         "subdata_included" : ["features/[*]/id", "features/[*]/aliases","features/[*]/function"],
         "path_to_subdata": ["features"],
         "selection_id" : "id",
-        "selection_description" : ["aliases","function"]
+        "selection_description" : ["aliases","function"],
+        "description_template" :
+            "{{#if aliases.length}} ({{aliases}}){{/if}}{{#if function}} - {{function}}{{/if}}"
       },
       "multiselection":true,
       "show_src_obj":true,
