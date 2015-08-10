@@ -29,10 +29,14 @@
     "textsubdata_options" : {
       "subdata_selection": {
         "parameter_id" : "input_expression_matrix",
-        "subdata_included" : ["data/row_ids"],
-        "path_to_subdata": ["data","row_ids"]
+        "subdata_included" : ["feature_mapping"],
+        "path_to_subdata": ["feature_mapping"],
+        "selection_id": ["value"]
       }
-    }
+    },
+    "multiselection":true,
+    "show_src_obj":false,
+    "allow_custom":false
   }
 ],
   "behavior" : {
