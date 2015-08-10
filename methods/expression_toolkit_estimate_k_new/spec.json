@@ -44,8 +44,8 @@
     }
   }, {
     "id" : "max_k",
-    "optional" : false,
-    "advanced" : false,
+    "optional" : true,
+    "advanced" : true,
     "allow_multiple" : false,
     "default_values" : [ "200" ],
     "field_type" : "text",
@@ -56,8 +56,8 @@
     }
   }, {
     "id" : "criterion",
-    "optional" : false,
-    "advanced" : false,
+    "optional" : true,
+    "advanced" : true,
     "allow_multiple" : false,
     "default_values" : [ "asw" ],
     "field_type" : "dropdown",
@@ -85,8 +85,8 @@
     }
   }, {
     "id" : "usepam",
-    "optional" : false,
-    "advanced" : false,
+    "optional" : true,
+    "advanced" : true,
     "allow_multiple" : false,
     "default_values" : [ "" ],
     "field_type" : "checkbox",
@@ -132,7 +132,7 @@
     "service-mapping" : {
       "url" : "https://ci.kbase.us/services/feature_values/jsonrpc",
       "name" : "KBaseFeatureValues",
-      "method" : "estimate_k",
+      "method" : "estimate_k_new",
       "input_mapping" : [
         {
           "input_parameter": "input_expression_matrix",
