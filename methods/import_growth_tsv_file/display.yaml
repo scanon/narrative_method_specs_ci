@@ -1,6 +1,6 @@
-name     : EXPRESSION MATRIX FROM TSV FILE
+name     : GROWTH MATRIX FROM TSV FILE
 subtitle : none
-tooltip  : Upload an expression matrix from a TSV file into your Narrative.
+tooltip  : Upload a growth matrix from a TSV file into your Narrative.
 
 screenshots :
     []
