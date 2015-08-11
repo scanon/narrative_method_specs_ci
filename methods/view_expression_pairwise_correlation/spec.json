@@ -25,9 +25,17 @@
     "advanced" : false,
     "allow_multiple" : false,
     "default_values" : [ "" ],
-    "field_type" : "textarea",
-    "textarea_options" : {
-      "n_rows" : 6
+    "field_type" : "textsubdata",
+    "textsubdata_options" : {
+      "subdata_selection": {
+        "parameter_id" : "input_expression_matrix",
+        "subdata_included" : ["feature_mapping"],
+        "path_to_subdata": ["feature_mapping"],
+        "selection_id": ["value"]
+      },
+      "multiselection":true,
+      "show_src_obj":false,
+      "allow_custom":false
     }
   }
 ],
