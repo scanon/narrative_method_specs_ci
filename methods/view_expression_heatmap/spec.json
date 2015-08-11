@@ -32,11 +32,11 @@
         "subdata_included" : ["feature_mapping"],
         "path_to_subdata": ["feature_mapping"],
         "selection_id": ["value"]
-      }
-    },
-    "multiselection":true,
-    "show_src_obj":false,
-    "allow_custom":false
+      },
+      "multiselection":true,
+      "show_src_obj":false,
+      "allow_custom":false
+    }
   }
 ],
   "behavior" : {
