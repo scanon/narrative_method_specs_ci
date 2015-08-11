@@ -122,9 +122,9 @@ parameters :
         ui-name : |
             Expression matrix
         short-hint : |
-            Matrix of gene expression values, one column of which will be used to constrain reaction activity in FBA
+            An imported ExpressionMatrix containing gene expression values, one condition (column) of which will be used to constrain reaction activity in FBA
         long-hint  : |
-            Matrix of gene expression values, one column of which will be used to constrain reaction activity in FBA
+            An imported ExpressionMatrix containing gene expression values, one condition (column) of which will be used to constrain reaction activity in FBA
 
     expression_condition :
         ui-name : |
