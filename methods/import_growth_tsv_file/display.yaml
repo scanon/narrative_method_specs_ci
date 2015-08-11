@@ -19,8 +19,8 @@ parameters :
 
     outputObject :
         ui-name : NAME OF GROWTH MATRIX
-        short-hint : Provide the name for the Expression Matrix object that will be created by this upload
-        long-hint  : Provide the name for the Expression Matrix object that will be created by this upload
+        short-hint : Provide the name for the Growth Matrix object that will be created by this upload
+        long-hint  : Provide the name for the Growth Matrix object that will be created by this upload
 
     fillMissingValues :
         ui-name : FILL MISSING VALUES
