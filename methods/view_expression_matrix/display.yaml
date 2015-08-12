@@ -3,9 +3,9 @@
 #
 name     : View Expression Matrix
 subtitle : |
-    View Expression Matrixe.
+    View Expression Matrix.
 tooltip  : |
-    View Expression Matrixe.
+    View Expression Matrix.
 
 screenshots :
     []
@@ -28,9 +28,9 @@ parameters :
         ui-name : |
             Expression Matrix
         short-hint : |
-            select the expression matrix you want to view
+            select an expression matrix to view
         long-hint  : |
-            select the expression matrix you want to view
+            select an expression matrix to view
 
 
 description : |
