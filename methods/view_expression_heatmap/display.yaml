@@ -36,7 +36,7 @@ parameters :
             Select the features to include in the heatmap.
 
 description : |
-    View and explore expression data as a sortable heatmap.  Conditions are displayed on each row
+    View and explore expression data as a sortable heatmap.  Conditions/Samples are displayed on each row
     with some summary statistics averaged across the selected features.  The conditions can be sorted
     by those values.  Each of the selected features is represented in a simple heatmap in the table.
     Mouseover the heatmap to view specific expression values.
