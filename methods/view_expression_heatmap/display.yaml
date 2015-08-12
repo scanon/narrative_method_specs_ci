@@ -1,10 +1,10 @@
 #
 # Define basic display information
 #
-name     : View Expression Heatmap
+name     : View Expression Matrix Heatmap
 
 tooltip  : |
-    View Expression Heatmap
+    Explore an expression data matrix by viewing a sortable heatmap of selected features  
 
 screenshots :
     []
@@ -27,21 +27,16 @@ parameters :
         ui-name : |
             Expression Matrix
         short-hint : |
-            Select the matrix with expression values
-        long-hint  : |
-            Select the matrix with expression values
+            Select the expression data to visualize
 
     input_gene_ids :
         ui-name : |
-            Genes
+            Features
         short-hint : |
-            Select the gene set to be visualized
-        long-hint  : |
-            Select the gene set to be visualized
+            Select the features to include in the heatmap.
 
 description : |
-    View and explore expression heatmap in your workspace.
-
-
-technical-description : |
-    View and explore expression heatmap in your workspace.
+    View and explore expression data as a sortable heatmap.  Conditions are displayed on each row
+    with some summary statistics averaged across the selected features.  The conditions can be sorted
+    by those values.  Each of the selected features is represented in a simple heatmap in the table.
+    Mouseover the heatmap to view specific expression values.

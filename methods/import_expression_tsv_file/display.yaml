@@ -20,7 +20,7 @@ parameters :
     outputObject :
         ui-name : New Expression Data Matrix Name
         short-hint : Provide the name for the Expression Matrix object that will be created by this upload
-        
+
     genomeObject :
         ui-name : Genome
         short-hint : Select the Genome object that contains features referenced by the Expression Matrix
