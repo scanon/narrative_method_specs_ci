@@ -42,6 +42,12 @@ parameters :
         short-hint : Scale of values in matrix
         long-hint  : Scale of values in matrix
 
-description : none
-
-technical-description : none
+description :  
+    <p> This upload method enables users to upload gene expression matrix in TSV format into the narrative.</p>
+    <p> Begin by selecting the ExpressionMatrix type in the dropdown (in Import tab ) and click Next. Select the .tsv file for upload and click Import </p>
+    <p> The .tsv file is a tab delimited text file, with genes across the rows and sample/observations across the columns. Each row (gene) should have an identifier (in green) that always goes in the first column.  Each column (sample) should have a label (in blue) that is always in the first row.The remaining cells in the table contain expression values for the appropriate gene and sample. </p>
+    
+technical-description : 
+    <p> This upload method enables users to upload gene expression matrix in TSV format into the narrative.</p>
+    <p> Begin by selecting the ExpressionMatrix type in the dropdown (in Import tab ) and click Next. Select the .tsv file for upload and click Import </p>
+    <p> The .tsv file is a tab delimited text file, with genes across the rows and sample/observations across the columns. Each row (gene) should have an identifier (in green) that always goes in the first column.  Each column (sample) should have a label (in blue) that is always in the first row.The remaining cells in the table contain expression values for the appropriate gene and sample. </p>
