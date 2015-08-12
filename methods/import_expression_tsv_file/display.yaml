@@ -15,7 +15,7 @@ parameters :
     expressionFile :
         ui-name : EXPRESSION TSV FILE
         short-hint : File with expression data in TSV format
-        long-hint  : File with expression data in TSV format (filename should end with ".tsv")
+        long-hint  : Filename should end with ".tsv"
 
     outputObject :
         ui-name : NAME OF EXPRESSION MATRIX
