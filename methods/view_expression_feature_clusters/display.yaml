@@ -1,11 +1,11 @@
 #
 # Define basic display information
 #
-name     : View Expression Cluster Set
+name     : View Feature Clusters
 subtitle : |
-    View Expression Cluster Set object in your workspace.
+    View Feature Clusters
 tooltip  : |
-    View Expression Cluster Set object in your workspace.
+    View Feature Clusters
 
 screenshots :
     []
@@ -26,7 +26,7 @@ method-suggestions :
 parameters :
     input_cluster_set :
         ui-name : |
-            Expression Cluster Set
+            Expression Feature Clusters
         short-hint : |
             select the Expression Cluster Set you want to view
         long-hint  : |

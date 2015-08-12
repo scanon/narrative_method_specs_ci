@@ -1,9 +1,9 @@
 #
 # Define basic display information
 #
-name     : Expression Cluster Set
-subtitle : Expression Cluster Set object
-tooltip  : Expression Cluster Set object
+name     : Expression Feature Clusters
+subtitle : Expression Feature Clusters
+tooltip  : Expression Feature Clusters
 
 icon : none
 
