@@ -79,7 +79,7 @@
   "behavior" : {
     "service-mapping" : {
       "url" : "",
-      "name" : "genome_util",
+      "name" : "KBaseGenomeUtil",
       "method" : "blast_against_genome",
       "input_mapping" : [
         {
