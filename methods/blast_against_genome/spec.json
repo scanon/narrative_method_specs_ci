@@ -29,6 +29,26 @@
         "n_rows":4
       }
     }, {
+      "id" : "e-value",
+      "optional" : true,
+      "advanced" : false,
+      "allow_multiple" : false,
+      "default_values" : [ "10" ],
+      "field_type" : "text",
+      "text_options" : {
+        "valid_ws_types" : [ ]
+      }
+    }, {
+      "id" : "output_name",
+      "optional" : false,
+      "advanced" : false,
+      "allow_multiple" : false,
+      "default_values" : [ "balst_output_" ],
+      "field_type" : "text",
+      "text_options" : {
+        "valid_ws_types" : [ ]
+      }
+    }, {
       "id" : "blast_program",
       "optional" : false,
       "advanced" : false,
@@ -57,7 +77,48 @@
       }
   } ],
   "behavior" : {
-    "none" : {
+    "service-mapping" : {
+      "url" : "",
+      "name" : "genome_util",
+      "method" : "blast_against_genome",
+      "input_mapping" : [
+        {
+          "input_parameter" : "genomes",
+          "target_property" : "genomes_ids"
+        },
+        {
+          "input_parameter" : "query",
+          "target_property" : "query"
+        },
+        {
+          "input_parameter" : "blast_program",
+          "target_property" : "blast_program"
+        },
+        {
+          "narrative_system_variable": "workspace",
+          "target_property" : "ws_id"
+        },
+        {
+          "constant_value" : "e-value",
+          "target_property" : "e-value"
+        },
+        {
+          "constant_value" : "0.00000000005",
+          "target_property" : "coverage"
+        },
+        {
+          "constant_value" : "0.00000003",
+          "target_property" : "identity"
+        },
+        {
+          "constant_value" : "50",
+          "target_property" : "score"
+        },
+        {
+          "input_parameter" : "output_name",
+          "target_property" : "output_name"
+        }
+      ],
       "output_mapping" : [
         {
           "narrative_system_variable": "workspace",
