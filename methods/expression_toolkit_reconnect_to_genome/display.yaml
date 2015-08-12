@@ -1,22 +1,29 @@
 #
 # Define basic display information
 #
-name     : Associate Expression Features to Genome Features
+name     : Associate Expression Data Matrix to Genome Features
 
 tooltip  : |
-    Associate Expression Features to Genome Features
+    Associate expression data matrix rows to genome features by ID or alias
 
 screenshots :
     []
 
+replacement-text : Associated Expression data {{{input_data}}} to Genome {{{genome_id}}}
 #
 # Define the set of other narrative methods that should be suggested to the user.
 #
-method-suggestions :
-    related :
-        []
-    next :
-        []
+suggestions :
+    apps:
+        related :
+            []
+        next :
+            []
+    methods:
+        related :
+            []
+        next :
+            []
 
 
 #
@@ -25,32 +32,26 @@ method-suggestions :
 parameters :
     input_data:
         ui-name : |
-            Input Matrix
+            Expression Matrix
         short-hint : |
-            Input Expression Matrix
-        long-hint  : |
-            Input Expression Matrix
+            Expression data to associate with genome features
 
     genome_id:
         ui-name : |
             Genome
         short-hint : |
-            Genome containing features referenced by the Input Matrix
-        long-hint  : |
-            Genome containing features referenced by the Input Matrix
+            Genome containing features referenced by the selected Expression Matrix
 
     out_matrix_id :
         ui-name : |
-            Output Matrix
+            Output Expression Matrix Name
         short-hint : |
-            Output Expression Matrix
-        long-hint  : |
-            Optional - overwrites input if not set
+            Provide a name for the new expresion data matrix associated with the genome
 
 
 description : |
-    Expression Toolkit reconnect matrix to genome
+    This method accepts an Expression data matrix and a Genome and attempts to associate
+    the rows in the data to features in the Genome.  The matching is performed by simply comparing
+    the row IDs to genome feature IDs or aliases.  Methods that operate on expression data
+    often rely on this mapping between rows and features to properly function.
 
-
-technical-description : |
-    Expression Toolkit reconnect matrix to genome
