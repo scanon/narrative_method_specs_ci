@@ -35,17 +35,17 @@ parameters :
         ui-name : |
             Genome
         short-hint : |
-            Genome object containing features referenced by the Input Matrix
+            Genome containing features referenced by the Input Matrix
         long-hint  : |
-            Input Expression Matrix
+            Genome containing features referenced by the Input Matrix
 
     out_matrix_id :
         ui-name : |
             Output Matrix
         short-hint : |
-            Output Expression Matrix (optional, overwrites input if not set)
+            Output Expression Matrix
         long-hint  : |
-            Output Expression Matrix (optional, overwrites input if not set)
+            Optional - overwrites input if not set
 
 
 description : |
