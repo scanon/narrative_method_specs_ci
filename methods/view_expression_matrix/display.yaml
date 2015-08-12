@@ -2,10 +2,9 @@
 # Define basic display information
 #
 name     : View Expression Matrix
-subtitle : |
-    View Expression Matrix.
+
 tooltip  : |
-    View Expression Matrix.
+    View Expression Matrix
 
 screenshots :
     []
@@ -28,9 +27,9 @@ parameters :
         ui-name : |
             Expression Matrix
         short-hint : |
-            select an expression matrix to view
+            Select an expression matrix to view
         long-hint  : |
-            select an expression matrix to view
+            Select an expression matrix to view
 
 
 description : |
@@ -38,4 +37,4 @@ description : |
 
 
 technical-description : |
-    View and explore Expression Matrix object in your workspace.
+    View and explore an Expression Matrix in your workspace.
