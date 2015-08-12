@@ -27,7 +27,7 @@ parameters :
         ui-name : |
             Expression Matrix
         short-hint : |
-            Matrix with expression values
+            Select the matrix with expression values
         long-hint  : |
             Select the matrix with expression values
 
@@ -35,13 +35,13 @@ parameters :
         ui-name : |
             Genes
         short-hint : |
-            Genes to be visuliazed 
+            Select the gene set to be visualized
         long-hint  : |
             Select the gene set to be visualized
 
 description : |
-    View and explore  expression heatmap in your workspace.
+    View and explore expression heatmap in your workspace.
 
 
 technical-description : |
-    View and explore  expression heatmap in your workspace.
+    View and explore expression heatmap in your workspace.
