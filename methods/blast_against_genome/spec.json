@@ -68,10 +68,6 @@
           {
             "value": "tblastp",
             "display": "tblastp"
-          },
-          {
-            "value": "test_by_Fei",
-            "display": "test_by_Fei"
           }
         ]
       }
@@ -99,19 +95,19 @@
           "target_property" : "ws_id"
         },
         {
-          "constant_value" : "e-value",
+          "constant_value" : "0.05",
           "target_property" : "e-value"
         },
         {
-          "constant_value" : "0.00000000005",
+          "constant_value" : "",
           "target_property" : "coverage"
         },
         {
-          "constant_value" : "0.00000003",
+          "constant_value" : "",
           "target_property" : "identity"
         },
         {
-          "constant_value" : "50",
+          "constant_value" : "",
           "target_property" : "score"
         },
         {
