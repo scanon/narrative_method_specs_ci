@@ -40,7 +40,7 @@
   }, {
     "id" : "input_featureset",
     "optional" : true,
-    "advanced" : false,
+    "advanced" : true,
     "allow_multiple" : false,
     "default_values" : [ "" ],
     "field_type" : "text",
@@ -50,7 +50,7 @@
   }, {
     "id" : "min_colorvalue",
     "optional" : false,
-    "advanced" : false,
+    "advanced" : true,
     "allow_multiple" : false,
     "default_values" : [ "" ],
     "field_type" : "text",
@@ -60,7 +60,7 @@
   }, {
     "id" : "max_colorvalue",
     "optional" : false,
-    "advanced" : false,
+    "advanced" : true,
     "allow_multiple" : false,
     "default_values" : [ "" ],
     "field_type" : "text",
