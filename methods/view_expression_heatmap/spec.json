@@ -49,7 +49,7 @@
     }
   }, {
     "id" : "min_colorvalue",
-    "optional" : false,
+    "optional" : true,
     "advanced" : true,
     "allow_multiple" : false,
     "default_values" : [ "" ],
@@ -59,7 +59,7 @@
     }
   }, {
     "id" : "max_colorvalue",
-    "optional" : false,
+    "optional" : true,
     "advanced" : true,
     "allow_multiple" : false,
     "default_values" : [ "" ],
