@@ -5,6 +5,7 @@ name     : Estimate K for K-Means Clustering Data ( New )
 
 tooltip  : |
     Calculate an optimal value of k for use in k-means clustering method
+
 screenshots :
     []
 
@@ -28,7 +29,8 @@ parameters :
         short-hint : |
             Expression Matrix to use for estimating value of k 
         long-hint  : |
-            Expression Matrix to use for estimating value of k 
+            Expression Matrix to use for estimating value of k
+
     output_estimated_k :
         ui-name : |
             Estimated number of clusters
@@ -36,6 +38,8 @@ parameters :
             Provide name for estimated number of clusters output
         long-hint  : |
             Provide name for estimated number of clusters output
+
+
     min_k :
         ui-name : Min. Number of Clusters
         short-hint : Minimum number of clusters
@@ -73,9 +77,12 @@ parameters :
 
 
 description : |
-    <p>This method computes an optimal number of clusters (k) for use in the K-Means Clustering for Expression Data method. This is achieved by minimizing both the number of clusters (k) and the average variance between the clusters. Begin by selecting or importing an expression dataset to analyze using the Add Data button. Provide a name for the output estimate, a valid number for the Max. Num of Clusters and select a criterion for running estimate k ,run the method to calculate an optimal value for k.</p>
+    <p>This method computes an optimal number of clusters (k) for use in the Cluster Expression Data - K-Means method. This is achieved by minimizing both the number of clusters (k) and the average variance between the clusters. Begin by selecting or importing an expression dataset to analyze using the Add Data button. Provide a name for the output estimate, a valid number for the Max. Num of Clusters and select a criterion for running estimate k, run the method to calculate an optimal value for k.</p>
+    
+    <p>This method is based on the <a href="http://www.inside-r.org/packages/cran/fpc/docs/pamk">fpc package for R</a>.
     
     <p><strong>Team members who developed & deployed algorithm in KBase:</strong>
     Paramvir Dehal, Roman Sutormin, Michael Sneddon, Srividya Ramakrishnan, Pavel Novichkov, Keith Keller.</p>
+    
     <p>For questions, <a href="mailto:help@kbase.us">e-mail help@kbase.us</a></p>
 
