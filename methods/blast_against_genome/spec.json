@@ -6,7 +6,7 @@
   "categories" : ["active"],
   "widgets" : {
     "input" : null,
-    "output" : null
+    "output" : "kbaseBlastOutput"
   },
   "parameters" : [ {
       "id" : "genomes",
@@ -47,6 +47,16 @@
       "field_type" : "text",
       "text_options" : {
         "valid_ws_types" : [ ]
+      }
+    }, {
+      "id" : "blast_output_name",
+      "optional" : false,
+      "advanced" : false,
+      "allow_multiple" : false,
+      "default_values" : [ "" ],
+      "field_type" : "text",
+      "text_options" : {
+        "valid_ws_types" : [ "GenomeUtil.BLAST_output" ]
       }
     }, {
       "id" : "blast_program",
@@ -118,19 +128,11 @@
       "output_mapping" : [
         {
           "narrative_system_variable": "workspace",
-          "target_property": "ws"
+          "target_property": "workspaceName"
         },
         {
-          "input_parameter": "genomes",
-          "target_property": "genomes"
-        },
-        {
-          "input_parameter": "query",
-          "target_property": "query"
-        },
-        {
-          "input_parameter": "blast_program",
-          "target_property": "blast_program"
+          "input_parameter": "output_name",
+          "target_property": "blast_output_name"
         }
       ]
     }
