@@ -4,7 +4,7 @@
 name     : Cluster Expression Data - K-Means
 
 tooltip  : |
-    Group expression data to observe and analyze patterns of gene expression.
+    Group expression data for observing and analyzing patterns of gene expression.
 
 screenshots :
     []
