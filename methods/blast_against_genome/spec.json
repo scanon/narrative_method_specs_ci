@@ -95,19 +95,19 @@
           "target_property" : "ws_id"
         },
         {
-          "constant_value" : "0.05",
+          "input_parameter" : "e-value",
           "target_property" : "e-value"
         },
         {
-          "constant_value" : "",
+          "constant_value" : "0.00000000005",
           "target_property" : "coverage"
         },
         {
-          "constant_value" : "",
+          "constant_value" : "0.00000003",
           "target_property" : "identity"
         },
         {
-          "constant_value" : "",
+          "constant_value" : "50",
           "target_property" : "score"
         },
         {
