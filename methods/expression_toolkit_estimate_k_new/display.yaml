@@ -27,53 +27,52 @@ parameters :
         ui-name : |
             Expression Matrix
         short-hint : |
-            Expression Matrix to use for estimating value of k 
+            Select the Expression Matrix to use for estimating value of k 
         long-hint  : |
-            Expression Matrix to use for estimating value of k
+            Calculate an optimal value of k for the selected Expression Matrix. You can upload your Expression Martix via the Import tab in the Add Data menu.
 
     output_estimated_k :
         ui-name : |
             Estimated number of clusters
         short-hint : |
-            Provide name for estimated number of clusters output
+            Provide a name for estimated number of clusters output
         long-hint  : |
-            Provide name for estimated number of clusters output
+            After the method has finished running, an EstimateKResult data object will be added to your data panel. Provide a name for this data object, using only alphanumeric characters.
 
 
     min_k :
         ui-name : Min. Number of Clusters
         short-hint : Minimum number of clusters
-        long-hint  : Minimum number of clusters
-
+        long-hint  : The smallest number of clusters for estimating potential values of k.
+        
     max_k :
         ui-name : Max. Number of Clusters
         short-hint : Maximum number of clusters
-        long-hint  : Maximum number of clusters
+        long-hint  : The largest number of clusters for estimating potential values of k.
 
     criterion :
         ui-name : Criterion
-        short-hint : Criterion for calculating average Silhouette width
-        long-hint  : Criterion for calculating average Silhouette width
+        short-hint : Criterion for calculating average silhouette width
+        long-hint  : Select "asw" to calculate using average silhouette width given out by the pam/clara. Use "multiasw" for silhouette width computed by distcritmulti - recommended for large data sets with usepam is not selected. If "ch" is selected, the Calinski-Harabasz index for estimating the number of clusters is applied.
 
     usepam:
-        ui-name : Usepam
-        short-hint : If TRUE, pam is used , otherwise clara (recommended for large datasets >2000 observations)
-        long-hint  : If TRUE, pam is used , otherwise clara (recommended for large datasets >2000 observations)
+        ui-name : Use pam
+        short-hint : If checked, Partitioning Around Medoids (pam) is used. Otherwise Clustering Large Applications (clara) is used.
+        long-hint  : Clustering Large Applications (clara) is recommended for large datasets that contain over 2000 observations.
 
     alpha:
         ui-name : alpha
-        short-hint : Numeric between 0 and 1
-        long-hint  : Numeric between 0 and 1
+        short-hint : Provide a numeric value between 0 and 1
+        long-hint  : Tuning constant used for Duda-Hart test for whether a data set should be split into two clusters. Provide a numeric value between 0 and 1 to set the significance level, recommended to be small if this is used for estimating the number of clusters.
 
     diss:
         ui-name : diss
-        short-hint : Set it TRUE for dissimilarity matrix
-        long-hint  : Set it TRUE for dissimilarity matrix
-  
+        short-hint : If checked, data will be considered as  dissimilarity matrix 
+        long-hint  : Considering data as a dissimilarity matrix means that the potential number of clusters will be larger than one. Otherwise, the data will beconsidered as a matrix of observations by variables.
     random_seed :
         ui-name : Random Seed
-        short-hint : Random seed used by K-means algorithm
-        long-hint  : Random seed used by K-means algorithm
+        short-hint : Seed value used by K-means algorithm
+        long-hint  : If left empty, a random seed value is generated to be used by K-means algorithm. Setting the seed explicitly to a specific value is required to generate the same results every time.
 
 
 description : |
