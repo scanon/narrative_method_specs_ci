@@ -71,7 +71,7 @@ description : |
     <p>Description of hierarchical clustering algorithms: 
         <ul>
         <li>hclust (default): Performs a hierarchical cluster analysis using a set of dissimilarities for the number of objects being clustered - <a href="http://www.inside-r.org/packages/cran/amap/docs/hcluster">Technical documentation for hclust</a></li>
-        <li>flashClust: Faster version of the hclust algorithm - <a href="https://cran.r-project.org/web/packages/flashClust/flashClust.pdf">Technical documentation for hclust</a></li>
+        <li>flashClust: Faster version of the hclust algorithm - <a href="https://cran.r-project.org/web/packages/flashClust/flashClust.pdf">Technical documentation for flashClust</a></li>
     </ul></p>
 
     <p><strong>Team members who developed & deployed algorithm in KBase:</strong>

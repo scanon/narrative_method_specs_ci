@@ -27,9 +27,9 @@ parameters :
         ui-name : |
             Expression Matrix
         short-hint : |
-            Name of Expression Matrix to use for K-means clustering
+            Select Expression Matrix for use k-means clustering
         long-hint  : |
-            Name of Expression Matrix to use for K-means clustering on
+            Select the Expression Matrix to use for k-means clustering on
             
     input_k_value:
         ui-name : |
