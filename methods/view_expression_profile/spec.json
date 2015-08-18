@@ -37,6 +37,16 @@
       "show_src_obj":false,
       "allow_custom":false
     }
+  }, {
+    "id" : "input_featureset",
+    "optional" : true,
+    "advanced" : true,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ "KBaseCollections.FeatureSet" ]
+    }
   }
 ],
   "behavior" : {
@@ -49,6 +59,10 @@
         {
           "input_parameter": "input_gene_ids",
           "target_property": "geneIds"
+        },
+        {
+          "input_parameter": "input_featureset",
+          "target_property": "featureset"
         },
         {
           "narrative_system_variable": "workspace",

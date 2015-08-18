@@ -33,11 +33,17 @@ parameters :
 
     input_gene_ids :
         ui-name : |
-            Genes
+            Features
         short-hint : |
-            Genes to be visuliazed 
+            Select the features to compare.
         long-hint  : |
-            Select the gene set to be visualized
+            If no features are found, you probably have to associate this expression data set with a Genome.
+
+    input_featureset :
+        ui-name : |
+            Feature Set
+        short-hint : |
+            Include all the features from this FeatureSet
 
 description : |
     View and explore expression pairwise correlation in your workspace.
