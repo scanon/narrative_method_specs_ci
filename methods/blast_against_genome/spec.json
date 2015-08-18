@@ -80,7 +80,7 @@
       "input_mapping" : [
         {
           "input_parameter" : "genomes",
-          "target_property" : "genomes_ids"
+          "target_property" : "genome_ids"
         },
         {
           "input_parameter" : "query",
