@@ -37,7 +37,7 @@ parameters :
         short-hint : |
             Provide a name for estimated number of clusters output
         long-hint  : |
-            After the method has finished running, an EstimateKResult data object will be added to your data panel. Provide a name for this data object, using only alphanumeric characters.
+            After the method has finished running, an EstimateKResult data object will be added to your data panel. Provide a name for this data object, using only alphanumeric characters and underscores.
 
 
     min_k :
