@@ -78,7 +78,7 @@ parameters :
 description : |
     <p>This method computes an optimal number of clusters (k) for use in the Cluster Expression Data - K-Means method. This is achieved by minimizing both the number of clusters (k) and the average variance between the clusters. Begin by selecting or importing an expression dataset to analyze using the Add Data button. Provide a name for the output estimate, a valid number for the Max. Num of Clusters and select a criterion for running estimate k, run the method to calculate an optimal value for k.</p>
     
-    <p>This method is based on the <a href="http://www.inside-r.org/packages/cran/fpc/docs/pamk">fpc package for R</a>.
+    <p>This method is based on the <a href="http://www.inside-r.org/packages/cran/fpc/docs/pamk">fpc package for R</a>.</p>
     
     <p><strong>Team members who developed & deployed algorithm in KBase:</strong>
     Paramvir Dehal, Roman Sutormin, Michael Sneddon, Srividya Ramakrishnan, Pavel Novichkov, Keith Keller.</p>

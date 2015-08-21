@@ -80,6 +80,8 @@ description : |
         <li>Forgy: For large data sets; continuous data distribution; optimizes total sum of squares</li>
         <li>MacQueen: Fast initial convergence; optimizes total sum of squares</li></ul></p>
         
+    <p>This method is based on the <a href="http://www.inside-r.org/packages/cran/amap/docs/Kmeans">amap package for R</a>.</p>
+        
     <p><strong>Team members who developed & deployed algorithm in KBase:</strong>
     Paramvir Dehal, Roman Sutormin, Michael Sneddon, Srividya Ramakrishnan, Pavel Novichkov, Keith Keller.</p>
     
