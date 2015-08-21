@@ -45,6 +45,18 @@ parameters :
         short-hint : |
             Include all the features from this FeatureSet
 
+    min_range :
+        ui-name : |
+            Min Color Range
+        short-hint : |
+            The color range of the heatmat will be calibrated to have this set as the minimum value
+
+    max_range :
+        ui-name : |
+            Max Color Range
+        short-hint : |
+            The color range of the heatmat will be calibrated to have this set as the maximum value
+
 description : |
     View and explore expression pairwise correlation in your workspace.
 
