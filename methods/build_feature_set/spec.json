@@ -55,7 +55,7 @@
     "advanced" : true,
     "allow_multiple" : false,
     "default_values" : [ "" ],
-    "field_type" : "textsubdata",
+    "field_type" : "textarea",
     "textarea_options" : {
       "n_rows" : 4
     }
