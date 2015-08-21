@@ -1,9 +1,9 @@
 {
-  "name" : "Expression Toolkit estimate k",
+  "name" : "Expression Toolkit estimate k (old)",
   "ver" : "1.0.0",
   "authors" : [ ],
   "contact" : "help@kbase.us",
-  "visble" : true,
+  "visble" : false,
   "categories" : ["active"],
   "widgets" : {
     "input" : null,
