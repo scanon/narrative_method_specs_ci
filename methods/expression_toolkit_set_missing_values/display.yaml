@@ -41,9 +41,9 @@ parameters :
 
 
 description : |
-    <p>This method imputes the missing values of gene-ids across the samples/conditions in an expression matrix. The missing values are calculated by taking a mean of the gene expression values for all the samples in the specific rows with missing gene expression values. </p>
+    <p>This method imputes the missing values of gene-ids across the samples or conditions in an expression matrix. 
+    The missing values are calculated by taking a mean of the gene expression values for all the samples in the 
+    specific rows with missing gene expression values</p>
    
     <p><strong>Team members who developed & deployed algorithm in KBase:</strong>
-Paramvir Dehal, Roman Sutormin, Michael Sneddon, Srividya Ramakrishnan, Pavel Novichkov, Keith Keller.</p>
-<p>For questions, <a href="mailto:help@kbase.us">e-mail help@kbase.us</a></p>
-
+    Paramvir Dehal, Roman Sutormin, Michael Sneddon, Srividya Ramakrishnan, Pavel Novichkov, Keith Keller.</p>
