@@ -34,8 +34,6 @@ parameters :
 
 
 description : |
-    View Estimated K Result object in your workspace.
 
-
-technical-description : |
-    View Estimated K Result object in your workspace.
+    <p>View the plot between the number of clusters k and the average silhouette width for the k clusters. The average silhoutte width provides an evaluation of the K-Means clustering validity and is used to estimate k for K-Means Clustering. Observations with a large silhouette width (near 1) are well clustered , observations near 0 lie between 2 clusters and observations with a negative silhouette width are placed in the wrong cluster </p>
+     
