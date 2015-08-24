@@ -27,9 +27,9 @@ parameters :
         ui-name : |
             Expression Matrix
         short-hint : |
-            Select Expression Matrix for use k-means clustering
+            Select Expression Matrix for k-means clustering
         long-hint  : |
-            Select the Expression Matrix to use for k-means clustering on
+            Select the Expression Matrix for k-means clustering
             
     input_k_value:
         ui-name : |
@@ -37,7 +37,7 @@ parameters :
         short-hint : |
             Value of <i>k</i> - number of clusters
         long-hint  : |
-            To calculate a suggested optimal of <i>k</i>, run the <a data-method-id=Òexpression_toolkit_estimate_k_newÓ>Estimate K for K-Means Clustering Data method on your Expression Matrix before running this method.
+            To calculate a suggested optimal of <i>k</i>, run the <a data-method-id=Ã’expression_toolkit_estimate_k_newÃ“>Estimate K for K-Means Clustering Data method on your Expression Matrix before running this method.
 
     output_cluster_set :
         ui-name : |
