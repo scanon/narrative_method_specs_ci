@@ -58,8 +58,7 @@ parameters :
             The color range of the heatmat will be calibrated to have this set as the maximum value
 
 description : |
-    View and explore expression pairwise correlation in your workspace.
+    <p>View and explore pairwise correlation of selected features as a heatmap. Click on the link Show Selected Features
+    on the top of the heatmap to view and sort the summary statistics of expression values of selected features.
+    Mouseover the heatmap to view specific correlation values.</p>
 
-
-technical-description : |
-    View and explore  expression pairwise correlation in your workspace.
