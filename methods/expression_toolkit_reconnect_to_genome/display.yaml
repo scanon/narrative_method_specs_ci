@@ -1,10 +1,10 @@
 #
 # Define basic display information
 #
-name     : Associate Expression Data Matrix to Genome Features
+name     : Associate Expression Matrix to Genome Features
 
 tooltip  : |
-    Associate expression data matrix rows to genome features by ID or alias
+    Associate Expression Matrix with Genome that contains features referenced in the matrix.
 
 screenshots :
     []
@@ -50,8 +50,5 @@ parameters :
 
 
 description : |
-    This method accepts an Expression data matrix and a Genome and attempts to associate
-    the rows in the data to features in the Genome.  The matching is performed by simply comparing
-    the row IDs to genome feature IDs or aliases.  Methods that operate on expression data
-    often rely on this mapping between rows and features to properly function.
+    <p>This method accepts an Expression data matrix and a Genome and attempts to associate the rows in the data to features in the Genome. The matching is performed by simply comparing the row IDs to genome feature IDs or aliases.  Methods that operate on expression data often rely on this mapping between rows and features to properly function.</p>
 
