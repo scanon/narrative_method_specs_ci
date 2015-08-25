@@ -4,7 +4,7 @@
 name     : View Pairwise Correlation for Expression Data
 
 tooltip  : |
-    View and explore pairwise correlation of selected features as a heatmap.
+    Explore pairwise correlation of selected features as a heatmap.
 
 screenshots :
     []
