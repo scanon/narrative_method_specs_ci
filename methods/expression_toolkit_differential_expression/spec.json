@@ -90,21 +90,25 @@
           "target_property" : "p_value"
         },
         {
+          "input_parameter": "expression",
+          "target_property": "filtered_expression",
+          "generated_value" : {
+            "suffix" : "_ftrd"
+          }
+        },
+        {
           "constant_value" : "0.00000000005",
           "target_property" : "coverage"
         }      
       ],
       "output_mapping" : [
         {
-          "narrative_system_variable": "workspace",
-          "target_property": "workspaceID"
+          "input_parameter": "filtered_expression",
+          "target_property": "expressionMatrixID"
         },
         {
-          "input_parameter": "expression",
-          "target_property": "expressionMatrixID",
-          "generated_value" : {
-            "suffix" : "_ftrd"
-          }
+          "narrative_system_variable": "workspace",
+          "target_property": "workspaceID"
         },
         {
           "service_method_output_path": [],
