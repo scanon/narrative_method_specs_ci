@@ -29,11 +29,25 @@ suggestions :
 parameters :
     expression :
         ui-name : |
-            Expression
+            Input Expression
         short-hint : |
             select ExpressionMatrix you want to filter
         long-hint  : |
             select ExpressionMatrix you want to filter
+    filtered_expression :
+        ui-name : |
+            Filtered Expression
+        short-hint : |
+            the output filtered ExpressionMatrix object name
+        long-hint  : |
+            the output filtered ExpressionMatrix object name
+    filtered_featureset :
+        ui-name : |
+            Filtered FeatureSet
+        short-hint : |
+            the output filtered FeatureSet object name
+        long-hint  : |
+            the output filtered FeatureSet object name
     method :
         ui-name : |
             Filtering Method
