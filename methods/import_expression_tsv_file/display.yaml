@@ -15,7 +15,7 @@ parameters :
     expressionFile :
         ui-name : Expression Data TSV File
         short-hint : File with expression data in TSV format with Features in rows and Conditions in columns
-        long-hint  : The filename should end with ".tsv" - see the <a href="http://kbase.us/data-upload-download-guide/">Data Upload and Download Guide</a> for more informaiton about formatting your file.
+        long-hint  : The filename should end with ".tsv"
 
     outputObject :
         ui-name : Expression Data Matrix Name
@@ -28,7 +28,7 @@ parameters :
 
     fillMissingValues :
         ui-name : Impute missing values?
-        short-hint : Check here to fill any missing values in the data
+        short-hint : Check this box to fill any missing values in the data
 
     dataType :
         ui-name : Value Type
@@ -41,4 +41,4 @@ parameters :
 description :  
     <p> This upload method enables users to upload gene expression matrix in TSV format into the narrative.</p>
     <p> Begin by selecting the ExpressionMatrix type in the dropdown (in Import tab ) and click Next. Select the .tsv file for upload and click Import </p>
-    <p> The .tsv file is a tab delimited text file, with genes across the rows and sample/observations across the columns. Each row (gene) should have an identifier (in green) that always goes in the first column.  Each column (sample) should have a label (in blue) that is always in the first row.  The remaining cells in the table contain expression values for the appropriate gene and sample. </p>
+    <p> The .tsv file is a tab delimited text file, with genes across the rows and sample/observations across the columns. Please make sure the first label in the first column is "gene-id" followed by tab delimited labels for samples. Each row (gene) should have an identifier (in green) that always goes in the first column.  Each column (sample) should have a label (in blue) that is always in the first row.  The remaining cells in the table contain expression values for the appropriate gene and sample. Be sure to exclude gene features with all missing expressions or non changing expressions for all the conditions/samples. See the <a href="http://kbase.us/data-upload-download-guide/">Data Upload and Download Guide</a> for more informaiton about formatting your expression data file.</p>
