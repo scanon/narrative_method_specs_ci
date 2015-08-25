@@ -29,7 +29,7 @@ parameters :
         short-hint : |
             Select the Expression Matrix to use for estimating value of k 
         long-hint  : |
-            Calculate an optimal value of k for the selected Expression Matrix. You can upload your Expression Martix via the Import tab in the Add Data menu.
+            Calculate an optimal value of k for the selected Expression Matrix. You can upload an Expression Matrix into your Narrative by clicking the <i>Add Data</i> button and selecting the <i>Import</i> tab.
 
     output_estimated_k :
         ui-name : |
