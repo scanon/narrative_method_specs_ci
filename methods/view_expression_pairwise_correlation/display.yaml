@@ -43,19 +43,19 @@ parameters :
         ui-name : |
             Feature Set
         short-hint : |
-            Include all the features from this FeatureSet
+            Include all the features from this FeatureSet.
 
     min_range :
         ui-name : |
             Min Color Range
         short-hint : |
-            The color range of the heatmat will be calibrated to have this set as the minimum value
+            The color range of the heatmat will be calibrated to set this as the minimum value.
 
     max_range :
         ui-name : |
             Max Color Range
         short-hint : |
-            The color range of the heatmat will be calibrated to have this set as the maximum value
+            The color range of the heatmat will be calibrated to set this as the maximum value.
 
 description : |
     <p>This method allows you to view and explore pairwise correlation of selected features as a heatmap. Click on the Hide&#47;Show Selected Features button on the top of the heatmap to view and sort the summary statistics of expression values for selected features. Mouse over the heatmap to view specific correlation values.</p>

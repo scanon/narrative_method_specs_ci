@@ -34,7 +34,7 @@ parameters :
         ui-name : |
             Expression Matrix
         short-hint : |
-            Select the Expression Matrix to associate with the Genome that references features contained within the expression data.
+            Select the Expression Matrix to associate with the Genome that references features contained within the expression data
 
     genome_id:
         ui-name : |

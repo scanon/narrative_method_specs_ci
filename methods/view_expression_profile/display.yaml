@@ -2,10 +2,9 @@
 # Define basic display information
 #
 name     : View Expression Profile
-subtitle : |
-    View and explore  expression profile in your workspace.
+
 tooltip  : |
-    View and explore  expression profile in your workspace.
+    View and explore expression profile in your Narrative.
 
 screenshots :
     []
@@ -28,17 +27,16 @@ parameters :
         ui-name : |
             Expression Matrix
         short-hint : |
-            Matrix with expression values
-        long-hint  : |
-            Select the matrix with expression values
+            Select an Expression Matrix to view
+
 
     input_gene_ids :
         ui-name : |
             Features
         short-hint : |
-            Select the features to compare.
+            Select the features to compare
         long-hint  : |
-            If no features are found, you probably have to associate this expression data set with a Genome.
+            If no features are found, your expression dataset may not be associated with the Genome that contains the features. Use the Associate Expression Matrix to Genome Features method to associate your expression dataset with the proper Genome.
 
     input_featureset :
         ui-name : |
@@ -47,8 +45,5 @@ parameters :
             Include all the features from this FeatureSet
 
 description : |
-    View and explore  expression profile in your workspace.
+    View and explore expression profile in your workspace.
 
-
-technical-description : |
-    View and explore  expression profile in your workspace.

@@ -27,7 +27,7 @@ parameters :
         ui-name : |
             Input Matrix
         short-hint : |
-            Input Expression Matrix
+            Select the Expression Matrix for imputing missing values
         long-hint  : |
             Choose an Expression Matrix from your Data Panel to use with this method. You can upload an Expression Matrix into your Narrative by clicking the <i>Add Data</i> button and selecting the <i>Import</i> tab.
 
@@ -35,7 +35,7 @@ parameters :
         ui-name : |
             Output Matrix
         short-hint : |
-            Output Expression Matrix
+            Provide name for the imputed Expression Matrix (optional)
         long-hint  : |
             If left blank, the input Expression Matix will be overwritten with the newly imputed values.
 
