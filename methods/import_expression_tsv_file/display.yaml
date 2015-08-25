@@ -32,8 +32,7 @@ parameters :
 
     dataType :
         ui-name : Value Type
-        short-hint : |
-            Indicate if the numbers are absolute expression levels, ratios, or log-ratios
+        short-hint : Indicate if the numbers are absolute expression levels, ratios, or log-ratios
 
     dataScale :
         ui-name : Value Scaling Factor
