@@ -15,15 +15,15 @@ parameters :
     expressionFile :
         ui-name : Expression Data TSV File
         short-hint : File with expression data in TSV format with Features in rows and Conditions in columns
-        long-hint  : The filename should end with ".tsv"
+        long-hint  : The filename should end with ".tsv" - see the <a href="http://kbase.us/data-upload-download-guide/">Data Upload and Download Guide</a> for more informaiton about formatting your file.
 
     outputObject :
-        ui-name : New Expression Data Matrix Name
+        ui-name : Expression Data Matrix Name
         short-hint : Provide the name for the Expression Matrix object that will be created by this upload
 
     genomeObject :
         ui-name : Genome
-        short-hint : Select the Genome object that contains features referenced by the Expression Matrix
+        short-hint : Select the Genome that contains features referenced by the Expression Matrix
         long-hint  : Feature IDs as listed in the first column will be matched against feature ids or aliases of the Genome
 
     fillMissingValues :
