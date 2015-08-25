@@ -57,7 +57,10 @@ parameters :
 
 
 description : |
-    View and explore expression data as a sortable heatmap.  Conditions/Samples are displayed on each row
+    <p> This method allows you to view and explore expression data as a sortable heatmap.  The Conditions&#47;Samples are displayed on each row
     with some summary statistics averaged across the selected features.  The conditions can be sorted
     by those values.  Each of the selected features is represented in a simple heatmap in the table.
-    Mouseover the heatmap to view specific expression values.
+    Mouseover the heatmap to view specific expression values.</p>
+    
+    <p><strong>Team members who developed & deployed algorithm in KBase:</strong>
+    Paramvir Dehal, Roman Sutormin, Michael Sneddon, Srividya Ramakrishnan, Pavel Novichkov, Keith Keller.</p>
