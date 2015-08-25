@@ -4,7 +4,7 @@
 name     : Associate Expression Matrix to Genome Features
 
 tooltip  : |
-    Associate Expression Matrix with Genome that contains features referenced in the matrix.
+    Associate an Expression Matrix with a Genome that contains features referenced in the matrix.
 
 screenshots :
     []
@@ -34,7 +34,7 @@ parameters :
         ui-name : |
             Expression Matrix
         short-hint : |
-            Select the Expression Matrix to associate with the Genome that references features
+            Select the Expression Matrix to associate with the Genome that references features contained within the expression data.
 
     genome_id:
         ui-name : |

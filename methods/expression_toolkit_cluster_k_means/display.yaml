@@ -4,7 +4,7 @@
 name     : Cluster Expression Data - K-Means
 
 tooltip  : |
-    Group expression data for observing and analyzing patterns of gene expression.
+    Perform k-means clustering to group expression data for observing and analyzing patterns of gene expression.
 
 screenshots :
     []
@@ -27,9 +27,9 @@ parameters :
         ui-name : |
             Expression Matrix
         short-hint : |
-            Select the Expression Matrix for k-means clustering
+            Select the Expression Matrix to use for k-means clustering
         long-hint  : |
-            Select the Expression Matrix for k-means clustering
+            Choose an Expression Matrix from your Data Panel to use with this method. You can upload an Expression Matrix into your Narrative by clicking the <i>Add Data</i> button and selecting the <i>Import</i> tab.
             
     input_k_value:
         ui-name : |

@@ -4,7 +4,7 @@
 name     : View Pairwise Correlation for Expression Data
 
 tooltip  : |
-    View Pairwise Correlation for Expression Data
+    View and explore pairwise correlation of selected features as a heatmap.
 
 screenshots :
     []
@@ -29,15 +29,15 @@ parameters :
         short-hint : |
             Matrix with expression values
         long-hint  : |
-            Select the matrix with expression values
+            Choose an Expression Matrix from your Data Panel to use with this method. You can upload an Expression Matrix into your Narrative by clicking the <i>Add Data</i> button and selecting the <i>Import</i> tab.
 
     input_gene_ids :
         ui-name : |
             Features
         short-hint : |
-            Select the features to compare.
+            Select the features to compare
         long-hint  : |
-            If no features are found, you probably have to associate this expression data set with a Genome.
+            If no features are found, your expression dataset may not be associated with the Genome that contains the features. Use the Associate Expression Matrix to Genome Features method to associate your expression dataset with the proper Genome.
 
     input_featureset :
         ui-name : |
@@ -58,7 +58,8 @@ parameters :
             The color range of the heatmat will be calibrated to have this set as the maximum value
 
 description : |
-    <p>View and explore pairwise correlation of selected features as a heatmap. Click on the link Hide&#47;Show Selected Features
-    on the top of the heatmap to view and sort the summary statistics of expression values for selected features.
-    Mouseover the heatmap to view specific correlation values.</p>
+    <p>This method allows you to view and explore pairwise correlation of selected features as a heatmap. Click on the link Hide&#47;Show Selected Features on the top of the heatmap to view and sort the summary statistics of expression values for selected features. Mouseover the heatmap to view specific correlation values.</p>
+    
+    <p><strong>Team members who developed & deployed algorithm in KBase:</strong>
+    Paramvir Dehal, Roman Sutormin, Michael Sneddon, Srividya Ramakrishnan, Pavel Novichkov, Keith Keller.</p>
 
