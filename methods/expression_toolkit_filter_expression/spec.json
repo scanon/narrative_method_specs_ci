@@ -85,7 +85,7 @@
   } ],
   "behavior" : {
     "service-mapping" : {
-      "url" : "impl",
+      "url" : "",
       "name" : "CoExpression",
       "method" : "coex_filter",
       "input_mapping" : [
