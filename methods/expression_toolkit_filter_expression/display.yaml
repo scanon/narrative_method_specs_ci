@@ -1,7 +1,7 @@
 #
 # Define basic display information
 #
-name     : Filtering expression
+name     : Select Differentially Expressed Genes
 tooltip  : |
     Filter out non-differentially expressed features
 
