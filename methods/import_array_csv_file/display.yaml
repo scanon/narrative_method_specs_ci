@@ -1,0 +1,51 @@
+#
+# Define basic display information
+#
+name     : UPLOAD ARRAY
+subtitle : none
+tooltip  : |
+    Import array data from a CSV file.
+
+screenshots :
+    []
+
+#
+# Define the set of other narrative methods that should be suggested to the user.
+#
+suggestions :
+    apps:
+        related :
+            []
+        next :
+            []
+    methods:
+        related :
+            []
+        next :
+            []
+
+
+#
+# Configure the display and description of the parameters
+#
+parameters :
+    csvFile :
+        ui-name : |
+            CSV FILE
+        short-hint : |
+            File with array data in CSV format.
+        long-hint  : |
+            A file with array data in comma separated values format.
+
+    outputObject :
+        ui-name : |
+            ARRAY OBJECT NAME
+        short-hint : |
+            Provide a name for the array object you are uploading (e.g., Bad Ass Array)
+        long-hint  : |
+            Provide a name for the array object you are uploading (e.g., Bad Ass Array)
+
+description : none
+
+
+technical-description : none
