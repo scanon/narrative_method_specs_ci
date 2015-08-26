@@ -37,12 +37,8 @@
       "method" : "upload",
       "input_mapping" : [
         {
-          "constant_value": "Transcript.FASTA",
+          "constant_value": "Array.CSV",
           "target_argument_position": 0
-        },
-        {
-          "constant_value": "KBaseGenomes.Genome",
-          "target_argument_position": 1
         },
         {
           "narrative_system_variable": "workspace",
@@ -51,12 +47,12 @@
         {
           "input_parameter": "outputObject",
           "generated_value": {
-            "prefix": "genome_"
+            "prefix": "array_"
           },
           "target_argument_position": 3
         },
         {
-          "input_parameter": "fastaFile",
+          "input_parameter": "csvFile",
           "target_property": "shock_node_id",
           "target_argument_position": 4
         }
