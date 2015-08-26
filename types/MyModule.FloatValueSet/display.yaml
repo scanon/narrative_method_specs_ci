@@ -1,0 +1,14 @@
+#
+# Define basic display information
+#
+name     : Array
+subtitle : Array object
+tooltip  : Array object
+
+icon : none
+
+description : |
+    <p>This type describes array.</p>
+    
+    
+    
