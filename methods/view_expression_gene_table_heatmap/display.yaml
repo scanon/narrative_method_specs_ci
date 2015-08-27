@@ -1,7 +1,7 @@
 #
 # Define basic display information
 #
-name     : View Expression Heatmap In Feature Table
+name     : View Expression Matrix Heatmap In Feature Table
 
 tooltip  : |
     Explore an Expression Matrix by viewing a sortable heatmap of selected conditions.  
