@@ -22,11 +22,6 @@ parameters :
         short-hint : Provide the name for the Growth Matrix object that will be created by this upload
         long-hint  : Provide the name for the Growth Matrix object that will be created by this upload
 
-    fillMissingValues :
-        ui-name : FILL MISSING VALUES
-        short-hint : Flag for filling in missing values in matrix
-        long-hint  : If checked, missing values will be filled with zeros.
-
 description : none
 
 technical-description : none
