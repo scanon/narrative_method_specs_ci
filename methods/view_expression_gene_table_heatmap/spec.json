@@ -1,5 +1,5 @@
 {
-  "name" : "View Expression Profile",
+  "name" : "View Expression Heatmap In Feature Table",
   "ver" : "1.0.0",
   "authors" : [ ],
   "contact" : "help@kbase.us",
@@ -7,7 +7,7 @@
   "categories" : ["active"],
   "widgets" : {
     "input" : null,
-    "output" : "kbaseExpressionSparkline"
+    "output" : "kbaseExpressionFeatureTableHeatmap"
   },
   "parameters" : [ {
     "id" : "input_expression_matrix",
@@ -19,8 +19,8 @@
     "text_options" : {
       "valid_ws_types" : [ "KBaseFeatureValues.ExpressionMatrix" ]
     }
-  }, {
-    "id" : "input_gene_ids",
+  } , {
+    "id" : "input_condition_ids",
     "optional" : true,
     "advanced" : false,
     "allow_multiple" : false,
@@ -28,24 +28,14 @@
     "field_type" : "textsubdata",
     "textsubdata_options" : {
       "subdata_selection": {
+
         "parameter_id" : "input_expression_matrix",
-        "subdata_included" : ["feature_mapping"],
-        "path_to_subdata": ["feature_mapping"],
-        "selection_id": ["value"]
+        "subdata_included" : ["data/col_ids"],
+        "path_to_subdata": ["data","col_ids"]
       },
       "multiselection":true,
       "show_src_obj":false,
       "allow_custom":false
-    }
-  }, {
-    "id" : "input_featureset",
-    "optional" : true,
-    "advanced" : true,
-    "allow_multiple" : false,
-    "default_values" : [ "" ],
-    "field_type" : "text",
-    "text_options" : {
-      "valid_ws_types" : [ "KBaseCollections.FeatureSet" ]
     }
   }
 ],
@@ -57,12 +47,8 @@
           "target_property": "expressionMatrixID"
         },
         {
-          "input_parameter": "input_gene_ids",
-          "target_property": "geneIds"
-        },
-        {
-          "input_parameter": "input_featureset",
-          "target_property": "featureset"
+          "input_parameter": "input_condition_ids",
+          "target_property": "conditionIds"
         },
         {
           "narrative_system_variable": "workspace",

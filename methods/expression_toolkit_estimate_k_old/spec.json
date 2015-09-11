@@ -1,10 +1,10 @@
 {
-  "name" : "Expression Toolkit estimate k_new",
+  "name" : "Expression Toolkit estimate k (old)",
   "ver" : "1.0.0",
   "authors" : [ ],
   "contact" : "help@kbase.us",
-  "visble" : true,
-  "categories" : ["active"],
+  "visble" : false,
+  "categories" : ["inactive"],
   "widgets" : {
     "input" : null,
     "output" : "kbaseExpressionEstimateK"
@@ -44,8 +44,8 @@
     }
   }, {
     "id" : "max_k",
-    "optional" : true,
-    "advanced" : true,
+    "optional" : false,
+    "advanced" : false,
     "allow_multiple" : false,
     "default_values" : [ "200" ],
     "field_type" : "text",
@@ -55,47 +55,32 @@
       "min_int" : 2
     }
   }, {
-    "id" : "criterion",
+    "id" : "max_iter",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "100" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ ],
+      "validate_as": "int",
+      "min_int" : 10,
+      "max_int" : 10000
+    }
+  }, {
+    "id" : "neighb_size",
     "optional" : true,
     "advanced" : true,
     "allow_multiple" : false,
-    "default_values" : [ "asw" ],
-    "field_type" : "dropdown",
-    "dropdown_options":{
-      "options": [
-        {
-          "value": "asw",
-          "display": "asw",
-          "id": "asw",
-          "ui_name": "asw"
-        },
-        {
-          "value": "multiasw",
-          "display": "multiasw",
-          "id": "multiasw",
-          "ui_name": "multiasw"
-        },
-        {
-          "value": "ch",
-          "display": "ch",
-          "id": "ch",
-          "ui_name": "ch"
-        }
-      ]
+    "default_values" : [ "10" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [ ],
+      "validate_as": "int",
+      "min_int" : 10
     }
   }, {
-    "id" : "usepam",
-    "optional" : true,
-    "advanced" : true,
-    "allow_multiple" : false,
-    "default_values" : [ "true" ],
-    "field_type" : "checkbox",
-    "checkbox_options":{
-    "checked_value": true,
-    "unchecked_value": false
-    }
-  }, {
-    "id" : "alpha",
+    "id" : "max_items",
     "optional" : true,
     "advanced" : true,
     "allow_multiple" : false,
@@ -103,20 +88,11 @@
     "field_type" : "text",
     "text_options" : {
       "valid_ws_types" : [ ],
-      "validate_as": "float"
+      "validate_as": "int",
+      "min_int" : 1000,
+      "max_int" : 15000
     }
   }, {
-    "id" : "diss",
-    "optional" : true,
-    "advanced" : true,
-    "allow_multiple" : false,
-    "default_values" : [ "false" ],
-    "field_type" : "checkbox",
-    "checkbox_options":{
-    "checked_value": true,
-    "unchecked_value": false
-    }
-  },{
     "id" : "random_seed",
     "optional" : true,
     "advanced" : true,
@@ -132,7 +108,7 @@
     "service-mapping" : {
       "url" : "https://ci.kbase.us/services/feature_values/jsonrpc",
       "name" : "KBaseFeatureValues",
-      "method" : "estimate_k_new",
+      "method" : "estimate_k",
       "input_mapping" : [
         {
           "input_parameter": "input_expression_matrix",
@@ -156,20 +132,16 @@
           "target_property": "max_k"
         },
         {
-          "input_parameter": "criterion",
-          "target_property": "criterion"
+          "input_parameter": "max_iter",
+          "target_property": "max_iter"
         },
         {
-          "input_parameter": "usepam",
-          "target_property": "usepam"
+          "input_parameter": "neighb_size",
+          "target_property": "neighb_size"
         },
         {
-          "input_parameter": "alpha",
-          "target_property": "alpha"
-        },
-         {
-          "input_parameter": "diss",
-          "target_property": "diss"
+          "input_parameter": "max_items",
+          "target_property": "max_items"
         },
         {
           "input_parameter": "random_seed",

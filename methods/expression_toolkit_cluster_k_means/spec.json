@@ -7,7 +7,7 @@
   "categories" : ["active"],
   "widgets" : {
     "input" : null,
-    "output" : "kbaseExpressionClusterSet"
+    "output" : "kbaseExpressionFeatureClusters"
   },
   "parameters" : [ {
     "id" : "input_expression_matrix",
@@ -38,7 +38,7 @@
     "default_values" : [ "" ],
     "field_type" : "text",
     "text_options" : {
-      "valid_ws_types" : [ "KBaseFeatureValues.ClusterSet" ],
+      "valid_ws_types" : [ "KBaseFeatureValues.FeatureClusters" ],
       "is_output_name":true
     }
   }, {

@@ -1,22 +1,29 @@
 #
 # Define basic display information
 #
-name     : Associate Expression Features to Genome Features
+name     : Associate Expression Matrix to Genome Features
 
 tooltip  : |
-    Associate Expression Features to Genome Features
+    Associate an Expression Matrix with a Genome that contains features referenced in the matrix.
 
 screenshots :
     []
 
+replacement-text : Associated Expression data {{{input_data}}} to Genome {{{genome_id}}}
 #
 # Define the set of other narrative methods that should be suggested to the user.
 #
-method-suggestions :
-    related :
-        []
-    next :
-        []
+suggestions :
+    apps:
+        related :
+            []
+        next :
+            []
+    methods:
+        related :
+            []
+        next :
+            []
 
 
 #
@@ -25,32 +32,26 @@ method-suggestions :
 parameters :
     input_data:
         ui-name : |
-            Input Matrix
+            Expression Matrix
         short-hint : |
-            Input Expression Matrix
-        long-hint  : |
-            Input Expression Matrix
+            Select the Expression Matrix to associate with the Genome that references features contained within the expression data
 
     genome_id:
         ui-name : |
             Genome
         short-hint : |
-            Genome object containing features referenced by the Input Matrix
-        long-hint  : |
-            Input Expression Matrix
+            Select the Genome containing features referenced by the Expression Matrix
 
     out_matrix_id :
         ui-name : |
-            Output Matrix
+            Output Expression Matrix Name
         short-hint : |
-            Output Expression Matrix (optional, overwrites input if not set)
-        long-hint  : |
-            Output Expression Matrix (optional, overwrites input if not set)
+            Provide a name for the new Expression Matrix associated with the Genome
 
 
 description : |
-    Expression Toolkit reconnect matrix to genome
+    <p>This method associates the rows of an Expression Matrix to features contained in the Genome by matching the row IDs to genome feature IDs or aliases. Methods that operate on expression data often require this mapping between rows and features to properly function. This method is can be used in case the Expression Matrix was not associated with a Genome upon importing or if an updated Genome becomes available to associate with the Expression Matrix.</p>
+    
+    <p><strong>Team members who developed & deployed algorithm in KBase:</strong>
+    Paramvir Dehal, Roman Sutormin, Michael Sneddon, Srividya Ramakrishnan, Pavel Novichkov, Keith Keller.</p>
 
-
-technical-description : |
-    Expression Toolkit reconnect matrix to genome
