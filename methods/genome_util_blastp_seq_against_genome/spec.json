@@ -106,12 +106,12 @@
             "display": "BLOSUM-80"
           },
           {
-            "value": "PAM-70",
-            "display": "PAM-70"
-          },
-          {
             "value": "PAM-30",
             "display": "PAM-30"
+          },
+          {
+            "value": "PAM-70",
+            "display": "PAM-70"
           }
         ]
       }
