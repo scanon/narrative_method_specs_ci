@@ -49,6 +49,86 @@
         "valid_ws_types" : [ ]
       }
     }, {
+      "id" : "gap_opening_penalty",
+      "optional" : true,
+      "advanced" : true,
+      "allow_multiple" : false,
+      "default_values" : [ "5" ],
+      "field_type" : "text",
+      "text_options" : {
+        "valid_ws_types" : [ ]
+      }
+    }, {
+      "id" : "gap_extension_penalty",
+      "optional" : true,
+      "advanced" : true,
+      "allow_multiple" : false,
+      "default_values" : [ "2" ],
+      "field_type" : "text",
+      "text_options" : {
+        "valid_ws_types" : [ ]
+      }
+    }, {
+      "id" : "nucleotide_match_reward",
+      "optional" : true,
+      "advanced" : true,
+      "allow_multiple" : false,
+      "default_values" : [ "1" ],
+      "field_type" : "text",
+      "text_options" : {
+        "valid_ws_types" : [ ]
+      }
+    }, {
+      "id" : "nucleotide_mismatch_penalty",
+      "optional" : true,
+      "advanced" : true,
+      "allow_multiple" : false,
+      "default_values" : [ "-3" ],
+      "field_type" : "text",
+      "text_options" : {
+        "valid_ws_types" : [ ]
+      }
+    }, {
+      "id" : "word_size",
+      "optional" : true,
+      "advanced" : true,
+      "allow_multiple" : false,
+      "default_values" : [ "11" ],
+      "field_type" : "text",
+      "text_options" : {
+        "valid_ws_types" : [ ]
+      }
+    }, {
+      "id" : "maximum_score",
+      "optional" : true,
+      "advanced" : true,
+      "allow_multiple" : false,
+      "default_values" : [ "25" ],
+      "field_type" : "text",
+      "text_options" : {
+        "valid_ws_types" : [ ]
+      }
+    }, {
+      "id" : "maximum_alignment_2show",
+      "optional" : true,
+      "advanced" : true,
+      "allow_multiple" : false,
+      "default_values" : [ "15" ],
+      "field_type" : "text",
+      "text_options" : {
+        "valid_ws_types" : [ ]
+      }
+    }, {
+      "id" : "output_name",
+      "optional" : false,
+      "advanced" : false,
+      "allow_multiple" : false,
+      "default_values" : [ "balst_output_" ],
+      "field_type" : "text",
+      "text_options" : {
+        "valid_ws_types" : [ ]
+      }
+    }, {
       "id" : "blast_output_name",
       "optional" : false,
       "advanced" : false,
