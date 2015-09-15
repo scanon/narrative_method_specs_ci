@@ -1,9 +1,9 @@
 #
 # Define basic display information
 #
-name     : Blast search against a genome using blastp
+name     : BLASTP search against a genome 
 tooltip  : |
-    Blast search against a genome using blastp
+    BLASTP search against a genome
 
 screenshots :
     []
