@@ -59,7 +59,7 @@
         "valid_ws_types" : [ "GenomeUtil.BLAST_output" ]
       }
     }
-  } ],
+  ],
   "behavior" : {
     "service-mapping" : {
       "url" : "",
