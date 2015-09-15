@@ -39,16 +39,6 @@
         "valid_ws_types" : [ ]
       }
     }, {
-      "id" : "output_name",
-      "optional" : false,
-      "advanced" : false,
-      "allow_multiple" : false,
-      "default_values" : [ "balst_output_" ],
-      "field_type" : "text",
-      "text_options" : {
-        "valid_ws_types" : [ ]
-      }
-    }, {
       "id" : "gap_opening_penalty",
       "optional" : true,
       "advanced" : true,
