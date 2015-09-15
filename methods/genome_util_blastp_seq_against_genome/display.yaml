@@ -1,9 +1,9 @@
 #
 # Define basic display information
 #
-name     : Blast search against a genome
+name     : Blast search against a genome using blastp
 tooltip  : |
-    Blast search against a genome
+    Blast search against a genome using blastp
 
 screenshots :
     []
@@ -38,17 +38,7 @@ parameters :
         ui-name : |
             Query Sequence
         short-hint : |
-            sequence you want to search for
-    query :
-        ui-name : |
-            Query Sequence
-        short-hint : |
-            sequence you want to search for
-    blast_program :
-        ui-name : |
-            Blast Program
-        short-hint : |
-            Defines the type of blast search to perform
+            Amino acid sequence you want to search for
     e-value :
         ui-name : E-value
         short-hint : E-value cut off threshold
