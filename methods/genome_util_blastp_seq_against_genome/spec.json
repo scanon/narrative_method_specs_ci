@@ -43,7 +43,7 @@
       "optional" : true,
       "advanced" : true,
       "allow_multiple" : false,
-      "default_values" : [ "5" ],
+      "default_values" : [ "11" ],
       "field_type" : "text",
       "text_options" : {
         "valid_ws_types" : [ ]
@@ -53,7 +53,7 @@
       "optional" : true,
       "advanced" : true,
       "allow_multiple" : false,
-      "default_values" : [ "2" ],
+      "default_values" : [ "1" ],
       "field_type" : "text",
       "text_options" : {
         "valid_ws_types" : [ ]
@@ -63,7 +63,7 @@
       "optional" : true,
       "advanced" : true,
       "allow_multiple" : false,
-      "default_values" : [ "11" ],
+      "default_values" : [ "3" ],
       "field_type" : "text",
       "text_options" : {
         "valid_ws_types" : [ ]
