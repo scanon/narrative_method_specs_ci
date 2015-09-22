@@ -133,7 +133,7 @@
       "default_values" : [ "" ],
       "field_type" : "text",
       "text_options" : {
-        "valid_ws_types" : [ "GenomeUtil.BLAST_output" ]
+        "valid_ws_types" : [ "GenomeUtil.BlastOutput" ]
       }
     }
   ],
@@ -164,11 +164,11 @@
           "target_property" : "e-value"
         },
         {
-          "constant_value" : "0.00000000005",
+          "constant_value" : "0.3",
           "target_property" : "coverage"
         },
         {
-          "constant_value" : "0.00000003",
+          "constant_value" : "0.3",
           "target_property" : "identity"
         },
         {
