@@ -129,16 +129,6 @@
       "text_options" : {
         "valid_ws_types" : [ ]
       }
-    }, {
-      "id" : "blast_output_name",
-      "optional" : false,
-      "advanced" : false,
-      "allow_multiple" : false,
-      "default_values" : [ "" ],
-      "field_type" : "text",
-      "text_options" : {
-        "valid_ws_types" : [ "GenomeUtil.BlastOutput" ]
-      }
     }
   ],
   "behavior" : {
