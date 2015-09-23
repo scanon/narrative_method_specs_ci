@@ -103,7 +103,27 @@
       "optional" : true,
       "advanced" : true,
       "allow_multiple" : false,
-      "default_values" : [ "15" ],
+      "default_values" : [ "250" ],
+      "field_type" : "text",
+      "text_options" : {
+        "valid_ws_types" : [ ]
+      }
+    }, {
+      "id" : "extending_hits",
+      "optional" : true,
+      "advanced" : true,
+      "allow_multiple" : false,
+      "default_values" : [ "0" ],
+      "field_type" : "text",
+      "text_options" : {
+        "valid_ws_types" : [ ]
+      }
+    }, {
+      "id" : "maximum_seq_2show",
+      "optional" : true,
+      "advanced" : true,
+      "allow_multiple" : false,
+      "default_values" : [ "500" ],
       "field_type" : "text",
       "text_options" : {
         "valid_ws_types" : [ ]
@@ -124,6 +144,44 @@
           {
             "value": "T",
             "display": "Use MEGABLAST"
+          }
+        ]
+      }
+    }, {
+      "id" : "gapped_alignment",
+      "optional" : true,
+      "advanced" : true,
+      "allow_multiple" : false,
+      "default_values" : [ "T" ],
+      "field_type" : "dropdown",
+      "dropdown_options":{
+        "options": [
+          {
+            "value": "F",
+            "display": "False"
+          },
+          {
+            "value": "T",
+            "display": "True"
+          }
+        ]
+      }
+    }, {
+      "id" : "filter_query_seq",
+      "optional" : true,
+      "advanced" : true,
+      "allow_multiple" : false,
+      "default_values" : [ "T" ],
+      "field_type" : "dropdown",
+      "dropdown_options":{
+        "options": [
+          {
+            "value": "F",
+            "display": "False"
+          },
+          {
+            "value": "T",
+            "display": "True"
           }
         ]
       }
@@ -196,6 +254,22 @@
         {
           "input_parameter" : "mega_blast",
           "target_property" : "mega_blast"
+        },
+        {
+          "input_parameter" : "gapped_alignment",
+          "target_property" : "gapped_alignment"
+        },
+        {
+          "input_parameter" : "filter_query_seq",
+          "target_property" : "filter_query_seq"
+        },
+        {
+          "input_parameter" : "extending_hits",
+          "target_property" : "extending_hits"
+        },
+        {
+          "input_parameter" : "maximum_seq_2show",
+          "target_property" : "maximum_seq_2show"
         },
         {
           "input_parameter" : "output_name",
