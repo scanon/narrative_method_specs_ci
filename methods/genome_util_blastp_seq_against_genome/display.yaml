@@ -71,10 +71,10 @@ parameters :
         short-hint : Filter query sequence
     extending_hits :
         ui-name : Threshold for extending hits
-        short-hint : Threshold for extending hits (default: 0)
+        short-hint : Threshold for extending hits
     maximum_seq_2show :
         ui-name : Number of database sequences to show
-        short-hint : Number of database sequences to show (default: 500)
+        short-hint : Number of database sequences to show
 
 
 description : |
