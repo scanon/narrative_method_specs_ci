@@ -66,6 +66,9 @@ parameters :
     maximum_alignment_2show :
         ui-name : Number of alignment
         short-hint : Maximum number of alignment to show
+    mega_blast :
+        ui-name : Use MEGABLAST
+        short-hint : Use MEGABLAST
 
 
 description : |
