@@ -63,6 +63,18 @@ parameters :
     substitution_matrix:
         ui-name : Substitution matrix
         short-hint : Substitution matrix
+    gapped_alignment :
+        ui-name : Perform gapped alignment
+        short-hint : Perform gapped alignment
+    filter_query_seq :
+        ui-name : Filter query sequence
+        short-hint : Filter query sequence
+    extending_hits :
+        ui-name : Threshold for extending hits
+        short-hint : Threshold for extending hits (default: 0)
+    maximum_seq_2show :
+        ui-name : Number of database sequences to show
+        short-hint : Number of database sequences to show (default: 500)
 
 
 description : |
