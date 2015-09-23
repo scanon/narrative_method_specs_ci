@@ -109,6 +109,25 @@
         "valid_ws_types" : [ ]
       }
     }, {
+      "id" : "mega_blast",
+      "optional" : true,
+      "advanced" : true,
+      "allow_multiple" : false,
+      "default_values" : [ "F" ],
+      "field_type" : "dropdown",
+      "dropdown_options":{
+        "options": [
+          {
+            "value": "F",
+            "display": "Use blastn"
+          },
+          {
+            "value": "T",
+            "display": "Use MEGABLAST"
+          }
+        ]
+      }
+    }, {
       "id" : "output_name",
       "optional" : false,
       "advanced" : false,
@@ -173,6 +192,10 @@
         {
           "input_parameter" : "maximum_alignment_2show",
           "target_property" : "maximum_alignment_2show"
+        },
+        {
+          "input_parameter" : "mega_blast",
+          "target_property" : "mega_blast"
         },
         {
           "input_parameter" : "output_name",
