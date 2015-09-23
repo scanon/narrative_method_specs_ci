@@ -93,10 +93,14 @@
       "optional" : true,
       "advanced" : true,
       "allow_multiple" : false,
-      "default_values" : [ "BLOSUM-62" ],
+      "default_values" : [ "Default" ],
       "field_type" : "dropdown",
       "dropdown_options":{
         "options": [
+          {
+            "value": "Default",
+            "display": "Default"
+          },
           {
             "value": "BLOSUM-62",
             "display": "BLOSUM-62"
@@ -164,16 +168,28 @@
           "target_property" : "e-value"
         },
         {
-          "constant_value" : "0.3",
-          "target_property" : "coverage"
+          "input_parameter" : "gap_opening_penalty",
+          "target_property" : "gap_opening_penalty"
         },
         {
-          "constant_value" : "0.3",
-          "target_property" : "identity"
+          "input_parameter" : "gap_extension_penalty",
+          "target_property" : "gap_extension_penalty"
         },
         {
-          "constant_value" : "50",
-          "target_property" : "score"
+          "input_parameter" : "word_size",
+          "target_property" : "word_size"
+        },
+        {
+          "input_parameter" : "maximum_score",
+          "target_property" : "maximum_score"
+        },
+        {
+          "input_parameter" : "maximum_alignment_2show",
+          "target_property" : "maximum_alignment_2show"
+        },
+        {
+          "input_parameter" : "substitution_matrix",
+          "target_property" : "substitution_matrix"
         },
         {
           "input_parameter" : "output_name",

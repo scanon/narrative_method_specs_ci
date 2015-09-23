@@ -177,6 +177,10 @@
           "target_property" : "word_size"
         },
         {
+          "input_parameter" : "maximum_score",
+          "target_property" : "maximum_score"
+        },
+        {
           "input_parameter" : "maximum_alignment_2show",
           "target_property" : "maximum_alignment_2show"
         },
