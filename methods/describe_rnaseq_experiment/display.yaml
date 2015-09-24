@@ -44,7 +44,7 @@ parameters :
             Platform
         short-hint : |
             Specify the platform for the RNASeq Reads
-    Library_Type :
+    Library_type :
         ui-name : |
             Library Type
         short-hint : |
