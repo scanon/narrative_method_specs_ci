@@ -69,12 +69,12 @@ parameters :
             Number of Replicates
         short-hint : |
             Enter the total number of Replicates in the Experiment
-   sample_ids :
+    sample_ids :
         ui-name : |
             Sample IDs 
         short-hint : |
             Select the Sample IDs used in the experiment
-   sample_short_names :
+    sample_short_names :
         ui-name : |
             Sample short names
         short-hint : |
