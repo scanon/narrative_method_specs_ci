@@ -59,31 +59,11 @@
         "valid_ws_types" : [ ]
       }
     }, {
-      "id" : "nucleotide_match_reward",
-      "optional" : true,
-      "advanced" : true,
-      "allow_multiple" : false,
-      "default_values" : [ "1" ],
-      "field_type" : "text",
-      "text_options" : {
-        "valid_ws_types" : [ ]
-      }
-    }, {
-      "id" : "nucleotide_mismatch_penalty",
-      "optional" : true,
-      "advanced" : true,
-      "allow_multiple" : false,
-      "default_values" : [ "-3" ],
-      "field_type" : "text",
-      "text_options" : {
-        "valid_ws_types" : [ ]
-      }
-    }, {
       "id" : "word_size",
       "optional" : true,
       "advanced" : true,
       "allow_multiple" : false,
-      "default_values" : [ "11" ],
+      "default_values" : [ "3" ],
       "field_type" : "text",
       "text_options" : {
         "valid_ws_types" : [ ]
@@ -103,7 +83,7 @@
       "optional" : true,
       "advanced" : true,
       "allow_multiple" : false,
-      "default_values" : [ "250" ],
+      "default_values" : [ "15" ],
       "field_type" : "text",
       "text_options" : {
         "valid_ws_types" : [ ]
@@ -113,7 +93,7 @@
       "optional" : true,
       "advanced" : true,
       "allow_multiple" : false,
-      "default_values" : [ "0" ],
+      "default_values" : [ "12" ],
       "field_type" : "text",
       "text_options" : {
         "valid_ws_types" : [ ]
@@ -127,25 +107,6 @@
       "field_type" : "text",
       "text_options" : {
         "valid_ws_types" : [ ]
-      }
-    }, {
-      "id" : "mega_blast",
-      "optional" : true,
-      "advanced" : true,
-      "allow_multiple" : false,
-      "default_values" : [ "F" ],
-      "field_type" : "dropdown",
-      "dropdown_options":{
-        "options": [
-          {
-            "value": "F",
-            "display": "Use blastn"
-          },
-          {
-            "value": "T",
-            "display": "Use MEGABLAST"
-          }
-        ]
       }
     }, {
       "id" : "gapped_alignment",
@@ -186,6 +147,37 @@
         ]
       }
     }, {
+      "id" : "substitution_matrix",
+      "optional" : true,
+      "advanced" : true,
+      "allow_multiple" : false,
+      "default_values" : [ "Default" ],
+      "field_type" : "dropdown",
+      "dropdown_options":{
+        "options": [
+          {
+            "value": "Default",
+            "display": "Default"
+          },
+          {
+            "value": "BLOSUM-62",
+            "display": "BLOSUM-62"
+          },
+          {
+            "value": "BLOSUM-80",
+            "display": "BLOSUM-80"
+          },
+          {
+            "value": "PAM-30",
+            "display": "PAM-30"
+          },
+          {
+            "value": "PAM-70",
+            "display": "PAM-70"
+          }
+        ]
+      }
+    }, {
       "id" : "output_name",
       "optional" : false,
       "advanced" : false,
@@ -212,7 +204,7 @@
           "target_property" : "query"
         },
         {
-          "constant_value" : "blastn",
+          "constant_value" : "blastx",
           "target_property" : "blast_program"
         },
         {
@@ -232,14 +224,6 @@
           "target_property" : "gap_extension_penalty"
         },
         {
-          "input_parameter" : "nucleotide_match_reward",
-          "target_property" : "nucleotide_match_reward"
-        },
-        {
-          "input_parameter" : "nucleotide_mismatch_penalty",
-          "target_property" : "nucleotide_mismatch_penalty"
-        },
-        {
           "input_parameter" : "word_size",
           "target_property" : "word_size"
         },
@@ -252,8 +236,8 @@
           "target_property" : "maximum_alignment_2show"
         },
         {
-          "input_parameter" : "mega_blast",
-          "target_property" : "mega_blast"
+          "input_parameter" : "substitution_matrix",
+          "target_property" : "substitution_matrix"
         },
         {
           "input_parameter" : "gapped_alignment",
