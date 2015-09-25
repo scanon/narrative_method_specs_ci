@@ -1,9 +1,9 @@
 #
 # Define basic display information
 #
-name     : BLASTX search against a genome 
+name     : TBLASTN search against a genome 
 tooltip  : |
-    BLASTX search against a genome
+    TBLASTN search against a genome
 
 screenshots :
     []
@@ -38,7 +38,7 @@ parameters :
         ui-name : |
             Query Sequence
         short-hint : |
-            Nucleotide sequence you want to search for
+            Amino acid sequence you want to search for
     e-value :
         ui-name : E-value
         short-hint : E-value cut off threshold
