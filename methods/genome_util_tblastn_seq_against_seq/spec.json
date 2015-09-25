@@ -196,8 +196,8 @@
       "method" : "blast_against_genome",
       "input_mapping" : [
         {
-          "input_parameter" : "genomes",
-          "target_property" : "genome_ids"
+          "input_parameter" : "target_seqs",
+          "target_property" : "target_seqs"
         },
         {
           "input_parameter" : "query",
