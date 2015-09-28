@@ -82,7 +82,7 @@
           "target_property": "workspaceName"
         },
         {
-          "input_parameter": "obj_name",
+          "input_parameter": "out_id",
           "target_property": "featureset_name"
         }
       ]
