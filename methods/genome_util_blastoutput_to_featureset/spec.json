@@ -75,16 +75,6 @@
           "input_parameter" : "entries",
           "target_property" : "entries"
         }
-      ],
-      "output_mapping" : [
-        {
-          "narrative_system_variable": "workspace",
-          "target_property": "workspaceName"
-        },
-        {
-          "input_parameter": "out_id",
-          "target_property": "featureset_name"
-        }
       ]
     }
   }
