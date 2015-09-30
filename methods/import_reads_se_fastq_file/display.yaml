@@ -1,6 +1,6 @@
 name     : SINGLE END READS
 subtitle : none
-tooltip  : Upload a SingleEndLibrary from a FASTA/FASTQ file into your narrative.
+tooltip  : Upload a SingleEndLibrary from a FASTA/FASTQ file into your Narrative.  Your uncompressed data should not be larger than 100GB.
 
 screenshots :
     []
