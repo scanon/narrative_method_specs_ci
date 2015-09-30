@@ -32,8 +32,8 @@
   "behavior" : {
     "service-mapping" : {
       "url" : "",
-      "name" : "GenomeFeatureComparator",
-      "method" : "compare_genome_features",
+      "name" : "onerepotest",
+      "method" : "send_data",
       "input_mapping" : [
         {
           "input_parameter": "param0",
