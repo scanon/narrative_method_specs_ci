@@ -6,7 +6,7 @@
   "categories" : ["active"],
   "widgets" : {
     "input" : null,
-    "output" : "kbaseBlastOutput"
+    "output" : "kbaseFeatureSet"
   },
   "parameters" : [ {
       "id" : "in_id",
@@ -26,7 +26,8 @@
       "default_values" : [ "" ],
       "field_type" : "text",
       "text_options" : {
-        "valid_ws_types" : [ ]
+        "is_output_name":true,
+        "valid_ws_types" : [ "KBaseCollections.FeatureSet" ]
       }
     }, {
       "id" : "evalue",
