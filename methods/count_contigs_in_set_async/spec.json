@@ -41,7 +41,7 @@
 			],
 			"output_mapping": [
 				{
-					"service_method_output_path": ["contig_count"],
+					"service_method_output_path": [],
 					"target_property": "contigCount"
 				},
 				{
