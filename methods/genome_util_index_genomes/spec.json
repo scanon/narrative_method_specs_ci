@@ -1,0 +1,87 @@
+{
+  "ver" : "1.0.0",
+  "authors" : [ ],
+  "contact" : "help@kbase.us",
+  "visble" : true,
+  "categories" : ["active"],
+  "widgets" : {
+    "input" : null,
+    "output" : null 
+  },
+  "parameters" : [ {
+      "id" : "genomes",
+      "optional" : false,
+      "advanced" : false,
+      "allow_multiple" : true,
+      "default_values" : [ "" ],
+      "field_type" : "text",
+      "text_options" : {
+        "valid_ws_types" : [ "KBaseGenomes.Genome" ]
+      }
+    }, {
+      "id" : "index_program",
+      "optional" : false,
+      "advanced" : false,
+      "allow_multiple" : false,
+      "default_values" : [ "formatdb" ],
+      "field_type" : "dropdown",
+      "dropdown_options":{
+        "options": [
+          {
+            "value": "formatdb",
+            "display": "False"
+          }
+        ]
+      }
+    }, {
+      "id" : "description",
+      "optional" : false,
+      "advanced" : false,
+      "allow_multiple" : false,
+      "default_values" : [ "" ],
+      "field_type" : "text",
+      "text_options" : {
+        "valid_ws_types" : [ ]
+      }
+    }, {
+      "id" : "blast_index_name",
+      "optional" : false,
+      "advanced" : false,
+      "allow_multiple" : false,
+      "default_values" : [ "" ],
+      "field_type" : "text",
+      "text_options" : {
+        "valid_ws_types" : [ ]
+      }
+    }
+  ],
+  "behavior" : {
+    "service-mapping" : {
+      "url" : "",
+      "name" : "KBaseGenomeUtil",
+      "method" : "index_genomes",
+      "input_mapping" : [
+        {
+          "input_parameter" : "genomes",
+          "target_property" : "genome_ids"
+        },
+        {
+          "input_parameter" : "index_program",
+          "target_property" : "index_program"
+        },
+        {
+          "narrative_system_variable": "workspace",
+          "target_property" : "ws_id"
+        },
+        {
+          "input_parameter" : "description",
+          "target_property" : "description"
+        },
+        {
+          "input_parameter" : "blast_index_name",
+          "target_property" : "blast_index_name"
+        }
+      ]
+    }
+  }
+}
