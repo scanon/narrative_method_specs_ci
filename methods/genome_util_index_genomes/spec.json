@@ -44,7 +44,7 @@
         "valid_ws_types" : [ ]
       }
     }, {
-      "id" : "blast_index_name",
+      "id" : "blastindex_name",
       "optional" : false,
       "advanced" : false,
       "allow_multiple" : false,
@@ -78,8 +78,8 @@
           "target_property" : "description"
         },
         {
-          "input_parameter" : "blast_index_name",
-          "target_property" : "blast_index_name"
+          "input_parameter" : "blastindex_name",
+          "target_property" : "blastindex_name"
         }
       ]
     }

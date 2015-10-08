@@ -27,11 +27,11 @@ suggestions :
 # Configure the display and description of the parameters
 #
 parameters :
-    genomes :
+    blastindex_name :
         ui-name : |
-            Genome
+            Prebuilt search index
         short-hint : |
-            select the genome you want to search
+            select prebuilt sequence search index
         long-hint  : |
             additional information can be placed here
     query :

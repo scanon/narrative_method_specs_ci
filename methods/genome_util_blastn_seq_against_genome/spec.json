@@ -9,14 +9,14 @@
     "output" : "kbaseBlastOutput"
   },
   "parameters" : [ {
-      "id" : "genomes",
+      "id" : "blastindex_name",
       "optional" : false,
       "advanced" : false,
-      "allow_multiple" : true,
+      "allow_multiple" : false,
       "default_values" : [ "" ],
       "field_type" : "text",
       "text_options" : {
-        "valid_ws_types" : [ "KBaseGenomes.Genome" ]
+        "valid_ws_types" : [ "GenomeUtil.BlastIndex" ]
       }
     }, {
       "id" : "query",
@@ -204,8 +204,8 @@
       "method" : "blast_against_genome",
       "input_mapping" : [
         {
-          "input_parameter" : "genomes",
-          "target_property" : "genome_ids"
+          "input_parameter" : "blastindex_name",
+          "target_property" : "blastindex_name"
         },
         {
           "input_parameter" : "query",
