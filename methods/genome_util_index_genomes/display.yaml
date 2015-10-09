@@ -1,9 +1,9 @@
 #
 # Define basic display information
 #
-name     : Build genome search index
+name     : Build Genome Search Index
 tooltip  : |
-    Build genome search index
+    Build Genome Search Index
 
 screenshots :
     []
