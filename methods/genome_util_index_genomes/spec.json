@@ -81,6 +81,16 @@
           "input_parameter" : "blastindex_name",
           "target_property" : "blastindex_name"
         }
+      ],
+      "output_mapping" : [
+        {
+          "narrative_system_variable": "workspace",
+          "target_property": "workspaceName"
+        },
+        {
+          "input_parameter": "blastindex_name",
+          "target_property": "blastindex_name"
+        }
       ]
     }
   }
