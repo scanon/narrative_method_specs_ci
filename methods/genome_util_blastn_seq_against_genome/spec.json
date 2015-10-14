@@ -36,7 +36,7 @@
       "default_values" : [ "0.05" ],
       "field_type" : "text",
       "text_options" : {
-        "valid_ws_types" : [ ]
+        "validate_as": "float"
       }
     }, {
       "id" : "gap_opening_penalty",
@@ -46,7 +46,7 @@
       "default_values" : [ "-1" ],
       "field_type" : "text",
       "text_options" : {
-        "valid_ws_types" : [ ]
+        "validate_as": "int"
       }
     }, {
       "id" : "gap_extension_penalty",
@@ -56,7 +56,7 @@
       "default_values" : [ "-1" ],
       "field_type" : "text",
       "text_options" : {
-        "valid_ws_types" : [ ]
+        "validate_as": "int"
       }
     }, {
       "id" : "nucleotide_match_reward",
@@ -66,7 +66,7 @@
       "default_values" : [ "1" ],
       "field_type" : "text",
       "text_options" : {
-        "valid_ws_types" : [ ]
+        "validate_as": "int"
       }
     }, {
       "id" : "nucleotide_mismatch_penalty",
@@ -76,7 +76,7 @@
       "default_values" : [ "-3" ],
       "field_type" : "text",
       "text_options" : {
-        "valid_ws_types" : [ ]
+        "validate_as": "int"
       }
     }, {
       "id" : "word_size",
@@ -86,7 +86,7 @@
       "default_values" : [ "11" ],
       "field_type" : "text",
       "text_options" : {
-        "valid_ws_types" : [ ]
+        "validate_as": "int"
       }
     }, {
       "id" : "maximum_score",
@@ -96,7 +96,7 @@
       "default_values" : [ "25" ],
       "field_type" : "text",
       "text_options" : {
-        "valid_ws_types" : [ ]
+        "validate_as": "int"
       }
     }, {
       "id" : "maximum_alignment_2show",
@@ -106,7 +106,7 @@
       "default_values" : [ "250" ],
       "field_type" : "text",
       "text_options" : {
-        "valid_ws_types" : [ ]
+        "validate_as": "int"
       }
     }, {
       "id" : "extending_hits",
@@ -116,7 +116,7 @@
       "default_values" : [ "0" ],
       "field_type" : "text",
       "text_options" : {
-        "valid_ws_types" : [ ]
+        "validate_as": "int"
       }
     }, {
       "id" : "maximum_seq_2show",
@@ -126,7 +126,7 @@
       "default_values" : [ "500" ],
       "field_type" : "text",
       "text_options" : {
-        "valid_ws_types" : [ ]
+        "validate_as": "int"
       }
     }, {
       "id" : "mega_blast",
