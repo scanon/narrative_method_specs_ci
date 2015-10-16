@@ -38,7 +38,7 @@
     "advanced" : false,
     "allow_multiple" : false,
     "default_values" : [ "" ],
-    "field_type" : "text",
+    "field_type" : "text"
   },{
     "id" : "platform",
     "optional" : true,
@@ -159,6 +159,10 @@
   "behavior" : {
     "none" : {
       "output_mapping" : [
+	{
+          "narrative_system_variable": "workspace",
+          "target_property": "ws_id"
+        },
         {
           "input_parameter": "experiment_id",
           "target_property": "experiment_id"
@@ -207,10 +211,6 @@
         },{
           "input_parameter": "publication_date",
           "target_property": "publication_date"
-        },
-        {
-          "narrative_system_variable": "workspace",
-          "target_property": "ws_id"
         }
       ]
     }

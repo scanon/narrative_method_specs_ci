@@ -104,6 +104,7 @@ parameters :
             Publication Date
         short-hint : |
             Enter the Publication Date from you got the RNASeq data 
+
 description : |
     <p>This method allows you to records the details of  RNASeq analysis </p>
     
