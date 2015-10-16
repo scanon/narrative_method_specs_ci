@@ -209,8 +209,8 @@
           "input_parameter": "source_id",
           "target_property": "source_id"
         },{
-          "input_parameter": "publication_date",
-          "target_property": "publication_date"
+          "input_parameter": "external_source_date",
+          "target_property": "external_source_date"
         }
       ]
     }
