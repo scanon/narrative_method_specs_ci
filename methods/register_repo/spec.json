@@ -52,8 +52,8 @@
 			],
 			"output_mapping": [
 				{
-					"service_method_output_path": [0],
-					"target_property": "timestamp"
+					"service_method_output_path": [],
+					"target_property": "output"
 				},
 				{
 					"input_parameter": "git_url",
