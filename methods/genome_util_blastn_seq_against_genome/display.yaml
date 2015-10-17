@@ -68,7 +68,7 @@ parameters :
         ui-name : Threshold for extending hits
         short-hint : Specify threshold for extending hits 
     maximum_seq_2show :
-        ui-name : Max taget sequences
+        ui-name : Max target sequences
         short-hint : Select the maximum number of aligned sequences to display.
         gapped_alignment :
         ui-name : Gapped alignment
