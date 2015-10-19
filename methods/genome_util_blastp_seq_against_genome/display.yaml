@@ -41,16 +41,16 @@ parameters :
             Copy/paste the amino-acid sequence in FASTA format
     e-value :
         ui-name : E-value
-        short-hint : E-value cut off threshold. Results with an expected value above this threshold will not be returned
+        short-hint : E-value cut off threshold. Results with an expected value above this threshold will not be returned.
     output_name :
         ui-name : Output object name
-        short-hint : Your desired output object name in the workspace
+        short-hint : Your desired output object name in the workspace.
     gap_opening_penalty :
         ui-name : Gap opening penalty
-        short-hint : The cost to open new gap where gap is inserted in an alignment
+        short-hint : The cost to open new gap where gap is inserted in an alignment.
     gap_extension_penalty :
         ui-name : Gap extension penalty
-        short-hint : The cost of extending an existing gap
+        short-hint : The cost of extending an existing gap.
     word_size :
         ui-name : Word size
         short-hint : The size of the initial word that must be matched between the query sequence and target sequence. The default is 3.
@@ -59,16 +59,16 @@ parameters :
         short-hint : Maximum number of alignments to show. The default is 15.
     gapped_alignment :
         ui-name : Gapped alignment
-        short-hint : Perform gapped alignment
+        short-hint : Perform gapped alignment.
     filter_query_seq :
         ui-name : Filter query sequence
-        short-hint : Filter out segments of the query sequence that have low compositional complexity
+        short-hint : Filter out segments of the query sequence that have low compositional complexity.
     extending_hits :
         ui-name : Threshold for extending hits
-        short-hint : Specify threshold for extending hits
+        short-hint : Specify threshold for extending hits.
     maximum_seq_2show :
         ui-name : Max target sequences
-        short-hint : Select the maximum number of aligned sequences to display
+        short-hint : Select the maximum number of aligned sequences to display.
     substitution_matrix :
         ui-name : Substitution matrix
         short-hint : The name of the alignment matrix that contains a reward or penalty for each possible match or mismatch. The default is BLOSUM-62.
