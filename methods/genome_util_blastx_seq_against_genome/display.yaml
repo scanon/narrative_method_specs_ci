@@ -69,7 +69,7 @@ parameters :
     maximum_seq_2show :
         ui-name : Max target sequences
         short-hint : Select the maximum number of aligned sequences to display
-    substitution matrix :
+    substitution_matrix :
         ui-name : Substitution matrix
         short-hint : The name of the alignment matrix that contains a reward or penalty for each possible match or mismatch. The default is BLOSUM-62.
 
