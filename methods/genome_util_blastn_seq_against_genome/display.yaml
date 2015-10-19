@@ -79,11 +79,11 @@ parameters :
 
 
 description : |
-    <p>BLAST is a Basic Local Alignment Search Tool and was developed by Altschul et al. 1990 [1]. KBase provides a BLAST tool for sequence search against one or more KBase genomes. KBase “BLASTN search against genome” takes a nucleotide query sequence as an input and searches for it against the sequence databases for one or more indexed genomes selected by the user. Prior to running this method, a single genome or multiple genomes of interest must be indexed using “Build Genome Search Index” method. It aligns the query sequence against every subject sequence in the targeted genome and reports the results (above a certain similarity threshold set by the user) in the form of a ranked list of hits. Every hit in the list is assigned a similarity score, an E-value and an identity score. Since the BLAST algorithm uses a heuristic approach, the E-value indicates the likelihood of an alignment happening purely by chance and thus provides the expected number of random hits associated with that score. 
+    <p>BLAST is a Basic Local Alignment Search Tool and was developed by Altschul et al. 1990 [1]. KBase provides a BLAST tool for sequence search against one or more KBase genomes. KBase “BLASTN search against genome” takes a nucleotide query sequence as an input and searches for it against the sequence databases for one or more indexed genomes selected by the user. Prior to running this method, a single genome or multiple genomes of interest must be indexed using “Build Genome Search Index” method. It aligns the query sequence against every subject sequence in the targeted genome and reports the results (above a certain similarity threshold set by the user) in the form of a ranked list of hits. Every hit in the list is assigned a similarity score, an E-value and an identity score. Since the BLAST algorithm uses a heuristic approach, the E-value indicates the likelihood of an alignment happening purely by chance and thus provides the expected number of random hits associated with that score. </p> 
 publications : |
 pmid: 2231712
 display-text: |
-Altschul, S.F., Gish, W., Miller, W., Myers, E.W. & Lipman, D.J. (1990) "Basic local alignment search tool." J. Mol. Biol. 215:403-410. 
+   <p>Altschul, S.F., Gish, W., Miller, W., Myers, E.W. & Lipman, D.J. (1990) "Basic local alignment search tool." J. Mol. Biol. 215:403-410. </p>
 link: http://www.ncbi.nlm.nih.gov/pubmed/2231712
 
 
