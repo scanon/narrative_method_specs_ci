@@ -86,11 +86,5 @@ description : |
     <p>Prior to running this method, a single genome or multiple genomes of interest must be indexed using “Build Genome Search Index” method.</p>
     <p>It aligns the query sequence against every subject sequence in the targeted genome and reports the results (above a certain similarity threshold set by the user) in the form of a ranked list of hits.</p>
     <p>Every hit in the list is assigned a similarity score, an E-value and an identity score. Since the BLAST algorithm uses a heuristic approach, the E-value indicates the likelihood of an alignment happening purely by chance and thus provides the expected number of random hits associated with that score.</p>
-        
-    
-publications : |
-        pmid : 2231712
-display text : |
-        Altschul, S.F., Gish, W., Miller, W., Myers, E.W. & Lipman, D.J. (1990) "Basic local alignment search tool." J. Mol. Biol. 215:403-410
-        link : http://www.ncbi.nlm.nih.gov/pubmed/2231712
+   
 
