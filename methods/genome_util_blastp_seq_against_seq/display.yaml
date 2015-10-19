@@ -31,6 +31,8 @@ parameters :
             Target sequences
         short-hint : |
             Copy/paste the target amino-acid sequences in FASTA format
+        long-hint  : |
+            additional information can be placed here
     query :
         ui-name : |
             Query Sequence
@@ -68,7 +70,7 @@ parameters :
         short-hint : Filter out segments of the query sequence that have low compositional complexity.
     substitution matrix :
         ui-name : Substitution matrix
-        short-hint : The name of the alignment matrix that contains a reward or penalty for each possible match or mismatch. The default is BLOSUM-62.
+        short-hint : The name of the alignment matrix that contains a reward or penalty for each possible match or mismatch. The default is BLOSUM62.
 
 
 description : |
