@@ -60,7 +60,7 @@ parameters :
     maximum_seq_2show :
         ui-name : Max target sequences
         short-hint : Select the maximum number of aligned sequences to display.
-        gapped_alignment :
+    gapped_alignment :
         ui-name : Gapped alignment
         short-hint : Perform gapped alignment
     filter_query_seq :
@@ -72,11 +72,16 @@ parameters :
 
 
 description : |
-    <p>BLAST is a Basic Local Alignment Search Tool and was developed by Altschul et al. 1990 [1]. KBase provides a BLAST tool for sequence search against one or more KBase genomes. KBase “BLASTP search against sequences” takes an amino-acid query sequence as an input and searches for it against the target amino-acid sequences given by the user.  It aligns the query sequence against every subject sequence and reports the results (above a certain similarity threshold set by the user) in the form of a ranked list of hits. Every hit in the list is assigned a similarity score, an E-value and an identity score. Since the BLAST algorithm uses a heuristic approach, the E-value indicates the likelihood of an alignment happening purely by chance and thus provides the expected number of random hits associated with that score. 
-publications : |
-pmid: 2231712
-display-text: |
-Altschul, S.F., Gish, W., Miller, W., Myers, E.W. & Lipman, D.J. (1990) "Basic local alignment search tool." J. Mol. Biol. 215:403-410. 
-link: http://www.ncbi.nlm.nih.gov/pubmed/2231712
+    <p>Blast is a Basic Local Alignment Search Tool and was developed by Altschul et al. 1990 [1]. KBase provides a BLAST tool for sequence search against one or more KBase genomes.</p> 
+    <p>KBase “BLASTP search against sequences” takes an amino-acid query sequence as an input and searches for it against the target amino-acid sequences given by the user.</p>
+    <p>It aligns the query sequence against every subject sequence and reports the results (above a certain similarity threshold set by the user) in the form of a ranked list of hits.</p>
+    <p>Every hit in the list is assigned a similarity score, an E-value and an identity score. Since the BLAST algorithm uses a heuristic approach, the E-value indicates the likelihood of an alignment happening purely by chance and thus provides the expected number of random hits associated with that score.</p>
+   
+publications :
+    -
+        pmid: 2231712
+        display-text: |
+            Altschul, S.F., Gish, W., Miller, W., Myers, E.W. & Lipman, D.J. (1990) "Basic local alignment search tool." J. Mol. Biol. 215:403-410
+        link: http://www.ncbi.nlm.nih.gov/pubmed/2231712
 
 
