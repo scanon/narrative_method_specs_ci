@@ -66,9 +66,6 @@ parameters :
     extending_hits :
         ui-name : Threshold for extending hits
         short-hint : Specify threshold for extending hits
-    maximum_seq_2show :
-        ui-name : Max target sequences
-        short-hint : Select the maximum number of aligned sequences to display
     substitution_matrix :
         ui-name : Substitution matrix
         short-hint : The name of the alignment matrix that contains a reward or penalty for each possible match or mismatch. The default is BLOSUM-62.
