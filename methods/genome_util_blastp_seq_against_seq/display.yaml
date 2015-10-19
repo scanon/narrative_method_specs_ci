@@ -26,7 +26,7 @@ suggestions :
 # Configure the display and description of the parameters
 #
 parameters :
-    blastindex_name :
+    target_seqs :
         ui-name : |
             Target sequences
         short-hint : |
@@ -68,7 +68,7 @@ parameters :
     filter_query_seq :
         ui-name : Filter query sequence
         short-hint : Filter out segments of the query sequence that have low compositional complexity.
-    substitution matrix :
+    substitution_matrix :
         ui-name : Substitution matrix
         short-hint : The name of the alignment matrix that contains a reward or penalty for each possible match or mismatch. The default is BLOSUM62.
 
