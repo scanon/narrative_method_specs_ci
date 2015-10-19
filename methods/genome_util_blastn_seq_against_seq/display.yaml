@@ -26,7 +26,7 @@ suggestions :
 # Configure the display and description of the parameters
 #
 parameters :
-    blastindex_name :
+    target_seqs :
         ui-name : |
             Target sequences
         short-hint : |
@@ -62,6 +62,12 @@ parameters :
     maximum_alignment_2show :
         ui-name : Number of alignments
         short-hint : Maximum number of alignments to show
+    extending_hits :
+        ui-name : Threshold for extending hits
+        short-hint : Specify threshold for extending hits
+    maximum_seq_2show :
+        ui-name : Max target sequences
+        short-hint : Select the maximum number of aligned sequences to display
     mega_blast :
         ui-name : Algorithm
         short-hint : The default is blastn. Use Megablast for comparing a query to closely related sequences
@@ -71,12 +77,7 @@ parameters :
     filter_query_seq :
         ui-name : Filter query sequence
         short-hint : Filter out segments of the query sequence that have low compositional complexity
-    extending_hits :
-        ui-name : Threshold for extending hits
-        short-hint : Specify threshold for extending hits
-    maximum_seq_2show :
-        ui-name : Max target sequences
-        short-hint : Select the maximum number of aligned sequences to display
+
 
 
 description : |
