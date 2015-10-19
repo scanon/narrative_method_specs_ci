@@ -69,16 +69,6 @@
         "valid_ws_types" : [ ]
       }
     }, {
-      "id" : "maximum_score",
-      "optional" : true,
-      "advanced" : true,
-      "allow_multiple" : false,
-      "default_values" : [ "25" ],
-      "field_type" : "text",
-      "text_options" : {
-        "valid_ws_types" : [ ]
-      }
-    }, {
       "id" : "maximum_alignment_2show",
       "optional" : true,
       "advanced" : true,
@@ -226,10 +216,6 @@
         {
           "input_parameter" : "word_size",
           "target_property" : "word_size"
-        },
-        {
-          "input_parameter" : "maximum_score",
-          "target_property" : "maximum_score"
         },
         {
           "input_parameter" : "maximum_alignment_2show",
