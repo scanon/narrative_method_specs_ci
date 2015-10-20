@@ -39,15 +39,7 @@ parameters :
         long-hint  : |
             After the method has finished running, an ClusterSet data object will be added to your data panel. Provide a name for this data object, using only alphanumeric characters and underscores.
 
-    max_items :
-        ui-name : Max. number of rows
-        short-hint : Maximum number of rows (recommended only for large datasets)
-        long-hint  : Maximum number of rows (recommended only for large datasets)
 
-    algorithm :
-        ui-name : Algorithm
-        short-hint : Select between a normal clustering algorithm (hclust) and a fast version (flashClust)
-        long-hint  : Select between a normal clustering algorithm (hclust) and a fast version (flashClust)
 
 
 description : |
