@@ -51,13 +51,17 @@
 				}
 			],
 			"output_mapping": [
+                {
+                    "service_method_output_path": [],
+                    "target_property": "output"
+                },
 				{
 					"input_parameter": "module_name",
-					"target_property": "module_name"
+					"target_property": "input_module_name"
 				},
 				{
 					"input_parameter": "git_url",
-					"target_property": "git_url"
+					"target_property": "input_git_url"
 				}
 			]
 		}
