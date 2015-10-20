@@ -1,10 +1,10 @@
 #
 # define display information
 #
-name: Register Repo
+name: SDK - Register Repo
 
 tooltip: |
-	Register dynamically servive repository.
+	Register dynamically service repository to the Catalog.
 
 screenshots: []
 
