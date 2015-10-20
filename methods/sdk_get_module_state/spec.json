@@ -39,7 +39,7 @@
 		"service-mapping": {
 			"url": "${endpoint}/catalog",
 			"name": "Catalog",
-			"method": "get_module_info",
+			"method": "get_module_state",
 			"input_mapping": [
 				{
 					"input_parameter": "module_name",

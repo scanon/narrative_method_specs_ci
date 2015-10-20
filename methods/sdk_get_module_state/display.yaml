@@ -1,10 +1,10 @@
 #
 # define display information
 #
-name: SDK - Get Module Details
+name: SDK - Get Module State
 
 tooltip: |
-	Get module details from the catalog
+	Get module state from the catalog
 
 screenshots: []
 
