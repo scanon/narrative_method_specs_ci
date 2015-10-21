@@ -43,17 +43,15 @@ parameters :
 
 
 description : |
-    <p>This method organizes gene expression data into a dendrogram (cluster tree) by using distance and linkage criteria to analyze dissimilarity between observations in the data and sorting these observations into the branches of the tree. Agglomerative clustering is used to build a hierarchy of clusters by progressively merging individual clusters into groups. This is useful for understanding the similarities and dissimilarities between sets of data based on their grouping patterns throughout the cluster tree.</p>
 
-    <p>Begin by selecting or importing both the expression dataset to analyze and the genome associated with the expression dataset using the Add Data button. Provide a name for the output set of clusters. Define the height to cut the branches of the tree, set the parameters for computing the dissimilarity between sets, and select the hierarchical clustering algorithm to use for the analysis.</p>
+    <p>Begin by selecting or importing both the expression dataset to analyze and the genome associated with the expression dataset using the Add Data button. Provide a name for the output set of clusters. Then, Weighted Gene Co-expression Network Analysis (WGCNA) can be performed.</p>
 
-    <p>Description of hierarchical clustering algorithms: 
-        <ul>
-        <li>hclust (default): Performs a hierarchical cluster analysis using a set of dissimilarities for the number of objects being clustered (<a href="http://www.inside-r.org/packages/cran/amap/docs/hcluster">technical documentation for hclust</a>)</li>
-        <li>flashClust: Faster version of the hclust algorithm (<a href="https://cran.r-project.org/web/packages/flashClust/flashClust.pdf">technical documentation for flashClust</a>)</li>
-    </ul></p>
+    <p>For detailed informatoion about WGCNA, see http://labs.genetics.ucla.edu/horvath/CoexpressionNetwork/Rpackages/WGCNA/Tutorials/Simulated-00-Background.pdf</p>
+    <p>This method allows users to use WGCNA to detect gene clusters from a expression matrix</p>
+
 
     <p><strong>Team members who developed & deployed algorithm in KBase:</strong>
     Paramvir Dehal, Roman Sutormin, Michael Sneddon, Srividya Ramakrishnan, Pavel Novichkov, Keith Keller.</p>
-    
+    <p>Fei He added this additional methods into this expression toolkit</p>
+    <p>Oct 21, 2015</p>
     <p>For questions, <a href="mailto:help@kbase.us">e-mail help@kbase.us</a></p>
