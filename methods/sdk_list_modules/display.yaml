@@ -28,9 +28,19 @@ suggestions:
 #
 # Configure the display and description of parameters
 #
-parameters : {}
-
-
+parameters :
+    include_released :
+        ui-name : |
+            Include released modules
+        short-hint: Include released modules
+    include_unreleased :
+        ui-name : |
+            Include unreleased modules
+        short-hint: Include unreleased modules
+    include_disabled :
+        ui-name : |
+            Include disabled modules
+        short-hint: Include disabled modules
 
 description : |
 	<p>List modules.</p>
