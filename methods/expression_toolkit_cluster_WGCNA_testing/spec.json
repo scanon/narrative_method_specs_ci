@@ -80,7 +80,7 @@
   } ],
   "behavior" : {
     "service-mapping" : {
-      "url" : "https://ci.kbase.us/services/feature_values/jsonrpc",
+      "url" : "http://http://140.221.66.225/services/feature_values/jsonrpc",
       "name" : "KBaseFeatureValues",
       "method" : "cluster_hierarchical",
       "input_mapping" : [
