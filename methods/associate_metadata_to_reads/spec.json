@@ -9,7 +9,7 @@
     "output" : "null"
   },
    "parameters" : [ {
-    "id" : "ws_rnaseqSample_id",
+    "id" : "sample_id",
     "optional" : false,
     "advanced" : false,
     "allow_multiple" : true,
@@ -19,33 +19,6 @@
       "valid_ws_types" : [ ]
     }
   }, {
-    "id" : "ws_referenceAnnotation_id",
-    "optional" : false,
-    "advanced" : false,
-    "allow_multiple" : false,
-    "default_values" : [ "" ],
-    "field_type" : "dropdown",
-    "dropdown_options":{
-      "options": [
-        {
-          "value": "ath",
-          "display": "Arabidopsis thaliana"
-        },
-        {
-          "value": "ptr",
-          "display": "Populus trichocarpa"
-        },
-        {
-          "value": "sbi",
-          "display": "Sorghum bicolor"
-        },
-        {
-          "value": "osa",
-          "display": "Oryza sativa"
-        }
-      ]
-    },
-  }, {
     "id" : "output_obj_name",
     "optional" : false,
     "advanced" : false,
@@ -53,43 +26,40 @@
     "default_values" : [ "" ],
     "field_type" : "text"
   }, {
-    "id" : "ws_reference_assembly_id",
+    "id" : "ws_genome_id",
     "optional" : false,
     "advanced" : false,
     "allow_multiple" : false,
     "default_values" : [ "" ],
     "field_type" : "text"
   }, {
-    "id" : "ws_bowtieIndex_id",
+    "id" : "genome_scientific_name",
     "optional" : false,
     "advanced" : false,
     "allow_multiple" : false,
     "default_values" : [ "" ],
     "field_type" : "text"
   }, {
-    "id" : "read_mismatches",
+    "id" : "replicate_id",
     "optional" : false,
     "advanced" : false,
     "allow_multiple" : false,
     "default_values" : [ "" ],
     "field_type" : "text"
   }, {
-    "id" : "read_gap_length",
+    "id" : "platform",
     "optional" : false,
     "advanced" : false,
     "allow_multiple" : false,
     "default_values" : [ "" ],
     "field_type" : "text"
   }, {
-    "id" : "read_edit_dist",
+    "id" : "sample_desc",
     "optional" : false,
     "advanced" : false,
     "allow_multiple" : false,
     "default_values" : [ "" ],
     "field_type" : "text",
-    "text_options" : {
-      "validate_as" : "int"
-    }
   }, {
     "id" : "min_intron_length",
     "optional" : false,
