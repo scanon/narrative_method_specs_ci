@@ -157,8 +157,11 @@
     "field_type" : "text"
   }],
   "behavior" : {
-    "none" : {
-      "output_mapping" : [
+    "service_mapping" : {
+    	"url" : "",
+    	"name" : "KBaseRNASeq",
+    	"method" : "SetupRNASeqAnalysis",
+	"input_mapping" : [    
 	{
           "narrative_system_variable": "workspace",
           "target_property": "ws_id"
@@ -212,7 +215,14 @@
           "input_parameter": "external_source_date",
           "target_property": "external_source_date"
         }
+      ],
+      "output_mapping" : [
+      	{
+      	 "service_method_output_path": [],
+	 "target_property": "job_id" 	
+      	}
       ]
     }
-  }
+  },
+  "job_id_output_field" : "job_id"
 }
