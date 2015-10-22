@@ -1,48 +1,178 @@
 #
 # Define basic display information
 #
-name     : Align Reads Using Tophat 
+name     : align_reads_using_tophat
 tooltip  : |
-    Align Reads Using Tophat 
+    align_reads_using_tophat
 
 screenshots :
     []
 
-replacement-text : Created a new bowtie2 Index  for {{{input_genome}}}
-
 #
 # Define the set of other narrative methods that should be suggested to the user.
 #
-suggestions :
-    apps:
-        related :
-            []
-        next :
-            []
-    methods:
-        related :
-            []
-        next :
-            []
+method-suggestions :
+    related :
+        []
+    next :
+        []
 
 
 #
 # Configure the display and description of the parameters
 #
 parameters :
-    input_genome:
+    ws_rnaseqSample_id :
         ui-name : |
-            Genome
+            RNASeq Sample
         short-hint : |
-            Select a reference genome 
+            when allowed types are specified, a dropdown of typed objects in the current workspace appears
+        description  : |
+            when allowed types are specified, a dropdown of typed objects in the current workspace appears
+        placeholder : |
+            placeholder text is possible
 
-    out_index_name:
+
+    ws_referenceAnnotation_id :
         ui-name : |
-            output
+            Reference Annotation
         short-hint : |
-            Enter a name for the output index object
+            textareas are possible; also notice that no red indicator arrow is shown for optional fields
+        description  : |
+            notice that if a field is marked as optional, no red indicator arrow is shown
+            
+    output_obj_name :
+        ui-name : |
+            tophat read alignment output
+        short-hint : |
+            if a text field indicates it is an output name, then it is ok to specify an object that does not yet exist; notice also that spaces are not allowed in names.
+        description  : |
+            if a text field indicates it is an output name, then it is ok to specify an object that does not yet exist
+        placeholder : |
+            provide a name for the output
+            
+    ws_reference_assembly_id :
+        ui-name : |
+            Reference Assembly Id
+        short-hint : |
+            text fields can have default values, and can validate as an integer if specified in the spec
+        description  : |
+            text fields can validate as an integer if specified in the spec
+            
+    ws_bowtieIndex_id :
+        ui-name : |
+            Bowtie Index Id
+        short-hint : |
+            same for float values- the input must be parsable as a number
+        description  : |
+            same for float values- the input must be parsable as a number        
+    
+    read_mismatches :
+        ui-name : |
+            Mismatches in Reads
+        short-hint : |
+            fields marked as advanced automatically are hidden; these fields should ALWAYS be optional or have a default value
+        description  : |
+            fields marked as advanced automatically are hidden; these fields should ALWAYS be optional or have a default value    
+    
+    read_gap_length :
+        ui-name : |
+            Gap length in reads
+        short-hint : |
+            checkboxes allow you to return one of two possible values as configured in the spec
+        description  : |
+            checkboxes allow you to return one of two possible values as configured in the spec
+            
+    read_edit_dist :
+        ui-name : |
+            read distance
+        short-hint : |
+            dropdown fields are also possible to force selection of predefined options
+        description  : |
+            dropdown fields are also possible to force selection of predefined options    
+    
+    min_intron_length :
+        ui-name : |
+            minimum length of intron
+        short-hint : |
+            any text field can be marked to accept a list of things instead of one thing
+        description  : |
+            any text field can be marked to accept a list of things instead of one thing
+
+    max_intron_length :
+        ui-name : |
+            max length of intron
+        short-hint : |
+            checkboxes allow you to return one of two possible values as configured in the spec
+        description  : |
+            checkboxes allow you to return one of two possible values as configured in the spec
+            
+    num_threads :
+        ui-name : |
+            number of threads
+        short-hint : |
+            dropdown fields are also possible to force selection of predefined options
+        description  : |
+            dropdown fields are also possible to force selection of predefined options    
+    
+    report_secondary_alignments :
+        ui-name : |
+            report secondary alignments
+        short-hint : |
+            any text field can be marked to accept a list of things instead of one thing
+        description  : |
+            any text field can be marked to accept a list of things instead of one thing
+    
+    no_coverage_search :
+        ui-name : |
+            no coverage search
+        short-hint : |
+            checkboxes allow you to return one of two possible values as configured in the spec
+        description  : |
+            checkboxes allow you to return one of two possible values as configured in the spec
+ 
+    library_type :
+        ui-name : |
+            read distance
+        short-hint : |
+            dropdown fields are also possible to force selection of predefined options
+        description  : |
+            dropdown fields are also possible to force selection of predefined options    
+
+
 
 description : |
-   This method is used to create the Bowtie2 Indexes for a reference genome object
+    <p>This description can be marked up with <b>html</b> and can have <a href="https://kbase.us">links</a></p>
+    <p>This description should be understandable by a novice biologist user.</p>
+
+technical-description : |
+    <p>A technical description should describe exactly what is going on under the covers, probably linking to
+    some publications, providing algorithms, etc.</p>
+    <pre>
+       # some psuedocode
+       # or examples should go here
+    </pre>
+    <p>This section should be for experts who actually want to know what it is you are doing in the method.</p>
+
+
+#
+# various ways to include publications, probably the best approach
+# is to use a pmid so the front-end can query pubmed directly
+# and render whatever information is needed.  display-text and
+# link could be included for backup, for instance if pubmed is down.
+#
+publications :
+    -
+        pmid: 2231712
+        display-text: Basic local alignment search tool.
+        link: http://www.ncbi.nlm.nih.gov/pubmed/2231712
+    -
+        display-text: Some made up paper
+    -
+        link: http://www.ncbi.nlm.nih.gov/pubmed/2231712
+    -
+        pmid: 2231712
+
+
    
     
