@@ -1,9 +1,9 @@
 #
 # Define basic display information
 #
-name     : Example Method
+name     : Associate metadata to reads
 tooltip  : |
-    This is an example method to highlight the various supported input field options.
+    Associate metadata to reads
 
 screenshots :
     []
@@ -22,7 +22,7 @@ method-suggestions :
 # Configure the display and description of the parameters
 #
 parameters :
-    genome :
+    ws_genome_id :
         ui-name : |
             Genome
         short-hint : |
@@ -33,17 +33,17 @@ parameters :
             placeholder text is possible
 
 
-    description :
+    sample_id :
         ui-name : |
-            Description
+            sample
         short-hint : |
             textareas are possible; also notice that no red indicator arrow is shown for optional fields
         description  : |
             notice that if a field is marked as optional, no red indicator arrow is shown
             
-    output_genome :
+    output_obj_name :
         ui-name : |
-            Output Genome
+            Associate Metadata To Reads Output 
         short-hint : |
             if a text field indicates it is an output name, then it is ok to specify an object that does not yet exist; notice also that spaces are not allowed in names.
         description  : |
@@ -51,54 +51,101 @@ parameters :
         placeholder : |
             provide a name for the output
             
-    int_value :
+    library_type :
         ui-name : |
-            Integer
+            library type
         short-hint : |
             text fields can have default values, and can validate as an integer if specified in the spec
         description  : |
             text fields can validate as an integer if specified in the spec
             
-    float_value :
+    replicate_id :
         ui-name : |
-            Float
+            replicate id
         short-hint : |
             same for float values- the input must be parsable as a number
         description  : |
             same for float values- the input must be parsable as a number        
     
-    advanced_float_value :
+    platform :
         ui-name : |
-            Another Float
+            platform type
         short-hint : |
             fields marked as advanced automatically are hidden; these fields should ALWAYS be optional or have a default value
         description  : |
             fields marked as advanced automatically are hidden; these fields should ALWAYS be optional or have a default value    
     
-    checkbox_example :
+    sample_desc :
         ui-name : |
-            Want a checkbox?
+            sample description
         short-hint : |
             checkboxes allow you to return one of two possible values as configured in the spec
         description  : |
             checkboxes allow you to return one of two possible values as configured in the spec
             
-    dropdown_example :
+    title :
         ui-name : |
-            Dropdown Example
+            title
         short-hint : |
             dropdown fields are also possible to force selection of predefined options
         description  : |
             dropdown fields are also possible to force selection of predefined options    
     
-    list_of_things :
+    source_id :
         ui-name : |
-            Thing
+            source
         short-hint : |
             any text field can be marked to accept a list of things instead of one thing
         description  : |
             any text field can be marked to accept a list of things instead of one thing
+             
+    ext_source_date :
+        ui-name : |
+            external source date
+        short-hint : |
+            text fields can have default values, and can validate as an integer if specified in the spec
+        description  : |
+            text fields can validate as an integer if specified in the spec
+            
+    domain :
+        ui-name : |
+            domain type
+        short-hint : |
+            same for float values- the input must be parsable as a number
+        description  : |
+            same for float values- the input must be parsable as a number        
     
+    genome_scientific_name :
+        ui-name : |
+            genome scientific name
+        short-hint : |
+            fields marked as advanced automatically are hidden; these fields should ALWAYS be optional or have a default value
+        description  : |
+            fields marked as advanced automatically are hidden; these fields should ALWAYS be optional or have a default value    
+    
+    tissue :
+        ui-name : |
+            tissue types
+        short-hint : |
+            checkboxes allow you to return one of two possible values as configured in the spec
+        description  : |
+            checkboxes allow you to return one of two possible values as configured in the spec
+            
+    condition :
+        ui-name : |
+            condition/treatments type
+        short-hint : |
+            dropdown fields are also possible to force selection of predefined options
+        description  : |
+            dropdown fields are also possible to force selection of predefined options    
+    
+    custom :
+        ui-name : |
+            custom
+        short-hint : |
+            any text field can be marked to accept a list of things instead of one thing
+        description  : |
+            any text field can be marked to accept a list of things instead of one thing
 
 description : |
     <p>This description can be marked up with <b>html</b> and can have <a href="https://kbase.us">links</a></p>
