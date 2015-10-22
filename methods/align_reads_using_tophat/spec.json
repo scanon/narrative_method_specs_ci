@@ -148,8 +148,8 @@
   "behavior" : {
     "service-mapping" : {
       "url" : "",
-      "name" : "KBaseGenomeUtil",
-      "method" : "blast_against_genome",
+      "name" : "KBaseRNASeq",
+      "method" : "align_reads_using_tophat",
       "input_mapping" : [
         {
           "input_parameter" : "ws_rnaseqSample_id",
