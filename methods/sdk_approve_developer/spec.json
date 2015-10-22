@@ -28,7 +28,7 @@
 		"service-mapping": {
 			"url": "${endpoint}/catalog",
 			"name": "Catalog",
-			"method": "get_module_state",
+			"method": "approve_developer",
 			"input_mapping": [
 				{
 					"input_parameter": "developer_name",
