@@ -9,96 +9,25 @@
     "output" : "null"
   },
    "parameters" : [ {
-    "id" : "sample_id",
+    "id" : "ws_genome_id",
     "optional" : false,
     "advanced" : false,
     "allow_multiple" : true,
     "default_values" : [ "" ],
     "field_type" : "text",
     "text_options" : {
-      "valid_ws_types" : [ ]
+      "valid_ws_types" : ["KBaseGenomes.Genome" ]
+    }
+  }, {
+    "id" : "sample_id",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
     }
   }, {
     "id" : "output_obj_name",
-    "optional" : false,
-    "advanced" : false,
-    "allow_multiple" : false,
-    "default_values" : [ "" ],
-    "field_type" : "text"
-  }, {
-    "id" : "ws_genome_id",
-    "optional" : false,
-    "advanced" : false,
-    "allow_multiple" : false,
-    "default_values" : [ "" ],
-    "field_type" : "text"
-  }, {
-    "id" : "genome_scientific_name",
-    "optional" : false,
-    "advanced" : false,
-    "allow_multiple" : false,
-    "default_values" : [ "" ],
-    "field_type" : "text"
-  }, {
-    "id" : "replicate_id",
-    "optional" : false,
-    "advanced" : false,
-    "allow_multiple" : false,
-    "default_values" : [ "" ],
-    "field_type" : "text"
-  }, {
-    "id" : "platform",
-    "optional" : false,
-    "advanced" : false,
-    "allow_multiple" : false,
-    "default_values" : [ "" ],
-    "field_type" : "text"
-  }, {
-    "id" : "sample_desc",
-    "optional" : false,
-    "advanced" : false,
-    "allow_multiple" : false,
-    "default_values" : [ "" ],
-    "field_type" : "text",
-  }, {
-    "id" : "min_intron_length",
-    "optional" : false,
-    "advanced" : false,
-    "allow_multiple" : false,
-    "default_values" : [ "" ],
-    "field_type" : "text",
-    "text_options" : {
-      "validate_as" : "int"
-    }
-  }, {
-    "id" : "max_intron_length",
-    "optional" : false,
-    "advanced" : false,
-    "allow_multiple" : false,
-    "default_values" : [ "" ],
-    "field_type" : "text",
-    "text_options" : {
-      "validate_as" : "int"
-    }
-  }, {
-    "id" : "num_threads",
-    "optional" : false,
-    "advanced" : false,
-    "allow_multiple" : false,
-    "default_values" : [ "" ],
-    "field_type" : "text",
-    "text_options" : {
-      "validate_as" : "int"
-    }
-  }, {
-    "id" : "report_secondary_alignments",
-    "optional" : false,
-    "advanced" : false,
-    "allow_multiple" : false,
-    "default_values" : [ "" ],
-    "field_type" : "text"
-  }, {
-    "id" : "no_coverage_search",
     "optional" : false,
     "advanced" : false,
     "allow_multiple" : false,
@@ -110,69 +39,177 @@
     "advanced" : false,
     "allow_multiple" : false,
     "default_values" : [ "" ],
-    "field_type" : "text"
+    "field_type" : "text",
+    }
+  }, {
+    "id" : "replicate_id",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    }
+  }, {
+    "id" : "platform",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    }
+  }, {
+    "id" : "sample_desc",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    }
+  }, {
+    "id" : "title",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    }
+  }, {
+    "id" : "source",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    }
+  }, {
+    "id" : "source_id",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    }
+  }, {
+    "id" : "ext_source_date",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    }
+  }, {
+    "id" : "domain",
+    "optional":false,
+    "advanced":false,
+    "allow_multiple":false,
+    "default_values":[""],
+    "field_type" : "text",
+    }
+  }, {
+    "id" : "genome_scientific_name",
+    "optional":false,
+    "advanced":false,
+    "allow_multiple":false,
+    "default_values":[""],
+    "field_type" : "text",
+    }
+  }, {
+    "id" : "tissue",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [  ]
+    }
+  }, {
+    "id" : "condition",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : [  ]
+    }
+  }, {
+    "id" : "custom",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
   } ],
   "behavior" : {
     "service-mapping" : {
       "url" : "",
-      "name" : "KBaseGenomeUtil",
-      "method" : "blast_against_genome",
+      "name" : "KBaseRNASeq",
+      "method" : "associate_metadata_to_reads",
       "input_mapping" : [
         {
-          "input_parameter" : "ws_rnaseqSample_id",
-          "target_property" : "ws_rnaseqSample_id"
+          "input_parameter" : "ws_genome_id",
+          "target_property" : "ws_genome_id"
         },
         {
-          "input_parameter" : "ws_referenceAnnotation_id",
-          "target_property" : "ws_referenceAnnotation_id"
+          "input_parameter" : "sample_id",
+          "target_property" : "sample_id"
         },
         {
           "narrative_system_variable": "workspace",
           "target_property" : "ws_id"
         },
         {
-          "input_parameter" : "ws_reference_assembly_id",
-          "target_property" : "ws_reference_assembly_id"
-        },
-        {
-          "input_parameter" : "ws_bowtieIndex_id",
-          "target_property" : "ws_bowtieIndex_id"
-        },
-        {
-          "input_parameter" : "read_mismatches",
-          "target_property" : "read_mismatches"
-        },
-        {
-          "input_parameter" : "read_gap_length",
-          "target_property" : "read_gap_length"
-        },
-        {
-          "input_parameter" : "read_edit_dist",
-          "target_property" : "read_edit_dist"
-        },
-        {
-          "input_parameter" : "min_intron_length",
-          "target_property" : "min_intron_length"
-        },
-        {
-          "input_parameter" : "max_intron_length",
-          "target_property" : "maxi_intron_length"
-        },
-        {
-          "input_parameter" : "num_threads",
-          "target_property" : "num_threads"
-        },
-        {
-          "input_parameter" : "report_secondary_alignments",
-          "target_property" : "report_secondary_alignments"
-        },
-        {
-          "input_parameter" : "no_coverage_search",
-          "target_property" : "no_coverage_search"
-        },
-        {
           "input_parameter" : "library_type",
           "target_property" : "library_type"
+        },
+        {
+          "input_parameter" : "replicate_id",
+          "target_property" : "replicate_id"
+        },
+        {
+          "input_parameter" : "platform",
+          "target_property" : "platform"
+        },
+        {
+          "input_parameter" : "sample_desc",
+          "target_property" : "sample_desc"
+        },
+        {
+          "input_parameter" : "title",
+          "target_property" : "title"
+        },
+        {
+          "input_parameter" : "source",
+          "target_property" : "source"
+        },
+        {
+          "input_parameter" : "source_id",
+          "target_property" : "source_id"
+        },
+        {
+          "input_parameter" : "ext_source_date",
+          "target_property" : "ext_source_date"
+        },
+        {
+          "input_parameter" : "domain",
+          "target_property" : "domain"
+        },
+        {
+          "input_parameter" : "genome_scientific_name",
+          "target_property" : "genome_scientific_name"
+        },
+        {
+          "input_parameter" : "tissue",
+          "target_property" : "tissue"
+        },
+        {
+          "input_parameter" : "condition",
+          "target_property" : "condition"
+        },
+       {
+          "input_parameter" : "custom",
+          "target_property" : "custom"
         }
       ],
       "output_mapping" : [
@@ -182,7 +219,7 @@
         },
         {
           "input_parameter": "output_obj_name",
-          "target_property": "associate_metadata_to_reads"
+          "target_property": "associate_metadata_to_reads_output_name"
         }
       ]
     }
