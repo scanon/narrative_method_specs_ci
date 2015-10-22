@@ -19,7 +19,6 @@
       "valid_ws_types" : [ ]
     }
   }, {
-  "parameters" : [ {
     "id" : "ws_referenceAnnotation_id",
     "optional" : false,
     "advanced" : false,
@@ -47,212 +46,175 @@
       ]
     },
   }, {
+    "id" : "output_obj_name",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text"
+  }, {
+    "id" : "ws_reference_assembly_id",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text"
+  }, {
     "id" : "ws_bowtieIndex_id",
     "optional" : false,
     "advanced" : false,
     "allow_multiple" : false,
     "default_values" : [ "" ],
+    "field_type" : "text"
+  }, {
+    "id" : "read_mismatches",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text"
+  }, {
+    "id" : "read_gap_length",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text"
+  }, {
+    "id" : "read_edit_dist",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
     "field_type" : "text",
     "text_options" : {
-      "validate_as": "int"
+      "validate_as" : "int"
     }
+  }, {
+    "id" : "min_intron_length",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    "text_options" : {
+      "validate_as" : "int"
+    }
+  }, {
+    "id" : "max_intron_length",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    "text_options" : {
+      "validate_as" : "int"
+    }
+  }, {
+    "id" : "num_threads",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text",
+    "text_options" : {
+      "validate_as" : "int"
+    }
+  }, {
+    "id" : "report_secondary_alignments",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text"
+  }, {
+    "id" : "no_coverage_search",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text"
+  }, {
+    "id" : "library_type",
+    "optional" : false,
+    "advanced" : false,
+    "allow_multiple" : false,
+    "default_values" : [ "" ],
+    "field_type" : "text"
   } ],
   "behavior" : {
-      "none" : {
-      "output_mapping" : [
-      	{
-          "narrative_system_variable": "workspace",
-          "target_property": "ws_id"
+    "service-mapping" : {
+      "url" : "",
+      "name" : "KBaseGenomeUtil",
+      "method" : "blast_against_genome",
+      "input_mapping" : [
+        {
+          "input_parameter" : "ws_rnaseqSample_id",
+          "target_property" : "ws_rnaseqSample_id"
         },
         {
-          "input_parameter": "input_genome",
-          "target_property": "reference"
-        },{
-          "input_parameter": "out_index_name",
-          "target_property": "output_obj_name"
+          "input_parameter" : "ws_referenceAnnotation_id",
+          "target_property" : "ws_referenceAnnotation_id"
+        },
+        {
+          "narrative_system_variable": "workspace",
+          "target_property" : "ws_id"
+        },
+        {
+          "input_parameter" : "ws_reference_assembly_id",
+          "target_property" : "ws_reference_assembly_id"
+        },
+        {
+          "input_parameter" : "ws_bowtieIndex_id",
+          "target_property" : "ws_bowtieIndex_id"
+        },
+        {
+          "input_parameter" : "read_mismatches",
+          "target_property" : "read_mismatches"
+        },
+        {
+          "input_parameter" : "read_gap_length",
+          "target_property" : "read_gap_length"
+        },
+        {
+          "input_parameter" : "read_edit_dist",
+          "target_property" : "read_edit_dist"
+        },
+        {
+          "input_parameter" : "min_intron_length",
+          "target_property" : "min_intron_length"
+        },
+        {
+          "input_parameter" : "max_intron_length",
+          "target_property" : "maxi_intron_length"
+        },
+        {
+          "input_parameter" : "num_threads",
+          "target_property" : "num_threads"
+        },
+        {
+          "input_parameter" : "report_secondary_alignments",
+          "target_property" : "report_secondary_alignments"
+        },
+        {
+          "input_parameter" : "no_coverage_search",
+          "target_property" : "no_coverage_search"
+        },
+        {
+          "input_parameter" : "library_type",
+          "target_property" : "library_type"
+        }
+      ],
+      "output_mapping" : [
+        {
+          "narrative_system_variable": "workspace",
+          "target_property": "workspaceName"
+        },
+        {
+          "input_parameter": "output_obj_name",
+          "target_property": "tophat_read_alignment_output_name"
         }
       ]
     }
   }
 }
-
-
-
-
-
-{
-  "ver" : "1.0.0",
-  "authors" : [ ],
-  "kb_contributers": [ "wstester3" ],
-  "contact" : "help@kbase.us",
-  "visble" : true,
-  "categories" : ["active"],
-  "widgets" : {
-    "input" : null,
-    "output" : "kbaseDefaultNarrativeOutput"
-  },
-  "parameters" : [ {
-    "id" : "genome",
-    "optional" : false,
-    "advanced" : false,
-    "allow_multiple" : false,
-    "default_values" : [ "" ],
-    "field_type" : "text",
-    "text_options" : {
-      "valid_ws_types" : [ "KBaseGenomes.Genome" ]
-    }
-  }, {
-    "id" : "description",
-    "optional" : true,
-    "advanced" : false,
-    "allow_multiple" : false,
-    "default_values" : [ "" ],
-    "field_type" : "textarea",
-    "textarea_options" : {
-      "n_rows" : 6
-    }
-  },
-  {
-    "id" : "output_genome",
-    "optional" : true,
-    "advanced" : false,
-    "allow_multiple" : false,
-    "default_values" : [ "" ],
-    "field_type" : "text",
-    "text_options" : {
-      "valid_ws_types" : [ "KBaseGenomes.Genome" ],
-      "is_output_name":true
-    }
-  }, {
-    "id" : "int_value",
-    "optional" : false,
-    "advanced" : false,
-    "allow_multiple" : false,
-    "default_values" : [ "188823" ],
-    "field_type" : "text",
-    "text_options" : {
-      "validate_as": "int"
-    }
-  }, {
-    "id" : "float_value",
-    "optional" : true,
-    "advanced" : false,
-    "allow_multiple" : false,
-    "default_values" : [ "" ],
-    "field_type" : "text",
-    "text_options" : {
-      "validate_as": "float"
-    }
-  }, {
-    "id" : "advanced_float_value",
-    "optional" : true,
-    "advanced" : true,
-    "allow_multiple" : false,
-    "default_values" : [ "" ],
-    "field_type" : "text",
-    "text_options" : {
-      "validate_as": "float",
-      "max_float" : 125.2,
-      "min_float" :-1e2
-    }
-  }, {
-    "id": "checkbox_example",
-    "optional":false,
-    "advanced":false,
-    "allow_multiple":false,
-    "default_values":[""],
-    "field_type" : "checkbox",
-    "checkbox_options":{
-      "checked_value": 1,
-      "unchecked_value": 0
-    }
-  }, {
-    "id" : "dropdown_example",
-    "optional" : false,
-    "advanced" : false,
-    "allow_multiple" : false,
-    "default_values" : [ "" ],
-    "field_type" : "dropdown",
-    "dropdown_options":{
-      "options": [
-        {
-          "value": "yes",
-          "display": "Yes"
-        },
-        {
-          "value": "no",
-          "display": "No"
-        },
-        {
-          "value": "maybe",
-          "display": "Maybe so"
-        },
-        {
-          "value": "complicated",
-          "display": "It's complicated"
-        }
-      ]
-    }
-  }, {
-    "id" : "list_of_things",
-    "optional" : true,
-    "advanced" : true,
-    "allow_multiple" : true,
-    "default_values" : [ "" ],
-    "field_type" : "text",
-    "text_options" : {
-      "valid_ws_types" : [  ]
-    }
-  }],
-  "behavior" : {
-    "none" : {
-      "output_mapping" : [
-        {
-          "narrative_system_variable": "workspace",
-          "target_property": "ws"
-        },
-        {
-          "input_parameter": "genome",
-          "target_property": "genome"
-        },
-        {
-          "input_parameter": "description",
-          "target_property": "description"
-        },
-        {
-          "input_parameter": "output_genome",
-          "target_property": "output_genome"
-        },
-        {
-          "input_parameter": "int_value",
-          "target_property": "int_value"
-        },
-        {
-          "input_parameter": "float_value",
-          "target_property": "float_value"
-        },
-        {
-          "input_parameter": "advanced_float_value",
-          "target_property": "advanced_float_value"
-        },
-        {
-          "input_parameter": "checkbox_example",
-          "target_property": "checkbox_example"
-        },
-        {
-          "input_parameter": "dropdown_example",
-          "target_property": "dropdown_example"
-        },
-        {
-          "input_parameter": "list_of_things",
-          "target_property": "list_of_things"
-        }
-      ]
-    }
-  }
-}
-
-
-
-
-
