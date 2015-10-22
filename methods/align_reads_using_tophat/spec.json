@@ -16,7 +16,7 @@
     "default_values" : [ "" ],
     "field_type" : "text",
     "text_options" : {
-      "valid_ws_types" : [ ]
+      "valid_ws_types" : ["KBaseRNASeq.RNASeqSample" ]
     }
   }, {
     "id" : "ws_referenceAnnotation_id",
@@ -24,27 +24,10 @@
     "advanced" : false,
     "allow_multiple" : false,
     "default_values" : [ "" ],
-    "field_type" : "dropdown",
-    "dropdown_options":{
-      "options": [
-        {
-          "value": "ath",
-          "display": "Arabidopsis thaliana"
-        },
-        {
-          "value": "ptr",
-          "display": "Populus trichocarpa"
-        },
-        {
-          "value": "sbi",
-          "display": "Sorghum bicolor"
-        },
-        {
-          "value": "osa",
-          "display": "Oryza sativa"
-        }
-      ]
-    },
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : ["KBaseRNASeq.ReferenceAnnotation" ]
+    }
   }, {
     "id" : "output_obj_name",
     "optional" : false,
@@ -58,28 +41,40 @@
     "advanced" : false,
     "allow_multiple" : false,
     "default_values" : [ "" ],
-    "field_type" : "text"
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : ["KBaseRNASeq.ReferenceAnnotation" ]
+    }
   }, {
     "id" : "ws_bowtieIndex_id",
     "optional" : false,
     "advanced" : false,
     "allow_multiple" : false,
     "default_values" : [ "" ],
-    "field_type" : "text"
+    "field_type" : "text",
+    "text_options" : {
+      "valid_ws_types" : ["KBaseRNASeq.ReferenceAnnotation" ]
+    }
   }, {
     "id" : "read_mismatches",
     "optional" : false,
     "advanced" : false,
     "allow_multiple" : false,
     "default_values" : [ "" ],
-    "field_type" : "text"
+    "field_type" : "text",
+    "text_options" : {
+      "validate_as" : "int"
+    }
   }, {
     "id" : "read_gap_length",
     "optional" : false,
     "advanced" : false,
     "allow_multiple" : false,
     "default_values" : [ "" ],
-    "field_type" : "text"
+    "field_type" : "text",
+     "text_options" : {
+      "validate_as" : "int"
+    }
   }, {
     "id" : "read_edit_dist",
     "optional" : false,
@@ -122,18 +117,26 @@
     }
   }, {
     "id" : "report_secondary_alignments",
-    "optional" : false,
-    "advanced" : false,
-    "allow_multiple" : false,
-    "default_values" : [ "" ],
-    "field_type" : "text"
+    "optional":false,
+    "advanced":false,
+    "allow_multiple":false,
+    "default_values":[""],
+    "field_type" : "checkbox",
+    "checkbox_options":{
+    "checked_value": 1,
+    "unchecked_value": 0
+    }
   }, {
     "id" : "no_coverage_search",
-    "optional" : false,
-    "advanced" : false,
-    "allow_multiple" : false,
-    "default_values" : [ "" ],
-    "field_type" : "text"
+    "optional":false,
+    "advanced":false,
+    "allow_multiple":false,
+    "default_values":[""],
+    "field_type" : "checkbox",
+    "checkbox_options":{
+      "checked_value": 1,
+      "unchecked_value": 0
+    }
   }, {
     "id" : "library_type",
     "optional" : false,
