@@ -93,7 +93,7 @@ parameters :
     
     source_id :
         ui-name : |
-            source
+            source Id
         short-hint : |
             any text field can be marked to accept a list of things instead of one thing
         description  : |
@@ -107,6 +107,14 @@ parameters :
         description  : |
             text fields can validate as an integer if specified in the spec
             
+    source :
+        ui-name : |
+            source
+        short-hint : |
+            any text field can be marked to accept a list of things instead of one thing
+        description  : |
+            any text field can be marked to accept a list of things instead of one thing
+             
     domain :
         ui-name : |
             domain type
