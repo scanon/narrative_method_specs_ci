@@ -24,7 +24,7 @@
     "advanced" : false,
     "allow_multiple" : false,
     "default_values" : [ "" ],
-    "field_type" : "text",
+    "field_type" : "text"
     }
   }, {
     "id" : "output_obj_name",
@@ -39,7 +39,7 @@
     "advanced" : false,
     "allow_multiple" : false,
     "default_values" : [ "" ],
-    "field_type" : "text",
+    "field_type" : "text"
     }
   }, {
     "id" : "replicate_id",
@@ -47,7 +47,7 @@
     "advanced" : false,
     "allow_multiple" : false,
     "default_values" : [ "" ],
-    "field_type" : "text",
+    "field_type" : "text"
     }
   }, {
     "id" : "platform",
@@ -55,7 +55,7 @@
     "advanced" : false,
     "allow_multiple" : false,
     "default_values" : [ "" ],
-    "field_type" : "text",
+    "field_type" : "text"
     }
   }, {
     "id" : "sample_desc",
@@ -63,7 +63,7 @@
     "advanced" : false,
     "allow_multiple" : false,
     "default_values" : [ "" ],
-    "field_type" : "text",
+    "field_type" : "text"
     }
   }, {
     "id" : "title",
@@ -71,7 +71,7 @@
     "advanced" : false,
     "allow_multiple" : false,
     "default_values" : [ "" ],
-    "field_type" : "text",
+    "field_type" : "text"
     }
   }, {
     "id" : "source",
@@ -79,7 +79,7 @@
     "advanced" : false,
     "allow_multiple" : false,
     "default_values" : [ "" ],
-    "field_type" : "text",
+    "field_type" : "text"
     }
   }, {
     "id" : "source_id",
@@ -87,7 +87,7 @@
     "advanced" : false,
     "allow_multiple" : false,
     "default_values" : [ "" ],
-    "field_type" : "text",
+    "field_type" : "text"
     }
   }, {
     "id" : "ext_source_date",
@@ -95,7 +95,7 @@
     "advanced" : false,
     "allow_multiple" : false,
     "default_values" : [ "" ],
-    "field_type" : "text",
+    "field_type" : "text"
     }
   }, {
     "id" : "domain",
@@ -103,7 +103,7 @@
     "advanced":false,
     "allow_multiple":false,
     "default_values":[""],
-    "field_type" : "text",
+    "field_type" : "text"
     }
   }, {
     "id" : "genome_scientific_name",
@@ -111,7 +111,7 @@
     "advanced":false,
     "allow_multiple":false,
     "default_values":[""],
-    "field_type" : "text",
+    "field_type" : "text"
     }
   }, {
     "id" : "tissue",
@@ -119,7 +119,7 @@
     "advanced" : false,
     "allow_multiple" : false,
     "default_values" : [ "" ],
-    "field_type" : "text",
+    "field_type" : "text"
     "text_options" : {
       "valid_ws_types" : [  ]
     }
@@ -129,7 +129,7 @@
     "advanced" : false,
     "allow_multiple" : false,
     "default_values" : [ "" ],
-    "field_type" : "text",
+    "field_type" : "text"
     "text_options" : {
       "valid_ws_types" : [  ]
     }
@@ -139,7 +139,7 @@
     "advanced" : false,
     "allow_multiple" : false,
     "default_values" : [ "" ],
-    "field_type" : "text",
+    "field_type" : "text"
   } ],
   "behavior" : {
     "service-mapping" : {
