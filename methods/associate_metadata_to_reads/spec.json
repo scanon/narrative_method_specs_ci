@@ -25,7 +25,6 @@
     "allow_multiple" : false,
     "default_values" : [ "" ],
     "field_type" : "text"
-    }
   }, {
     "id" : "output_obj_name",
     "optional" : false,
@@ -40,7 +39,6 @@
     "allow_multiple" : false,
     "default_values" : [ "" ],
     "field_type" : "text"
-    }
   }, {
     "id" : "replicate_id",
     "optional" : false,
@@ -48,7 +46,6 @@
     "allow_multiple" : false,
     "default_values" : [ "" ],
     "field_type" : "text"
-    }
   }, {
     "id" : "platform",
     "optional" : false,
@@ -56,7 +53,6 @@
     "allow_multiple" : false,
     "default_values" : [ "" ],
     "field_type" : "text"
-    }
   }, {
     "id" : "sample_desc",
     "optional" : false,
@@ -64,7 +60,6 @@
     "allow_multiple" : false,
     "default_values" : [ "" ],
     "field_type" : "text"
-    }
   }, {
     "id" : "title",
     "optional" : false,
@@ -72,7 +67,6 @@
     "allow_multiple" : false,
     "default_values" : [ "" ],
     "field_type" : "text"
-    }
   }, {
     "id" : "source",
     "optional" : false,
@@ -80,7 +74,6 @@
     "allow_multiple" : false,
     "default_values" : [ "" ],
     "field_type" : "text"
-    }
   }, {
     "id" : "source_id",
     "optional" : false,
@@ -88,7 +81,6 @@
     "allow_multiple" : false,
     "default_values" : [ "" ],
     "field_type" : "text"
-    }
   }, {
     "id" : "ext_source_date",
     "optional" : false,
@@ -96,7 +88,6 @@
     "allow_multiple" : false,
     "default_values" : [ "" ],
     "field_type" : "text"
-    }
   }, {
     "id" : "domain",
     "optional":false,
@@ -104,7 +95,6 @@
     "allow_multiple":false,
     "default_values":[""],
     "field_type" : "text"
-    }
   }, {
     "id" : "genome_scientific_name",
     "optional":false,
@@ -112,14 +102,13 @@
     "allow_multiple":false,
     "default_values":[""],
     "field_type" : "text"
-    }
   }, {
     "id" : "tissue",
     "optional" : false,
     "advanced" : false,
     "allow_multiple" : false,
     "default_values" : [ "" ],
-    "field_type" : "text"
+    "field_type" : "text",
     "text_options" : {
       "valid_ws_types" : [  ]
     }
