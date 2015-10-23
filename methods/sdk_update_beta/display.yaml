@@ -1,10 +1,10 @@
 #
 # define display information
 #
-name: SDK Admin - Add Developer
+name: SDK - Update Beta Version
 
 tooltip: |
-	Approve a developer for access to register to the catalog
+	Migrates the latest dev version to beta
 
 screenshots: []
 
@@ -30,14 +30,19 @@ suggestions:
 #
 parameters :
 
-    developer_name :
+    module_name :
         ui-name : |
-            Developer user name
+            Module Name
         short-hint : |
-            Developer user name
-
+            Name of the registered module
+            
+    git_url :
+        ui-name : |
+            Git URL
+        short-hint : |
+            Git URL of registered repository
 
 
 
 description : |
-	<p>Get module information.</p>
+	<p>Updates the beta version</p>

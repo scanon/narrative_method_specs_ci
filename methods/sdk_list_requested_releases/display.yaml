@@ -1,10 +1,10 @@
 #
 # define display information
 #
-name: SDK Admin - Add Developer
+name: SDK - List Module Releases Under Review
 
 tooltip: |
-	Approve a developer for access to register to the catalog
+	List the modules that have requested a release
 
 screenshots: []
 
@@ -28,16 +28,7 @@ suggestions:
 #
 # Configure the display and description of parameters
 #
-parameters :
-
-    developer_name :
-        ui-name : |
-            Developer user name
-        short-hint : |
-            Developer user name
-
-
-
+parameters : {}
 
 description : |
-	<p>Get module information.</p>
+	<p>List modules that have requested a release</p>
