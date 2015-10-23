@@ -37,6 +37,14 @@
 		    }
 	  	},
 	  	{
+		    "id": "owners",
+		    "optional":true,
+		    "advanced":false,
+		    "allow_multiple":true,
+		    "default_values":[""],
+		    "field_type" : "text"
+	  	},
+	  	{
 		    "id": "include_disabled",
 		    "optional":true,
 		    "advanced":true,
@@ -66,6 +74,10 @@
 				{
 					"input_parameter": "include_disabled",
 					"target_property": "include_disabled"
+				},
+				{
+					"input_parameter": "owners",
+					"target_property": "owners"
 				}
 			],
 			"output_mapping": [

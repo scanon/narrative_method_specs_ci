@@ -37,6 +37,10 @@ parameters :
         ui-name : |
             Include unreleased modules
         short-hint: Include unreleased modules
+    owners :
+        ui-name : |
+            Owners
+        short-hint: Only include modules with these owners
     include_disabled :
         ui-name : |
             Include disabled modules
