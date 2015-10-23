@@ -43,7 +43,7 @@
     "default_values" : [ "" ],
     "field_type" : "text",
     "text_options" : {
-      "valid_ws_types" : ["KBaseRNASeq.ReferenceAnnotation" ]
+      "valid_ws_types" : ["KBaseRNASeq.ReferenceAssembly" ]
     }
   }, {
     "id" : "ws_bowtieIndex_id",
@@ -53,7 +53,7 @@
     "default_values" : [ "" ],
     "field_type" : "text",
     "text_options" : {
-      "valid_ws_types" : ["KBaseRNASeq.ReferenceAnnotation" ]
+      "valid_ws_types" : ["KBaseRNASeq.BowtieIndex" ]
     }
   }, {
     "id" : "read_mismatches",
