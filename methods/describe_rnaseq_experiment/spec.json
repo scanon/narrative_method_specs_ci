@@ -164,65 +164,65 @@
 	"input_mapping" : [    
 	{
           "narrative_system_variable": "workspace",
-          "target_property": "ws_id"
+          "target_argument_position": 0
         },
         {
           "input_parameter": "experiment_id",
-          "target_property": "experiment_id"
+          "target_argument_position": 1
         },{
           "input_parameter": "title",
-          "target_property": "title"
+          "target_argument_position": 2
         },{
           "input_parameter": "experiment_design",
-          "target_property": "experiment_design"
+          "target_argument_position": 4
         },{
           "input_parameter": "experiment_desc",
-          "target_property": "experiment_desc"
+          "target_argument_position": 3 
         },{
           "input_parameter": "platform",
-          "target_property": "platform"
+          "target_argument_position": 5
         },{
           "input_parameter": "Library_type",
-          "target_property": "Library_type"
+          "target_argument_position": 14
         },{
           "input_parameter": "genome_id",
-          "target_property": "genome_id"
+          "target_argument_position": 6
         },{
           "input_parameter": "annotation_id",
-          "target_property": "annotation_id"
+          "target_argument_position": 12
         },{
           "input_parameter": "num_samples",
-          "target_property": "num_samples"
+          "target_argument_position": 7
         },{
           "input_parameter": "num_replicates",
-          "target_property": "num_replicates"
+          "target_argument_position": 8
         },{
           "input_parameter": "tissue",
-          "target_property": "tissue"
+          "target_argument_position": 10
         }, {
           "input_parameter": "condition",
-          "target_property": "condition"
+          "target_argument_position": 11
         }, {
           "input_parameter": "source",
-          "target_property": "source"
+          "target_argument_position": 13
         },{
           "input_parameter": "publication_id",
-          "target_property": "publication_id"
+          "target_argument_position": 15
         },{
           "input_parameter": "source_id",
-          "target_property": "source_id"
+          "target_argument_position": 16
         },{
           "input_parameter": "external_source_date",
-          "target_property": "external_source_date"
+          "target_argument_position": 17
         }
       ],
       "output_mapping" : [
       	{
-      	 "service_method_output_path": [],
-	 "target_property": "job_id" 	
+      	 "service_method_output_path": [0, "SetupRNASeqAnalysis"],
+	 "target_property": "SetupRNASeqAnalysis" 	
       	}
       ]
     }
   },
-  "job_id_output_field" : "job_id"
+  "job_id_output_field" : "docker"
 }
