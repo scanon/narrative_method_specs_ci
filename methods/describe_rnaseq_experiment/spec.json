@@ -218,8 +218,8 @@
       ],
       "output_mapping" : [
       	{
-      	 "service_method_output_path": [0, "SetupRNASeqAnalysis"],
-	 "target_property": "SetupRNASeqAnalysis" 	
+      	 "service_method_output_path": [0],
+	 "target_property": "job_id" 	
       	}
       ]
     }
