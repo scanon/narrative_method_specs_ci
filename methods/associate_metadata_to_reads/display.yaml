@@ -42,7 +42,7 @@ parameters :
     domain:
         ui-name : |
             Domain
- short-hint : |
+    short-hint : |
             Enter the domain of the RNASeq Sample
     genome_id :
         ui-name : |
