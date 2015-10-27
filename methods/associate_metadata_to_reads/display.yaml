@@ -84,7 +84,9 @@ parameters :
         ui-name : |
             Sample Description
         short-hint : |
-            Select the description of the        ui-name : |
+            Select the description of the  RNASeq Sample
+    title:
+        ui-name : |
             Title
         short-hint : |
             Title for the RNASeq sample in the Experiment
@@ -109,5 +111,4 @@ description : |
 
     <p><strong>Team members who developed & deployed algorithm in KBase:</strong>
     Michael Schatz, James Gurtowski, Michael Sneddon,Srividya Ramakrishnan,Sunita Kumari.</p>
-RNASeq Sample
-    title :
+    
