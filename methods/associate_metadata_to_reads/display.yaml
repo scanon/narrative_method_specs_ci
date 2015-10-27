@@ -1,10 +1,10 @@
 #
 # Define basic display information
 #
-name     : Associate metadata to reads
-tooltip  : |
-    Associate metadata to reads
+name     : Associate Reads to RNASeqSample
 
+tooltip  : |
+    Explain the sample details of a RNASeqSample.
 screenshots :
     []
 
@@ -22,168 +22,92 @@ method-suggestions :
 # Configure the display and description of the parameters
 #
 parameters :
-    ws_genome_id :
+    singleend_sample :
         ui-name : |
-            Genome
+            SingleEnd Read
         short-hint : |
-            when allowed types are specified, a dropdown of typed objects in the current workspace appears
-        description  : |
-            when allowed types are specified, a dropdown of typed objects in the current workspace appears
-        placeholder : |
-            placeholder text is possible
-
-
-    sample_id :
+            Select the SingleEnd Read for a RNASeq Sample.
+    pairedend_sample :
         ui-name : |
-            sample
+            PairedEnd Read
         short-hint : |
-            textareas are possible; also notice that no red indicator arrow is shown for optional fields
-        description  : |
-            notice that if a field is marked as optional, no red indicator arrow is shown
-            
-    output_obj_name :
+            Select the PairedEnd Read for a RNASeq Sample
+        long-hint  : |
+            Select the PairedEnd Read for a RNASeq Sample
+    analysis_id :
         ui-name : |
-            Associate Metadata To Reads Output 
+            Analysis ID
         short-hint : |
-            if a text field indicates it is an output name, then it is ok to specify an object that does not yet exist; notice also that spaces are not allowed in names.
-        description  : |
-            if a text field indicates it is an output name, then it is ok to specify an object that does not yet exist
-        placeholder : |
-            provide a name for the output
-            
+            Specify the RNASeq Analysis ID that sample belongs to
+    domain:
+        ui-name : |
+            Domain
+ short-hint : |
+            Enter the domain of the RNASeq Sample
+    genome_id :
+        ui-name : |
+            Reference Genome
+        short-hint : |
+            Select the reference genome of the RNASeq Experiment
     library_type :
         ui-name : |
-            library type
+            Library Type
         short-hint : |
-            text fields can have default values, and can validate as an integer if specified in the spec
-        description  : |
-            text fields can validate as an integer if specified in the spec
-            
-    replicate_id :
+            Select Library Type PairedEnd or SingleEnd
+    sample_id :
         ui-name : |
-            replicate id
+            RNASeq Sample Id
         short-hint : |
-            same for float values- the input must be parsable as a number
-        description  : |
-            same for float values- the input must be parsable as a number        
-    
-    platform :
+            Enter the RNASeq Sample ID.
+
+    replicate_id:
         ui-name : |
-            platform type
+            RNASeq Sample Replicate ID
         short-hint : |
-            fields marked as advanced automatically are hidden; these fields should ALWAYS be optional or have a default value
-        description  : |
-            fields marked as advanced automatically are hidden; these fields should ALWAYS be optional or have a default value    
-    
+            Specify the replicate ID for the sample replicates
+    tissue:
+        ui-name : |
+            Tissue
+        short-hint : |
+            Enter the Tissue of the samples where extracted from
+    condition:
+        ui-name : |
+            Condition
+        short-hint : |
+            Enter the Specific condition of the RNASeq Sample
+    platform:
+        ui-name : |
+            Platform
+        short-hint : |
+            Enter the Sequencing Platform used
     sample_desc :
         ui-name : |
-            sample description
+            Sample Description
         short-hint : |
-            checkboxes allow you to return one of two possible values as configured in the spec
-        description  : |
-            checkboxes allow you to return one of two possible values as configured in the spec
-            
-    title :
+            Select the description of the        ui-name : |
+            Title
+        short-hint : |
+            Title for the RNASeq sample in the Experiment
+    source  :
         ui-name : |
-            title
+            Source
         short-hint : |
-            dropdown fields are also possible to force selection of predefined options
-        description  : |
-            dropdown fields are also possible to force selection of predefined options    
-    
+            Enter the Source for the RNASeq Sample
     source_id :
         ui-name : |
-            source Id
+            Source ID
         short-hint : |
-            any text field can be marked to accept a list of things instead of one thing
-        description  : |
-            any text field can be marked to accept a list of things instead of one thing
-             
-    ext_source_date :
+            Enter the Source ID for the RNASeq Sample
+    ext_source_date:
         ui-name : |
-            external source date
+            Source Date
         short-hint : |
-            text fields can have default values, and can validate as an integer if specified in the spec
-        description  : |
-            text fields can validate as an integer if specified in the spec
-            
-    source :
-        ui-name : |
-            source
-        short-hint : |
-            any text field can be marked to accept a list of things instead of one thing
-        description  : |
-            any text field can be marked to accept a list of things instead of one thing
-             
-    domain :
-        ui-name : |
-            domain type
-        short-hint : |
-            same for float values- the input must be parsable as a number
-        description  : |
-            same for float values- the input must be parsable as a number        
-    
-    genome_scientific_name :
-        ui-name : |
-            genome scientific name
-        short-hint : |
-            fields marked as advanced automatically are hidden; these fields should ALWAYS be optional or have a default value
-        description  : |
-            fields marked as advanced automatically are hidden; these fields should ALWAYS be optional or have a default value    
-    
-    tissue :
-        ui-name : |
-            tissue types
-        short-hint : |
-            checkboxes allow you to return one of two possible values as configured in the spec
-        description  : |
-            checkboxes allow you to return one of two possible values as configured in the spec
-            
-    condition :
-        ui-name : |
-            condition/treatments type
-        short-hint : |
-            dropdown fields are also possible to force selection of predefined options
-        description  : |
-            dropdown fields are also possible to force selection of predefined options    
-    
-    custom :
-        ui-name : |
-            custom
-        short-hint : |
-            any text field can be marked to accept a list of things instead of one thing
-        description  : |
-            any text field can be marked to accept a list of things instead of one thing
+            Enter the Source Date
 
 description : |
-    <p>This description can be marked up with <b>html</b> and can have <a href="https://kbase.us">links</a></p>
-    <p>This description should be understandable by a novice biologist user.</p>
+    <p>This method allows you to records the details of  RNASeqSample </p>
 
-technical-description : |
-    <p>A technical description should describe exactly what is going on under the covers, probably linking to
-    some publications, providing algorithms, etc.</p>
-    <pre>
-       # some psuedocode
-       # or examples should go here
-    </pre>
-    <p>This section should be for experts who actually want to know what it is you are doing in the method.</p>
-
-
-#
-# various ways to include publications, probably the best approach
-# is to use a pmid so the front-end can query pubmed directly
-# and render whatever information is needed.  display-text and
-# link could be included for backup, for instance if pubmed is down.
-#
-publications :
-    -
-        pmid: 2231712
-        display-text: Basic local alignment search tool.
-        link: http://www.ncbi.nlm.nih.gov/pubmed/2231712
-    -
-        display-text: Some made up paper
-    -
-        link: http://www.ncbi.nlm.nih.gov/pubmed/2231712
-    -
-        pmid: 2231712
-
+    <p><strong>Team members who developed & deployed algorithm in KBase:</strong>
+    Michael Schatz, James Gurtowski, Michael Sneddon,Srividya Ramakrishnan,Sunita Kumari.</p>
+RNASeq Sample
+    title :
