@@ -107,7 +107,7 @@ parameters :
             Enter the Source Date
 
 description : |
-    <p>This method allows you to records the details of  RNASeqSample </p>
+    <p>This method allows you to record the metadata for each RNAseq sample. The metadata for each sample includes title and source of RNAseq sample, tissue type from which sample is derived, conditions/treatments type that sample was exposed, and additional metadata related to RNAseq experiment including platform type, library type, domain name and selection of the reference genome.    </p>
 
     <p><strong>Team members who developed & deployed algorithm in KBase:</strong>
     Michael Schatz, James Gurtowski, Michael Sneddon,Srividya Ramakrishnan,Sunita Kumari.</p>
