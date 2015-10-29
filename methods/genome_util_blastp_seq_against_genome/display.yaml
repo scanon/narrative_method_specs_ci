@@ -33,7 +33,7 @@ parameters :
         short-hint : |
             Select the pre-indexed genome of interest
         long-hint  : |
-            additional information can be placed here
+            A single genome or multiple genomes of interest must be indexed using “Build Genome Search Index” method.
     query :
         ui-name : |
             Query Sequence
