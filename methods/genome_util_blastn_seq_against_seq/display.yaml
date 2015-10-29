@@ -32,7 +32,7 @@ parameters :
         short-hint : |
             Copy/paste the target nucleotide sequences in FASTA format
         long-hint  : |
-            additional information can be placed here
+            Multiple target sequences can be pasted in FASTA format. Blank lines are not allowed in the middle of bare sequence input.
     query :
         ui-name : |
             Query Sequence
