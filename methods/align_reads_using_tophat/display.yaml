@@ -26,9 +26,9 @@ parameters :
         ui-name : |
             RNASeq Sample
         short-hint : |
-            when allowed types are specified, a dropdown of typed objects in the current workspace appears
+            RNASeq Sample
         description  : |
-            when allowed types are specified, a dropdown of typed objects in the current workspace appears
+            RNASeq Sample
         placeholder : |
             placeholder text is possible
 
@@ -37,107 +37,107 @@ parameters :
         ui-name : |
             Reference Annotation
         short-hint : |
-            textareas are possible; also notice that no red indicator arrow is shown for optional fields
+            Reference Annotation
         description  : |
-            notice that if a field is marked as optional, no red indicator arrow is shown
+            Reference Annotation
             
     output_obj_name :
         ui-name : |
             tophat read alignment output
         short-hint : |
-            if a text field indicates it is an output name, then it is ok to specify an object that does not yet exist; notice also that spaces are not allowed in names.
+            tophat read alignment output
         description  : |
-            if a text field indicates it is an output name, then it is ok to specify an object that does not yet exist
+            tophat read alignment output
         placeholder : |
-            provide a name for the output
+            tophat read alignment output
             
     ws_reference_assembly_id :
         ui-name : |
             Reference Assembly Id
         short-hint : |
-            text fields can have default values, and can validate as an integer if specified in the spec
+            Reference Assembly Id
         description  : |
-            text fields can validate as an integer if specified in the spec
+            Reference Assembly Id
             
     ws_bowtieIndex_id :
         ui-name : |
             Bowtie Index Id
         short-hint : |
-            same for float values- the input must be parsable as a number
+            Bowtie Index Id
         description  : |
-            same for float values- the input must be parsable as a number        
+            Bowtie Index Id
     
     read_mismatches :
         ui-name : |
             Mismatches in Reads
         short-hint : |
-            fields marked as advanced automatically are hidden; these fields should ALWAYS be optional or have a default value
+            Mismatches in Reads
         description  : |
-            fields marked as advanced automatically are hidden; these fields should ALWAYS be optional or have a default value    
+            Mismatches in Reads
     
     read_gap_length :
         ui-name : |
             Gap length in reads
         short-hint : |
-            checkboxes allow you to return one of two possible values as configured in the spec
+            Gap length in reads
         description  : |
-            checkboxes allow you to return one of two possible values as configured in the spec
+            Gap length in reads
             
     read_edit_dist :
         ui-name : |
             read distance
         short-hint : |
-            dropdown fields are also possible to force selection of predefined options
+            read distance
         description  : |
-            dropdown fields are also possible to force selection of predefined options    
+            read distance    
     
     min_intron_length :
         ui-name : |
             minimum length of intron
         short-hint : |
-            any text field can be marked to accept a list of things instead of one thing
+            minimum length of intron
         description  : |
-            any text field can be marked to accept a list of things instead of one thing
+            minimum length of intron
 
     max_intron_length :
         ui-name : |
             max length of intron
         short-hint : |
-            checkboxes allow you to return one of two possible values as configured in the spec
+            max length of intron
         description  : |
-            checkboxes allow you to return one of two possible values as configured in the spec
+            max length of intron
             
     num_threads :
         ui-name : |
             number of threads
         short-hint : |
-            dropdown fields are also possible to force selection of predefined options
+            number of threads
         description  : |
-            dropdown fields are also possible to force selection of predefined options    
+            number of threads    
     
     report_secondary_alignments :
         ui-name : |
             report secondary alignments
         short-hint : |
-            any text field can be marked to accept a list of things instead of one thing
+            report secondary alignments
         description  : |
-            any text field can be marked to accept a list of things instead of one thing
+           
     
     no_coverage_search :
         ui-name : |
             no coverage search
         short-hint : |
-            checkboxes allow you to return one of two possible values as configured in the spec
+            no coverage search
         description  : |
-            checkboxes allow you to return one of two possible values as configured in the spec
+            
  
     library_type :
         ui-name : |
-            read distance
+            library type
         short-hint : |
-            dropdown fields are also possible to force selection of predefined options
+            library type
         description  : |
-            dropdown fields are also possible to force selection of predefined options    
+            library type    
 
 
 
